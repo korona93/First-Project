@@ -1,0 +1,258 @@
+/* reset CSS */
+*{margin:0; padding:0;}
+ul li{list-style: none;}
+a{outline:0; text-decoration: none; color:#000;}
+img{border:0;}
+body{font:12px/1.6 arial; color:#000;}
+
+#contentWrap{
+    width:970px;
+    margin:0 auto;
+}
+
+#contentWrap > h1 {
+    width: 970px; height:50px;
+    text-align: center;
+    border-bottom: 3px solid #aaa;
+    margin:0 auto;
+}
+
+/* typeCon */
+#typeCon{
+    width: 600px; height:400px;
+    margin:0 auto;
+    position: relative;
+}
+
+#category{
+    position: relative;
+    display:block;
+    height:40px;
+    overflow: hidden;
+    float: left;
+}
+.menu1{
+    float: left;
+    display:block;
+    margin: 20px 90px 0 30px;
+}
+#category > ul{
+    float : left;
+    margin-top:20px;
+    margin-left:20px;
+
+}
+#category > ul > li{
+    float:left;
+    display: block;
+    width : 200px;
+    margin: 0 auto;
+}
+
+#type{
+    position: relative;
+    display: block;
+    float: left;
+    height: 50px;
+    top:40px;
+}
+.menu2{
+    float: left;
+    display: block;
+    height: 50px;
+    margin: 15px 80px 0 40px;
+}
+#type > ul{
+    float:left;
+}
+#type > ul:nth-of-type(1) > li{
+    float:left;
+    display: block;
+    width : 100px; height:40px;
+    margin: 0 auto;
+    
+
+}
+#type > ul:nth-of-type(2) > li{
+    float:left;
+    width : 100px;
+    margin: 0 auto;
+
+}
+#subType{
+    position: relative;
+    display: block;
+    height: 50px;
+    top:100px;  left:0;
+}
+.menu3{
+    float: left;
+    display: block;
+    height: 50px;
+    margin: 15px 70px 0 30px;
+    
+    
+}
+#subType > ul:nth-of-type(1) > li{
+    float:left;
+    display: block;
+    width : 100px; height:40px;
+    margin: 0 auto;
+    
+
+}
+#subType > ul:nth-of-type(2) > li{
+    float:left;
+    width : 100px;
+    margin: 0 auto;
+
+}
+
+#select{
+    
+    border-top:2px solid #aaa;
+    border-bottom:2px solid #aaa;
+    position: relative;
+    height: 30px;
+    top:220px;
+}
+#select > button{
+    position: relative;
+    top:-32px;
+}
+#sort{
+    display: block;
+    position: absolute;
+    top:300px;
+    width: 600px;
+    height: 40px;
+    border-bottom: 2px solid #aaa;
+}
+#sort li{
+    float: left;
+    position: relative;
+    width:80px;
+    margin:15px 0 5px 35px;
+}
+
+/* detailContentWrap*/
+
+#detailContentWrap{
+    width:800px;
+    margin: 0 auto;
+    display: block;
+}
+#detailCon > ul > li{
+    float: left;
+    margin: 10px 30px 30px 20px;
+}
+.colorBox{
+    width:150px;
+    vertical-align: baseline;
+    display: inline-block;
+    overflow: hidden;
+    margin: 3px 0 8px 0;
+
+}
+.colorBox span{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 0 4px 4px 0;
+    font-size:0;
+    border:1px solid #d7d7d7;
+    cursor: pointer;
+}
+.colorBox input{
+    float: right;
+}
+
+.colorBox > span:nth-of-type(1){
+    background-color: aqua;
+}
+.colorBox > span:nth-of-type(2){
+    background-color: black;
+}
+.colorBox > span:nth-of-type(3){
+    background-color: violet;
+}
+
+
+
+/* navBarContent*/
+#navBar{
+    width:600px; height: 330px;
+    margin:0 auto;
+    border:2px solid black;
+    overflow: hidden;
+}
+#navBarContent li{
+    float:left;
+    margin-left: 10px;
+}
+
+.navBarHeader{
+    display: block;
+    height: 35px;
+    position: relative;
+}
+#navBarHeaderOpt{
+    position: absolute;
+    right:10px; top:5px;
+}
+#navBarContent{
+    display: block;
+    
+}
+.navConInfo > div{
+    width: 150px;
+}
+.del{
+    float: right;
+    margin-right: 30px;
+}
+.navPrice{
+    position: absolute;
+}
+.navConInfo div > input{
+    width:10px;
+    position: relative;
+    left:95px; top:-10px;
+}
+.count{
+    display: block;
+    width: 10px; 
+    position: relative;
+    left: 110px; top:-30px;
+    font-size: 0px;
+
+}
+.count img{
+    cursor: pointer;
+}
+#navBarContentOpt{
+    position: relative;
+    top: 40px;
+    display: block;
+}
+#navBarContentOpt > button:nth-of-type(1){
+    position: relative;
+    left:30px;
+    margin-bottom:50px;
+}
+#navBarContentOpt > button:nth-of-type(2){
+    position: relative;
+    top:50px; right:30px;
+    margin-bottom:50px;
+}
+#navBarContentOpt > button:nth-of-type(3){
+    position: relative;
+    left:30px; top:50px;
+    margin-bottom:20px;
+}
+.totalPrice{
+    width: 600px;
+    position: relative;
+    bottom:-140px;
+    border-top:2px solid #d7d7d7;
+}

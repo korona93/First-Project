@@ -1,0 +1,320 @@
+/*reset css*/
+*{margin:0; padding:0;}
+ol,ul{list-style:none;}
+a{outline:0; text-decoration:none; color:#555;}
+img{border:0;}
+body{font:12px/1.6 arial; color:#555;}
+
+/*header*/
+#header{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    z-index : 1000;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+}
+
+#header > h1#mainLogo{
+    position : absolute;
+    left: 10px;
+    bottom : 3px;
+}
+ul#mainMenu1{
+    position: absolute;
+    left : 220px;
+    bottom : 3px;
+}
+
+ul#mainMenu1 > li{
+    float: left;
+    padding : 2x;
+    margin : 10px;
+}
+
+ul#mainMenu2{
+    position: absolute;
+    right : 125px;
+    bottom : 3px;
+}
+
+ul#mainMenu2 > li{
+    float: left;
+    padding : 2x;
+    margin : 10px;
+}
+
+ul#tools{
+    position: absolute;
+    right : 0px;
+    bottom : 0px;
+}
+
+ul#tools > li{
+    float: left;
+    margin : 0 10px 3px 10px;
+   
+}
+
+/*WRAP*/
+
+#wrap{
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    margin-top: 150px;
+}
+
+#loginTitle{
+    margin: 70px auto 0 auto;
+    height: 20px;
+    width: 65px;
+    font-size: 16px;
+    text-align: center; 
+}
+
+/*loginBox*/
+
+#loginBox{
+    margin : 70px auto 0 auto;
+    height: 625px;
+    width: 515px;
+    background-color: rgb(250, 247, 242);
+    border: 1px solid #101010;
+    position: relative;
+}
+
+#loginBox > .inputClickBox{
+    height: 50px;
+    width: 385px;
+    margin:0px;
+    font-size:12px;
+    line-height: 50px;
+    border: 1px solid #101010;
+}
+
+/* 아이디 입력칸 */
+
+#loginBox > #inputUn{
+    position: absolute;
+    top:60px;
+    left:64px;
+    background-color: white;
+}
+
+/* 패스워드 입력칸 */
+
+#loginBox > #inputPw{
+    position: absolute;
+    top:130px;
+    left:64px;
+    background-color: white;
+}
+
+#loginBox .forWhat{
+    float: left;
+    margin-left:10px;
+    width:65px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+
+}
+
+/*아이디 저장 및 보안접속*/
+
+#loginBox > #checkList{
+   
+    height: 55px;
+    width:387p;
+    position: absolute;
+    top:180px;
+    left:64px;
+    position: relative;
+    
+}
+
+#checkList > #idSaveCheck{
+    height: 55px;
+    width:15px;
+    line-height: 55px;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#checkList > #idSaveCheckText{
+    height: 55px;
+    width:100px;
+    line-height: 55px;
+    position: absolute;
+    top:0px;
+    left:15px;
+}
+
+#checkList > #securityConnect{
+    height: 55px;
+    width: 11px;
+    line-height: 55px;
+    position: absolute;
+    top:0px;
+    right:180px;   
+}
+
+#checkList > #securityConnectText{
+    height: 55px;
+    width:50px;
+    line-height: 55px;
+    position: absolute;
+    top:0px;
+    right : 130px;
+}
+
+/*로그인/회원가입 버튼*/
+
+#loginBox > #clickLogin{
+    position: absolute;
+    top:235px;
+    left:64px;
+    background-color: #d99f9d;
+    text-align: center;
+}
+
+#loginBox > #xMark{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top:296px;
+    left:250px;
+    font-size:12px;
+    text-align: center;
+    line-height: 15px;
+}
+
+
+#loginBox > #clickAssign{
+    position: absolute;
+    top:320px;
+    left:64px;
+    text-align: center;
+}
+
+#loginBox > #find{
+    width:100%;
+    height:54px;
+    line-height: 18px;
+    text-align: center;
+    position: absolute;
+    bottom:150px;
+    
+}
+
+/* 계정 연동 */
+#loginBox > div.interLock{
+    width: 155px;
+    position : absolute;
+    left: 180px;
+    bottom:55px;
+}
+
+div.interLock > ul.interLock > li{
+    float: left;
+    padding : 2x;
+    margin : 6px; 
+}
+
+/*footer*/
+
+/*푸터전체*/
+div#footer{
+    width: 1163px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+/*배너*/
+div#footer > div.benefitBanner{
+    
+    height: 230px;
+    width: 100%;
+    margin:200px auto 0;
+}
+
+ul.benefitBanner > li{
+    float: left;
+    margin-right: 17.5px
+}
+
+ul.benefitBanner > li:last-of-type{
+    margin-right: 0;
+}
+/*푸터 메뉴*/
+div#footer > div.ftMenu{
+    
+    height: 170px;
+    width: 1000px;
+    margin:110px auto 0;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    font-size: 11px;
+    color: rgb(16, 16, 16);
+}
+
+ul.ftMenu > li{
+    float: left;
+    width: 130px;
+    height: 100%;
+    margin-right: 15px;
+    padding-left: 15px;
+}
+
+ul.ftMenu > li:first-of-type{
+    margin-left:100px;
+}
+
+ul.ftMenu > li:nth-of-type(2){
+    width:140px;
+}
+
+ul.ftMenu > li:nth-of-type(4){
+    width:70px;
+}
+
+ul.ftMenu > li:nth-of-type(5){
+    width:70px;
+}
+
+ul.ftMenu > li:nth-of-type(6){
+    width:70px;
+}
+
+
+/*푸터 아이콘*/
+div#footer > div.ftIcon{
+    
+    height: 91px;
+    width: 1000px;
+    margin:10px auto 0;
+}
+
+div.ftIcon{
+    position: relative;
+    top:37px;
+    left:398px;
+}
+
+div.ftIcon > ul.ftIcon{
+    position: absolute;
+
+}
+
+ul.ftIcon > li{
+    float: left;
+    margin-left: 17px;
+}
+
+/*푸터 회사정보*/
+div#footer > div#information{
+    
+    height: 150px;
+    width: 100%;
+    margin:10px auto 0 auto;
+    text-align: center;
+}
