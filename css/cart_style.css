@@ -26,6 +26,7 @@ caption{
     width: 1000px;
     table-layout:fixed;
     text-align: center;
+    margin-top: 15px;
 }
 
 #ordForm > table>  tr{
