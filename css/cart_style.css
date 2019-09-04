@@ -1,0 +1,254 @@
+*{margin: 0; padding: 0;}
+ol, ul, li{list-style: none;}
+a{outline: 0; text-decoration: none; color: #555;} /*아웃라인 없애줌*/
+img{border: 0;}
+p{margin: 0;}
+
+.orderListArea{
+    width: 1000px;
+    height: 800px;
+    position: relative;
+    margin:0 auto;
+    font-size: 11px;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic'; 
+}
+
+caption{
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    padding:10px 0; 
+    border-bottom: 1px solid #555;
+    
+}
+
+#ordForm > table{
+    width: 1000px;
+    table-layout:fixed;
+    text-align: center;
+}
+
+#ordForm > table>  tr{
+    margin:0 auto;
+}
+
+/* #ordForm > table > tr > th{
+    margin: 10px 0;
+} */
+
+.chk{
+    width: 100px;
+    height: 20px;
+    margin: 10px 0;
+}
+
+.thumb{
+    width: 150px;
+    height: 20px;
+}
+
+.product{
+    width: 150px;
+    height: 20px;
+}
+
+.name{
+    width: 150px;
+    height: 20px;
+}
+
+.price{
+    width: 150px;
+    height: 20px;
+}
+
+.quantity{
+    width: 150px;
+    height: 20px;
+}
+
+.mileage{
+    width: 150px;
+    height: 20px;
+}
+
+.total{
+    width: 150px;
+    height: 20px;
+}
+
+th,td{
+    border-bottom: 1px solid #555; 
+}
+
+#pri_btn > td{
+    border: 0;
+}
+tbody{
+    margin:0 auto;
+}
+
+table > tbody > tr{
+    border-bottom: 1px solid #555; 
+}
+
+.body > .xans_record > .item{
+    width: 100px;
+    height: 200px;
+}
+
+.body > .xans_record > #quantity_item{
+    position: relative;
+}
+
+.body > .xans_record > #quantity_item > .btn_o{
+    position: absolute;
+    right: 26px; 
+    top: 114px; 
+}
+
+.displaynone{
+    position: absolute;
+    margin-top: -22px; 
+}
+
+#product_item > a > img{
+    width: 100px;
+    height: 180px;
+}
+
+#name_item{
+    height: 180px;
+    width: 100px;
+    position: relative;
+}
+
+/* #name_item > ul > li > a:nth-child(1){
+    position: absolute;
+    top: 150px;
+    left: 279px;  
+}
+
+#name_item > ul > li > a:nth-child(2){
+    position: absolute;
+    top: 350px;
+    left: 279px;  
+} */
+
+
+#name_item > ul > li > p{
+    position: absolute;
+    left: 25px; 
+}
+
+#name_item > ul > li > a{
+    position: absolute;
+    left: 55px;  
+    bottom: 126px;
+}
+
+
+#name_item > ul> li> .displaynone{
+    margin-bottom: 2px;
+    position: absolute;
+    left: 65px;
+}
+
+
+.btn_o{
+    border: 1px solid #555;
+    width: 100px;
+    height: 20px;
+    background-color: white; 
+    padding: 3px 0;
+    text-align: center;
+}
+
+/* #price_item{
+    position: relative;
+}
+
+#price_item > div > p{
+    position: absolute;
+    top: -8px;
+} */
+
+/* .body > tr > td > div > p{
+    position: absolute;
+    left: 20px; 
+} */
+
+#quantity_item > p{
+    width: 100px;
+}
+
+#quantity_item > input{
+    width: 100px;
+}
+
+/* #total_item{
+    position: relative;
+}
+
+#total_item > div > p{
+    position: absolute;
+    top: -8px;
+} */
+
+.bold{
+    font-weight: bold;
+    color: black;
+}
+
+.item > ul > li{
+    margin: 2px;
+    width: 100px;
+}
+
+#quantity_item{
+    width: 100px;
+    height: 20px;
+}
+
+
+#all_p{
+    width: 1000px;
+    height: 60px;
+    text-align: right;
+    border-bottom: 1px solid #555;
+}
+#all_p > span{
+    display: inline;
+    /* font-size: 30px; */
+}
+
+#pri_btn{
+    width: 1000px;
+    height: 50px;
+}
+
+#pri_btn > .btn_p{
+    width: 160px;
+    height: 50px;
+    float: left;
+    margin: 10px 24px 0; 
+    text-align: center;
+    line-height: 50px;
+    background-color: #ccc;
+    color: white;
+}
+
+#pri_btn > .btn_p:first-child{
+    margin-left: 0;
+}
+
+#pri_btn > .btn_p:last-child{
+    text-align: center;
+    margin-right: 0;
+    /* float: right; */
+    background-color:#d99f9d;
+}
+
+
+
+
