@@ -1,470 +1,672 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet", href="../css/index.css">
+            <link rel="stylesheet" href="../css/detail_search.css">
+            <script src="./js/main.js"></script>
+            <title>cart</title>
+            <style>
+                #header{    
+                position: fixed;
+                left:0; top:0; right: 0; 
+                }
+            </style>
+    </head> 
+    <body>
+        <!-- header -->
+        <div id="header">
+            <!-- 메인로고 -->
+            <h1 id="mainLogo">
+                <a href="../index.html" title="스타일난다">
+                    <img src="../images/logo.png" alt="메인로고">
+                </a>
+            </h1>
+            <!-- !메인로고 -->
+            <!-- 메인 메뉴1-->
+            <ul id="mainMenu1">
+                <li class="sale">
+                    <a href="#" title="SALE">
+                        <p>SALE</p>
+                    </a>
+                </li>
+                <li class="3ce">
+                    <a href="#" title="3CE">
+                        <p>3CE</p>
+                    </a>
+                </li>
+                <li class="nandaMade">
+                    <a href="#" title="KKXX">
+                         <p>KKXX</p>
+                    </a>
+                </li>
+                <li class="kkxx">
+                    <a href="#" title="NANDAMADE">
+                        <p>NANDAMADE</p>
+                    </a>
+                </li>
+                <li class="apperalFashion">
+                    <a href="#" title="apperalFashion">
+                        <p>의류/패션</p>
+                    </a>
+               </li>
+                <li class="video">
+                    <a href="#" title="video">
+                        <p>영상으로 보는 신상</p>
+                    </a>
+                </li>
+            </ul>
+            <!-- !메인 메뉴1 -->
+            <!-- 메인 메뉴2 -->
+            <ul id="mainMenu2">
+                <li class="login">
+                    <a href="Login.html" title="login">
+                        <p>LOGIN</p>
+                    </a>
+                </li>
+                <li class="mypage">
+                    <a href="#" title="mypage">
+                        <p>MYPAGE</p>
+                    </a>
+                </li>
+                <li class="language">
+                    <a href="#" title="language">
+                         <p>LANGUAGE</p>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- !메인 메뉴2 -->
+            <!-- 헤더 툴 -->
+                <ul id="tools">
+                    <li class="shoppingCart">
+                        <a href="cart.html" title="장바구니">
+                            <img src="../images/cart.png" alt="장바구니" width="20px" height="25px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="detail_search.html" title="검색">
+                            <img src="../images/search.png" alt="검색" width="20px" height="22px">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="gnb">
+                            <img src="../images/gnb.png" alt="gnb" width="25px" height="28px">
+                        </a>
+                    </li>
+                </ul>
+            <!-- !헤더 툴 -->
+        </div>
+        <!-- !header -->
+
+        <!-- wrap -->
+        <div id="wrap">
+        <!--contentWrap -->
+            <div id="contentWrap">
+                <h1><strong>상 세 검 색</strong></h1>
+                <!-- typeCon -->
+                <div id="typeCon">
+                    <div id="category" class="con1">
+                        <div class="menu1">Category</div>
+                        <ul>
+                            <li><input id="check1" type="radio" name="category" />패션</li>
+                            <li><input id="check1" type="radio" name="category" />화장품</li>
+                        </ul>
+                    </div>
+                    <div id="type">
+                        <div class="menu2">Type</div>
+                        <ul>
+                            <li><input type="checkbox" />탑</li>
+                            <li><input type="checkbox" />아우터</li>
+                            <li><input type="checkbox" />드레스</li>
+                            <li><input type="checkbox" />스커트</li>
+                        </ul>
+                        <ul>
+                            <li><input type="checkbox" />팬츠</li>
+                            <li><input type="checkbox" />가방</li>
+                            <li><input type="checkbox" />슈즈</li>
+                            <li><input type="checkbox" />악세사리</li>
+                        </ul>
+                    </div>
+                    <div id="subType">
+                        <div class="menu3">Subtype</div>
+                        <ul>
+                            <li><input type="checkbox" />블라우스</li>
+                            <li><input type="checkbox" />셔츠</li>
+                            <li><input type="checkbox" />긴팔</li>
+                            <li><input type="checkbox" />후드</li>
+                        </ul>
+                        <ul>
+                            <li><input type="checkbox" />반팔</li>
+                            <li><input type="checkbox" />나시</li>
+                            <li><input type="checkbox" />뷔스티에</li>
+                            <li><input type="checkbox" />니트</li>
+                        </ul>
+                    </div>
+                    <div id="select">
+                        <button type="button"><span>초기화</span></button>
+                    </div>
+                    <div id="sort">
+                        <ul>
+                            <li><a href="#">전체보기</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">인기상품</a></li>
+                            <li><a href="#">낮은 가격순</a></li>
+                            <li><a href="#">높은 가격순</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //typeCon -->
+
+                <!-- detailContentWrap -->
+                <div id="detailContentWrap">
+                    <!-- detailCon -->
+                    <div id="detailCon">
+                        <ul>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                            <li>
+                                <!-- conImage -->
+                                <div class="conImage">
+                                    <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
+                                </div>
+                                <!-- //conImage -->
+                                <!-- conInfo -->
+                                <div class="conInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <input type="checkbox">
+                                        </div>
+                                
+                                    </div>
+                                    <!-- productName -->
+                                    <div class="productName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!-- productName -->
+                                    <!-- price -->
+                                    <div class="price">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //price -->
+                                </div>
+                                <!-- //conInfo -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //detailCon -->
+                </div>
+                <!-- //detailContentWrap  -->
+
+            </div>
+            <!-- //contentWrap -->
+            <!-- navBar -->
+            <div id="navBar">
+                <!-- navBarHeader -->
+                <div class="navBarHeader">
+                    <h4>
+                        <span>장바구니</span>
+                        <em>(3)</em>
+                    </h4>
+                    <!-- navBarHeaderOpt -->
+                    <div id="navBarHeaderOpt">
+                        <button type="button">네비바접기</button>
+                    </div>
+                    <!-- //navBarHeaderOpt -->
+                </div>
+                <!-- //navBarHeader -->
+                <div>
+                    <!-- navBarContent -->
+                    <div id="navBarContent">
+                        <ul>
+                            <li>
+                                <!-- navConImage -->
+                                <div class="navConImage">
+                                    <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
+                                </div>
+                                <!-- //navConImage -->
+                                <!-- navConInfo -->
+                                <div class="navConInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <a href="#" class="del">삭제</a>
+                                        </div>
+                                    </div>
+                                    <!-- navProductName -->
+                                    <div class="navProductName">
+                                        <a href="#"><a href="#"><span>Text-Double clic</span></a></a>
+                                    </div>
+                                    <!--navProductName -->
+                                    <!-- navPrice -->
+                                    <div class="navPrice">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <div>
+                                        <input type="text" />
+                                        <div class="count">
+                                            <img src="../images/icon_quantity_up.gif" />
+                                            <img src="../images/icon_quantity_down.gif" />
+                                        </div>
+                                    </div>
+                                    <!-- //navPrice -->
+                                </div>
+                                <!-- //navConInfo -->
+                            </li>
+                            <li>
+                                <!-- navConImage -->
+                                <div class="navConImage">
+                                    <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
+                                </div>
+                                <!-- //navConImage -->
+                                <!-- navConInfo -->
+                                <div class="navConInfo">
+                                    <div class = "color">
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <a href="#" class="del">삭제</a>
+                                        </div>
+                                    </div>
+                                    <!-- navProductName -->
+                                    <div class="navProductName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!--navProductName -->
+                                    <!-- navPrice -->
+                                    <div class="navPrice">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <div>
+                                        <input type="text" />
+                                        <div class="count">
+                                            <img src="../images/icon_quantity_up.gif" />
+                                            <img src="../images/icon_quantity_down.gif" />
+                                        </div>
+                                    </div>
+                                    <!-- //navPrice -->
+                                </div>
+                                <!-- //navConInfo -->
+                            </li>
+                            <li>
+                                <!-- navConImage -->
+                                <div class="navConImage">
+                                    <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
+                                </div>
+                                <!-- //navConImage -->
+                                <!-- navConInfo -->
+                                <div class="navConInfo">
+                                    <div class = "color"`>
+                                        <div class = "colorBox">
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <span><a href="#"></a></span>
+                                            <a href="#" class="del">삭제</a>
+                                        </div>
+                                    </div>
+                                    <!-- navProductName -->
+                                    <div class="navProductName">
+                                        <a href="#"><span>Text-Double clic</span></a>
+                                    </div>
+                                    <!--navProductName -->
+                                    <!-- navPrice -->
+                                    <div class="navPrice">
+                                        <a href="#">46,000원</a>
+                                    </div>
+                                    <!-- //navPrice -->
+                                    <div>
+                                        <input type="text" />
+                                        <div class="count">
+                                            <img src="../images/icon_quantity_up.gif" />
+                                            <img src="../images/icon_quantity_down.gif" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //navConInfo -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //navBarContent -->
+                    <!-- navBarContentOpt -->
+                    <div id="navBarContentOpt">
+                        <button>장바구니</button>
+                        <button>주문하기</button>
+                        <button>전체삭제</button>
+                    </div>
+                    <!-- //navBarContentOpt -->
+                </div>
+                <!-- totalPrice -->
+                <div class="totalPrice">
+                    <span>상품 구입 금액 : 210,000원</span>
+                </div>
+                <!-- //totalPrice -->
+            </div>
+            <!-- //navBar -->
+        </div>
+        <!-- !wrap -->
+        <!-- footer -->
+        <div id="footer">
+            <div class="benefitBanner">
+                <ul class="benefitBanner">
+                    <li><a href="#" title="benefitBanner1"><img src="../images/benefitBanner1.jpg" alt="benefitBanner1" width="376px" height="230px"></a></li>
+                    <li><a href="#" title="benefitBanner2"><img src="../images/benefitBanner2.jpg" alt="benefitBanner2" width="376px" height="230px"></a></li>
+                    <li><a href="#" title="benefitBanner3"><img src="../images/benefitBanner3.jpg" alt="benefitBanner3" width="376px" height="230px"></a></li>
+
+            </div>
+            <div class="ftMenu">
+                <ul class="ftMenu">
+                    <li>
+                        <h3>CUSTOMER</h3>
+                        <br>
+                        <p>0502 707 8888</p>
+                        <p>평일 09:30 - 18:00</p>
+                        <p>점심 12:00 - 13:00</p>
+                        <p>휴무 (토, 일, 공휴일)</p>
+                    </li>
+                    <li>
+                        <h3>DELIVERY</h3>
+                        <br>
+                        <p><a href="#none" onclick="window.open('http://service.epost.go.kr/iservice/trace/Trace.jsp','Trace','width=400px,height=500px,left=20,top=80,resizable=0,scrollbars=0');" onfocus="this.blur();">배송조회 &gt;&gt;</a></p>
+                        <p>반품주소</p>
+                        <p>인천광역시 계양구 계산동</p>
+                        <p>계양우체국 사서함 1117호</p>
+                        <p>반드시 우체국택배 이용</p>
+                    </li>
+                    <li>
+                        <h3>ACCOUNT</h3>
+                        <br>
+                        <p>신한 140-007-646350</p>
+                        <p>국민 392001-04-066016</p>
+                        <p>농협 130011-55-003804</p>
+                        <p>기업 123-132282-01-011</p>
+                        <p>㈜난다</p>
+                    </li>
+                    <li>
+                        <h3>STORE</h3>
+                        <br>
+                        <p><a href="/import/store.html?store_no=2">플래그십</a></p>
+                        <p><a href="/import/store.html?store_no=3">백화점</a></p>
+                        <p><a href="/import/store.html?store_no=4">면세점</a></p>
+                        <p><a href="/import/store.html?store_no=5">올리브영</a></p>
+                        <p><a href="/import/store.html?store_no=6">해외</a></p>
+                    </li>
+                    <li>
+                        <h3>CONTACT</h3>
+                        <br>
+                        <p><a href="/import/collaboration.html">제휴신청</a></p>
+                    </li>
+                    <li>
+                        <h3>NOTICE</h3>
+                        <br>
+                        <p><a href="/import/about.html">회사소개</a></p>
+                        <p><a href="/shopinfo/guide.html">이용안내</a></p>
+                        <p><a href="/import/i_shipping.html">해외배송</a></p>
+                        <p><a href="/board/free/list_notice.html?board_no=1">공지사항</a></p>
+                        <p><a href="/board/gallery/list_evt.html?board_no=71">이벤트</a></p>
+                        <p><a href="/board/product/list.html?board_no=6">Q &amp; A</a></p>
+                        <!--<p><a href="/board/product/list_faq.html">FAQ</a></p>
+                        <p><a href="/board/free/list_recruit.html?board_no=5">Recruit</a></p>-->
+                    </li>
+                </ul>
+            </div>
+            <!-- footer icon -->
+            <div class="ftIcon">
+                <ul class="ftIcon">
+                        <li><a href="#" title="ftIcon1"><img src="../images/footer_ico01.png" alt="ftIcon1"></a></li>
+                        <li><a href="#" title="ftIcon2"><img src="../images/footer_ico02.png" alt="ftIcon2"></a></li>
+                        <li><a href="#" title="ftIcon3"><img src="../images/footer_ico03.png" alt="ftIcon3"></a></li>
+                        <li><a href="#" title="ftIcon4"><img src="../images/footer_ico04.png" alt="ftIcon4"></a></li>
+                        <li><a href="#" title="ftIcon5"><img src="../images/footer_ico05.png" alt="ftIcon5"></a></li>
+                        <li><a href="#" title="ftIcon6"><img src="../images/footer_ico06.png" alt="ftIcon6"></a></li>
+                        
+                </ul>
+            </div>
+            <!-- !footer icon -->
+            <div id="information">
+                <p>
+                    "대표이사. 신지은 | 사업자등록번호. 130-86-24632 | 통신판매업신고. 2014-서울마포-0835 | 개인정보보호책임자. 강숙현 "
+                    <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1308624632" target="_blank" style="color:#101010">[사업자정보확인]</a>
+                </p>
+                <p>
+                    회사명. ㈜난다 │ 전화. 0502-707-8888 │ 팩스. 02-335-5274 │ 이메일. nanda@stylenanda.com │ 주소. 서울특별시 마포구 잔다리로 32 서문빌딩 2,3,4,6F
+                </p>
+                <p style="margin-bottom:20px">
+                    ⓒ 2017 NANDA All rights reserved. │ <a href="./html/privacy.html" style="font-weight:bold; color:#101010">개인정보처리방침</a> │ 
+                    <a href="/member/cctv_policies_procedures.html">영상정보기기 운영 및 관리 방침</a> │
+                    <a href="/member/agreement01.html" style="color:#101010">이용약관</a> │ Hosting by cafe24
+                </p>
+                <p>
+                    고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG 사의 구매안전서비스를 이용하실 수 있습니다. 　
+                    <strong>LG U+ 에스크로 </strong>
+                    <a href="https://pgweb.uplus.co.kr:9091/pg/wmp/mertadmin/jsp/mertservice/s_escrowYn.jsp?mertid=CF_stylenanda" target="_blank" style="color:#101010">(서비스가입사실확인)</a>
+                </p>
+            </div>
+
+        </div>
+        <!-- !footer -->
+    </body>
+</html>
+
+
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Detail_search</title>
-    <link rel="stylesheet" href="../css/detail_search.css">
-    <script src="./js/jquery-2.1.1.min.js"></script>
-    <!--jQuery 기본문법-->
-    <script src="./js/jquery.easing.1.3.js"></script> <!--  옵션  -->
-    <script src="./js/jquery-ui.min.js"></script> <!--  화면 옵션  -->
-    <script src="./js/prefixfree.min.js"></script> <!--  밴더 프리픽스옵션  -->
-    <script src="./js/detail_search.js"></script>
+    
+    <title>Document</title>
 </head>
 
 <body>
-    <!--contentWrap -->
-    <div id="contentWrap">
-        <h1><strong>상 세 검 색</strong></h1>
-        <!-- typeCon -->
-        <div id="typeCon">
-            <div id="category" class="con1">
-                <div class="menu1">Category</div>
-                <ul>
-                    <li><input id="check1" type="radio" name="category" />패션</li>
-                    <li><input id="check1" type="radio" name="category" />화장품</li>
-                </ul>
-            </div>
-            <div id="type">
-                <div class="menu2">Type</div>
-                <ul>
-                    <li><input type="checkbox" />탑</li>
-                    <li><input type="checkbox" />아우터</li>
-                    <li><input type="checkbox" />드레스</li>
-                    <li><input type="checkbox" />스커트</li>
-                </ul>
-                <ul>
-                    <li><input type="checkbox" />팬츠</li>
-                    <li><input type="checkbox" />가방</li>
-                    <li><input type="checkbox" />슈즈</li>
-                    <li><input type="checkbox" />악세사리</li>
-                </ul>
-            </div>
-            <div id="subType">
-                <div class="menu3">Subtype</div>
-                <ul>
-                    <li><input type="checkbox" />블라우스</li>
-                    <li><input type="checkbox" />셔츠</li>
-                    <li><input type="checkbox" />긴팔</li>
-                    <li><input type="checkbox" />후드</li>
-                </ul>
-                <ul>
-                    <li><input type="checkbox" />반팔</li>
-                    <li><input type="checkbox" />나시</li>
-                    <li><input type="checkbox" />뷔스티에</li>
-                    <li><input type="checkbox" />니트</li>
-                </ul>
-            </div>
-            <div id="select">
-                <button type="button"><span>초기화</span></button>
-            </div>
-            <div id="sort">
-                <ul>
-                    <li><a href="#">전체보기</a></li>
-                    <li><a href="#">신상품</a></li>
-                    <li><a href="#">인기상품</a></li>
-                    <li><a href="#">낮은 가격순</a></li>
-                    <li><a href="#">높은 가격순</a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- //typeCon -->
+    
 
-        <!-- detailContentWrap -->
-        <div id="detailContentWrap">
-            <!-- detailCon -->
-            <div id="detailCon">
-                <ul>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                    <li>
-                        <!-- conImage -->
-                        <div class="conImage">
-                            <a href="#"><img src="https://via.placeholder.com/150x210" /></a>
-                        </div>
-                        <!-- //conImage -->
-                        <!-- conInfo -->
-                        <div class="conInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <input type="checkbox">
-                                </div>
-                        
-                            </div>
-                            <!-- productName -->
-                            <div class="productName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!-- productName -->
-                            <!-- price -->
-                            <div class="price">
-                                <a href="#">46,000원</a>
-                            </div>
-                            <!-- //price -->
-                        </div>
-                        <!-- //conInfo -->
-                    </li>
-                </ul>
-            </div>
-            <!-- //detailCon -->
-        </div>
-        <!-- //detailContentWrap  -->
-
-    </div>
-    <!-- //contentWrap -->
-    <!-- navBar -->
-    <div id="navBar">
-        <!-- navBarHeader -->
-        <div class="navBarHeader">
-            <h4>
-                <span>장바구니</span>
-                <em>(3)</em>
-            </h4>
-            <!-- navBarHeaderOpt -->
-            <div id="navBarHeaderOpt">
-                <button type="button">네비바접기</button>
-            </div>
-            <!-- //navBarHeaderOpt -->
-        </div>
-        <!-- //navBarHeader -->
-        <div>
-            <!-- navBarContent -->
-            <div id="navBarContent">
-                <ul>
-                    <li>
-                        <!-- navConImage -->
-                        <div class="navConImage">
-                            <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
-                        </div>
-                        <!-- //navConImage -->
-                        <!-- navConInfo -->
-                        <div class="navConInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <a href="#" class="del">삭제</a>
-                                </div>
-                            </div>
-                            <!-- navProductName -->
-                            <div class="navProductName">
-                                <a href="#"><a href="#"><span>Text-Double clic</span></a></a>
-                            </div>
-                            <!--navProductName -->
-                            <!-- navPrice -->
-                            <div class="navPrice">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <div>
-                                <input type="text" />
-                                <div class="count">
-                                    <img src="./images/icon_quantity_up.gif" />
-                                    <img src="./images/icon_quantity_down.gif" />
-                                </div>
-                            </div>
-                            <!-- //navPrice -->
-                        </div>
-                        <!-- //navConInfo -->
-                    </li>
-                    <li>
-                        <!-- navConImage -->
-                        <div class="navConImage">
-                            <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
-                        </div>
-                        <!-- //navConImage -->
-                        <!-- navConInfo -->
-                        <div class="navConInfo">
-                            <div class = "color">
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <a href="#" class="del">삭제</a>
-                                </div>
-                            </div>
-                            <!-- navProductName -->
-                            <div class="navProductName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!--navProductName -->
-                            <!-- navPrice -->
-                            <div class="navPrice">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <div>
-                                <input type="text" />
-                                <div class="count">
-                                    <img src="./images/icon_quantity_up.gif" />
-                                    <img src="./images/icon_quantity_down.gif" />
-                                </div>
-                            </div>
-                            <!-- //navPrice -->
-                        </div>
-                        <!-- //navConInfo -->
-                    </li>
-                    <li>
-                        <!-- navConImage -->
-                        <div class="navConImage">
-                            <a href="#"><img src="https://via.placeholder.com/120x160" /></a>
-                        </div>
-                        <!-- //navConImage -->
-                        <!-- navConInfo -->
-                        <div class="navConInfo">
-                            <div class = "color"`>
-                                <div class = "colorBox">
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <span><a href="#"></a></span>
-                                    <a href="#" class="del">삭제</a>
-                                </div>
-                            </div>
-                            <!-- navProductName -->
-                            <div class="navProductName">
-                                <a href="#"><span>Text-Double clic</span></a>
-                            </div>
-                            <!--navProductName -->
-                            <!-- navPrice -->
-                            <div class="navPrice">
-                                 <a href="#">46,000원</a>
-                            </div>
-                            <!-- //navPrice -->
-                            <div>
-                                <input type="text" />
-                                <div class="count">
-                                    <img src="./images/icon_quantity_up.gif" />
-                                    <img src="./images/icon_quantity_down.gif" />
-
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //navConInfo -->
-                    </li>
-                </ul>
-            </div>
-            <!-- //navBarContent -->
-            <!-- navBarContentOpt -->
-            <div id="navBarContentOpt">
-                <button>장바구니</button>
-                <button>주문하기</button>
-                <button>전체삭제</button>
-            </div>
-            <!-- //navBarContentOpt -->
-        </div>
-        <!-- totalPrice -->
-        <div class="totalPrice">
-            <span>상품 구입 금액 : 210,000원</span>
-        </div>
-        <!-- //totalPrice -->
-    </div>
-    <!-- //navBar -->
 </body>
 
 </html>
