@@ -11,7 +11,9 @@ body{font:11px/1.6 arial; color:#000;}
     margin: 0 auto;
     padding: 70px 0px 80px;
 }
-
+*{
+    box-sizing: border-box;
+}
 #content{
     /* width:970px; */
     margin:0 auto;
@@ -34,7 +36,7 @@ body{font:11px/1.6 arial; color:#000;}
 
 
 .subsubTitle{
-    width: 110px;
+    width: 130px;
     padding: 10px 0 8px 20px;
     /* border-top: 1px solid #ccc; */
     text-align: left;
@@ -79,7 +81,7 @@ p{ font-size: 12px;}
 }
 /*  */
 .subTitle{
-    width: 110px;
+    width: 130px;
     padding: 10px 0 8px 20px;
     /* border-top: 1px solid #ccc; */
     text-align: left;
