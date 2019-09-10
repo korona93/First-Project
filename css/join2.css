@@ -81,7 +81,7 @@ p{ font-size: 12px;}
 }
 /*  */
 .subTitle{
-    width: 130px;
+    width: 115px;
     padding: 10px 0 8px 20px;
     /* border-top: 1px solid #ccc; */
     text-align: left;
@@ -107,3 +107,12 @@ p{ font-size: 12px;}
     vertical-align: middle;
 }
 
+#smsAgr{
+    vertical-align: middle;
+}
+#emailAgr{
+    vertical-align: middle;
+}
+#old{
+    vertical-align: middle;
+}
