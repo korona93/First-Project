@@ -1,0 +1,125 @@
+/* reset CSS */
+*{margin:0; padding:0; box-sizing: border-box;}
+ul li{list-style: none;}
+a{outline:0; text-decoration: none; color:#000;}
+img{border:0;}
+body{font:12px/1.6 arial; color:#000;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    font-weight: 400;}
+div{vertical-align: baseline;}
+
+
+/*contentWrap*/
+#contentWrap{
+    margin: 0 auto;
+    display: block;
+}
+
+/* agreement */
+#agreement{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-weight: 800;
+    display: block;
+    font-size: 16px;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    padding: 0px 0px 40px;
+}
+#agreement strong{
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+/*content*/
+#content{
+    margin-top: 50px;
+    margin:0 auto;
+    font-size: 11px;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    font-weight: 400;
+}
+
+/*join1*/
+.join1{
+    float: left;
+    width: 49%;
+    margin:0 auto;
+    display: block;
+}
+.join h3{
+    font-size: 16px;
+    clear: both;
+    font-weight: normal;
+    margin: 0 auto;
+    display: block;
+}
+.agreeArea{
+    display: block;
+    margin-top:20px;
+}
+.agree{
+    display: block;
+    overflow: auto;
+    height: 500px;
+    padding:20px;
+    border: 1px solid #e6e6e6;
+    background: #fff;
+}
+.agree p{
+    padding: 0 0 17px;
+    font-size: 12px;
+    line-height: 21px;
+    margin:0 auto;
+}
+.check{
+    padding:7px 0 0 0;
+    color:#202020;
+    font-size: 12px;
+    text-align: right;
+    margin:0 auto;
+}
+.check input{
+    width: 14px;
+    margin: 0 3px 0 0;
+    padding: 0;
+}
+.check label{
+    cursor: default;
+}
+
+/*join2*/
+.join2{
+    float:right;
+    width:49%;
+    margin:0 auto;
+}
+
+/*button*/
+#button{
+    display:block;
+    text-align: right;
+    margin:30px auto;
+    padding : 30px 0;
+}
+.btn_L{
+    margin-right: 5px;
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    padding: 12px;
+    vertical-align: middle;
+    background: #d99f9d;
+    color: #fff;
+    border: 1px solid #d99f9d;
+}
+.btn_R{
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px;
+    background:#ccc;
+    color: #fff;
+    border: 1px solid #ccc;
+}

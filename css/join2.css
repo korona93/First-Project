@@ -1,0 +1,91 @@
+/* reset CSS */
+*{margin:0; padding:0;}
+ul li{list-style: none;}
+a{outline:0; text-decoration: none; color:#000;}
+img{border:0;}
+body{font:12px/1.6 arial; color:#000;}
+
+#contentWrap{
+    width:970px;
+    margin:0 auto;
+}
+
+#titleWrap{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+#title{
+    font-size: 16px;
+    margin-top: 0;
+    padding: 0px 0px 40px;
+}
+
+#content{
+    width:100%;
+}
+
+#subsubTitle{
+    width: 130px;
+    padding: 10px 0 8px 20px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+/*  */
+.member{
+    overflow: hidden;
+}
+/*  */
+#subsubTitle{
+    float: left;
+}
+#detail1{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#detail2{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+/*  */
+.subTitle{
+    width: 130px;
+    padding: 10px 0 8px 20px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+/*  */
+.floatL {
+    display: block;
+    overflow: hidden;
+}
+.floatL > div {
+    float: left;
+}
+
+/*  */
+.required{
+    float: right;
+}
+/*  */
+.subCon_floatL{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
