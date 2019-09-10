@@ -3,13 +3,22 @@
 ul li{list-style: none;}
 a{outline:0; text-decoration: none; color:#000;}
 img{border:0;}
-body{font:12px/1.6 arial; color:#000;}
+body{font:11px/1.6 arial; color:#000;}
+
 
 #contentWrap{
-    width:970px;
-    margin:0 auto;
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0px 80px;
 }
 
+#content{
+    /* width:970px; */
+    margin:0 auto;
+}
+.border{
+    border-top: 1px solid #ccc;
+}
 #titleWrap{
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -23,17 +32,26 @@ body{font:12px/1.6 arial; color:#000;}
     padding: 0px 0px 40px;
 }
 
-#content{
-    width:100%;
-}
 
-#subsubTitle{
-    width: 130px;
+.subsubTitle{
+    width: 110px;
     padding: 10px 0 8px 20px;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
+}
+/* h4 */
+h4{
+    padding: 50px 0 20px 20px;
+    font-size: 13px !important;
+}
+/* p */
+p{ font-size: 12px;}
+.required{
+    margin: -25px 0 10px;
+    color: #353535;
+    text-align: right;
 }
 
 /*  */
@@ -41,7 +59,7 @@ body{font:12px/1.6 arial; color:#000;}
     overflow: hidden;
 }
 /*  */
-#subsubTitle{
+.subsubTitle{
     float: left;
 }
 #detail1{
@@ -61,9 +79,9 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /*  */
 .subTitle{
-    width: 130px;
+    width: 110px;
     padding: 10px 0 8px 20px;
-    border-top: 1px solid #ccc;
+    /* border-top: 1px solid #ccc; */
     text-align: left;
     font-weight: normal;
     vertical-align: middle;
@@ -77,10 +95,7 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
 }
 
-/*  */
-.required{
-    float: right;
-}
+
 /*  */
 .subCon_floatL{
     float: left;
@@ -89,3 +104,4 @@ body{font:12px/1.6 arial; color:#000;}
     text-align: left;
     vertical-align: middle;
 }
+
