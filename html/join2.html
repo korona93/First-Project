@@ -135,9 +135,9 @@
                             <span class="btn02" style="height: 25px; line-height: 25px; vertical-align: top; padding: 0">우편번호</span>
                         </a>
                         <br>
-                        <input id="addr1" class="input_css" name="addr1" value type="text">기본주소
+                        <input id="addr1" class="input_css" name="addr1" value type="text"> 기본주소
                         <br>
-                        <input id="addr2" class="input_css" name="addr2" value type="text">나머지주소
+                        <input id="addr2" class="input_css" name="addr2" value type="text"> 나머지주소
                     </div>
                 </div>
 
@@ -201,9 +201,9 @@
                     </div>
                 </div>
 
-                <div class="floatL border">
-                    <div class="subTitle">SMS 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
-                    <div class="subCon_floatL">
+                <div id="smsWrap" class="floatL border">
+                    <div id="smsAgree" class="subTitle">SMS 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL_smsAgree">
                         <label><input type="checkbox" id="smsAgr" value="smsAgr">동의함</label>
                     </div>
                     <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.<br>
@@ -233,9 +233,9 @@
                     </div>
                 </div>
 
-                <div class="floatL border">
-                    <div class="subTitle">이메일 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
-                    <div class="subCon_floatL">
+                <div id="emailAgreeWrap" class="floatL border">
+                    <div id="emailAgree" class="subTitle">이메일 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL_emailAgree">
                         <label><input type="checkbox" id="emailAgr" value="emailAgr">동의함</label>
                     </div>
                     <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.<br>
@@ -257,6 +257,7 @@
                         <input value type="text" maxlength="2" id="birth_month" class="input_css" name="birth_month">
                         월
                         <input value type="text" maxlength="2" id="birth_day" class="input_css" name="birth_day">
+                        일
                     </div>
                 </div>
 
