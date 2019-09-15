@@ -4,7 +4,20 @@ ul li{list-style: none;}
 a{outline:0; text-decoration: none; color:#000;}
 img{border:0;}
 body{font:11px/1.6 arial; color:#000;}
-
+select{
+    -webkit-appearance: none;
+    background: url('../images/select_arr.png') no-repeat 100%;
+    background-size: 32px 27px;
+    min-height: 26px;
+    min-width: 80px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+select, input {
+    vertical-align: middle;
+    font-size: 100%;
+    color: #000;
+}
 
 #contentWrap{
     width: 70%;
@@ -154,3 +167,23 @@ p{ font-size: 12px;}
     height: 26px;
 }
 /* input하이트 묶을것!!!!!!!!!! */
+.input_css{
+    padding: 4px;
+    border: 1px solid #d9d9d9 !important;
+    height: 25px;
+    color: #202020;
+    font-size: 12px;
+}
+
+#email3{
+    width: 130px;
+}
+
+#birth_year{
+    width: 60px;
+    margin: 0 4px 0 0;
+}
+#birth_month, #birth_day{
+    width: 30px;
+    margin: 0 4px 0 0;
+}
