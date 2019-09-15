@@ -116,3 +116,41 @@ p{ font-size: 12px;}
 #old{
     vertical-align: middle;
 }
+
+/* authMember */
+.authMember{
+    height: 70px;
+    position: relative;
+}
+#auth{
+    padding: 20px 0 30px 20px;
+}
+.authWrap{
+    display: block;
+    height: 70px;
+    position: relative;
+}
+.mobileWrap{
+    vertical-align: middle;
+    position: absolute;
+    top: 37px;
+    left: 168px;
+}
+/* pwd_hint */
+#pwd_hint{
+    padding: 13px 0 8px 40px;
+}
+/* #hint */
+#hint {
+    height: 26px;
+    font-size: 11px;
+}
+/* #hint_answer */
+#hint_answer{
+    padding: 13px 0 8px 40px;
+}
+#hint_answer > input{
+    width: 500px;
+    height: 26px;
+}
+/* input하이트 묶을것!!!!!!!!!! */
