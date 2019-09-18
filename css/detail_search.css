@@ -50,7 +50,7 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /* type */
 #type{
-    display: block;
+    display: none;
     float: left;
     height: 60px;
     margin: 40px 0 0 0;
