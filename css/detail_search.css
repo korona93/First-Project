@@ -194,7 +194,8 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navBarContent*/
 #navBar{
-    width:600px; height: 330px;
+    width:620px;
+    /* height: 330px; */
     margin:0 auto;
     border:2px solid black;
     overflow: hidden;
@@ -267,10 +268,17 @@ body{font:12px/1.6 arial; color:#000;}
     margin-bottom:20px;
 }
 .totalPrice{
-    width: 600px;
+    width: 620px;
     position: relative;
-    bottom:-140px;
+    bottom:-120px;
     border-top:2px solid #d7d7d7;
+}
+
+.ico{
+    display: inline-block;
+    overflow: hidden;
+    background: url('../images/bg_blog_190328.png') no-repeat;
+    text-indent: -9999px;
 }
 
 .navBarHeader #navBarHeaderOpt .btn_toggle{
@@ -286,9 +294,25 @@ body{font:12px/1.6 arial; color:#000;}
     border: 0;
     background-position: -124px -331px;
 }
-.ico{
-    display: inline-block;
-    overflow: hidden;
-    background: url('../images/bg_blog_190328.png') no-repeat;
-    text-indent: -9999px;
+
+.btn_delete{
+    width: 85px;
+    padding: 5px 0;
+    background: transparent;
+    border: 0;
+    font-family: "Malgun Gothic","맑은 고딕";
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navBarContentOpt .btn_delete .i_bin{
+    width: 20px;
+    height: 18px;
+    background-position: -100px -310px;
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+.navContentWrap{
+    display:none;
 }

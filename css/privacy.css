@@ -1,12 +1,8 @@
-
-
 #mainWrap{ 
     width: 1200px;
     margin: 0 auto;
     
 }
-
-
 
 #mainWrap{
     text-align: left;
@@ -64,6 +60,25 @@ p,a{
     text-align: center;
 }
 
+.member_privacy{
+    padding: 25px;
+}
+
 .member_privacy_list{
+    margin: 0 auto;
+    width: 800px;
+    border: 10px solid lightgray;
+}
+
+.member_privacy_list ul{
+    width: 800px;
+}
+
+.member_privacy_list ul li{
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
 
 }
