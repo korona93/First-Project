@@ -79,10 +79,12 @@ div{vertical-align: baseline;}
     text-align: right;
     margin:0 auto;
 }
-.check input{
+.check input[type="checkbox"]{
     width: 14px;
-    margin: 0 3px 0 0;
-    padding: 0;
+    position: relative;
+    top:2px;
+    font-size: 12px;
+    border: 1px solid #d9d9d9 !important;
 }
 .check label{
     cursor: default;
