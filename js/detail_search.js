@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //var state = true;
 	$("#navBtn").click(function(){
-        $(".navContentWrap").stop().slideUp("fast");
+        $(".navContentWrap").stop().slideToggle("fast");
         /*
         $(".navContentWrap")..slidetoggle("fast");
 		if(!state){			

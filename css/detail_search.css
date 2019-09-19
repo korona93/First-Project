@@ -194,7 +194,8 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navBarContent*/
 #navBar{
-    width:620px; height: 330px;
+    width:620px;
+    /* height: 330px; */
     margin:0 auto;
     border:2px solid black;
     overflow: hidden;
@@ -269,7 +270,7 @@ body{font:12px/1.6 arial; color:#000;}
 .totalPrice{
     width: 620px;
     position: relative;
-    bottom:-140px;
+    bottom:-120px;
     border-top:2px solid #d7d7d7;
 }
 
@@ -311,4 +312,7 @@ body{font:12px/1.6 arial; color:#000;}
     background-position: -100px -310px;
     vertical-align: -3px;
     margin-right: 5px;
+}
+.navContentWrap{
+    display:none;
 }
