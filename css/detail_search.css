@@ -50,10 +50,11 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /* type */
 #type{
-    display: none;
+    display: block;
     float: left;
     height: 60px;
     margin: 40px 0 0 0;
+    overflow: hidden;
 }
 .menu2{
     float: left;
@@ -61,10 +62,10 @@ body{font:12px/1.6 arial; color:#000;}
     height: 50px;
     margin: 15px 80px 0 40px;
 }
-#type > ul{
+#type > div > ul{
     float:left;
 }
-#type > ul:nth-of-type(1) > li{
+#type > div > ul:nth-of-type(1) > li{
     float:left;
     display: block;
     width : 100px; height:40px;
@@ -72,7 +73,7 @@ body{font:12px/1.6 arial; color:#000;}
     
 
 }
-#type > ul:nth-of-type(2) > li{
+#type > div > ul:nth-of-type(2) > li{
     float:left;
     width : 100px;
     margin: 0 auto;
@@ -270,4 +271,24 @@ body{font:12px/1.6 arial; color:#000;}
     position: relative;
     bottom:-140px;
     border-top:2px solid #d7d7d7;
+}
+
+.navBarHeader #navBarHeaderOpt .btn_toggle{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.navBarHeader #navBarHeaderOpt .btn_toggle .i_toggle{
+    width: 18px;
+    height: 10px;
+    border: 0;
+    background-position: -124px -331px;
+}
+.ico{
+    display: inline-block;
+    overflow: hidden;
+    background: url('../images/bg_blog_190328.png') no-repeat;
+    text-indent: -9999px;
 }
