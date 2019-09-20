@@ -3,7 +3,7 @@ $(document).ready(function() {
         if ($(this).prop('checked')
             && $('input[type="checkbox"][name="type"]:checked').size()>1) {
             $(this).prop('checked', false);
-        alert('두개 이상 선택할 수 없습니다.');
+        alert('중복선택이 불가합니다.');
         }
     });
     $('input[type="radio"][name="category"]').click(function(){
