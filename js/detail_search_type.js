@@ -6,13 +6,13 @@ $(document).ready(function() {
         alert('중복선택이 불가합니다.');
         }
     });
-    $('input[type="radio"][name="category"]').click(function(){
-        if('.menu1 li:first'){
-            $('.menu2 ul:fisrt').css("display","block");
+    $('input[name="category"]').click(function(){
+        if($(this).checked()){
+            $('.menu2 > ul:fisrt').css("display","block");
         }
-        else if('.menu1 li:last'){
-            $('.menu2 ul:first').css("display","none");
-            $('.menu2 ul:last').css("display","block");
+        else if('.menu1 > li:last'){
+            $('.menu2 > ul:first').css("display","none");
+            $('.menu2 > ul:last').css("display","block");
         }
     })
 });
