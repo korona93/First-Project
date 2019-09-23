@@ -54,7 +54,7 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
     height: 60px;
     margin: 40px 0 0 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .menu2{
     float: left;
@@ -62,31 +62,50 @@ body{font:12px/1.6 arial; color:#000;}
     height: 50px;
     margin: 15px 80px 0 40px;
 }
-#type > div > ul{
-    float:left;
+#type .fashion{
+    display: block;
 }
-#type > div > ul:nth-of-type(1) > li{
+#type .fashion > ul{
+    float:left;
+    width: 400px;
+}
+#type > .fashion > ul:nth-of-type(1) > li{
     float:left;
     display: block;
     width : 100px; height:40px;
     margin: 0 auto;
-    
-
 }
-#type > div > ul:nth-of-type(2) > li{
+#type > .fashion > ul:nth-of-type(2) > li{
     float:left;
     width : 100px;
     margin: 0 auto;
-
 }
-
+#type .cosmetic{
+    float: left;
+    display: none;
+    width: 400px;
+}
+#type .cosmetic > ul{
+    float:left;
+    width: 500px;
+}
+#type > .cosmetic > ul:nth-of-type(1) > li{
+    float:left;
+    display: block;
+    width: 100px; height:40px;
+    margin: 0 auto;
+}
+#type > .cosmetic > ul:nth-of-type(2) > li{
+    float:left;
+    width : 100px;
+}
 /* subType */
 #subType{
-    
+    float: left;
     display: block;
     height: 60px;
     margin: 40px 0 20px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .menu3{
     float: left;
@@ -94,28 +113,41 @@ body{font:12px/1.6 arial; color:#000;}
     height: 60px;
     margin: 15px 70px 0 30px;   
 }
-#subType{
-    float: left;
-}
 #subType > div{ display: none;}
 #subType div > ul{
     float: left;
+    width: 455px;
 }
 #subType div > ul:nth-of-type(1) > li{
     float:left;
     display: block;
-    width : 100px; height:40px;
-    margin: 0 auto;
+    width : 90px; height:40px;
+    /* margin-right:10px; */
     
 
 }
 #subType div > ul:nth-of-type(2) > li{
     float:left;
-    width : 100px;
-    margin: 0 auto;
+    width : 90px;
+    /* margin-right:10px; */
 
 }
-
+#subType > .fs3 > ul{
+    float: left;
+    width: 455px;
+}
+#subType > .fs3 > ul > li{
+    float: left;
+    margin-right: 100px;
+}
+#subType .fs8 > ul > li{margin-bottom: 5px;}
+#subType .fs8 > ul:first-child > li{height: 20px;}
+#subType .fs8 > ul:last-child > li{
+    float: left;
+    width: 90px; 
+    margin: 0 auto;
+}
+/* select */
 #select{
     display: block;
     border-top:2px solid #aaa;
