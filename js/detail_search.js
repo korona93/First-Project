@@ -44,3 +44,24 @@ $(function(){
 		$(this).text(addComma($(this).text()));
 	});
 });
+
+
+// 장바구니수량
+$(function(){
+	$('.inputNumber').blur(function () {
+		var value = $(this).val();
+		if (value == "") {
+			alert("최소 구매수량은 1개입니다.");
+			$(this).val("1").focus();
+		}
+	});
+});
+
+// 삭제 버튼 클릭시 리스트 삭제
+$(function(){
+	$('.del').click(function(){
+		var li = $(this).parent().parent().parent().parent();
+		li.remove();
+
+	});
+});
