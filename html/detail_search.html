@@ -121,31 +121,31 @@
                 <div id="category" class="con1">
                     <div class="menu1">Category</div>
                     <ul>
-                        <li><label><input id="check1" type="radio" name="category" checked />패션</label></li>
-                        <li><label><input id="check1" type="radio" name="category" />화장품</label></li>
+                        <li><label><input id="check1" type="radio" name="category" value="1" checked />패션</label></li>
+                        <li><label><input id="check1" type="radio" name="category" value="2"/>화장품</label></li>
                     </ul>
                 </div>
                 <div id="type">
                     <div class="menu2">Type</div>
-                    <div>
+                    <div class="fashion">
                         <ul>
-                            <li><label><input type="radio" name="type"/>탑</label></li>
-                            <li><label><input type="radio" name="type"/>아우터</label></li>
-                            <li><label><input type="radio" name="type"/>드레스</label></li>
-                            <li><label><input type="radio" name="type"/>스커트</label></li>
+                            <li><label><input type="radio" name="type" value="1"/>탑</label></li>
+                            <li><label><input type="radio" name="type" value="2"/>아우터</label></li>
+                            <li><label><input type="radio" name="type" value="3"/>드레스</label></li>
+                            <li><label><input type="radio" name="type" value="4"/>스커트</label></li>
                         </ul>
                         <ul>
-                            <li><label><input type="radio" name="type"/>팬츠</label></li>
-                            <li><label><input type="radio" name="type"/>가방</label></li>
-                            <li><label><input type="radio" name="type"/>슈즈</label></li>
-                            <li><label><input type="radio" name="type"/>악세사리</label></li>
+                            <li><label><input type="radio" name="type" value="5"/>팬츠</label></li>
+                            <li><label><input type="radio" name="type" value="6"/>가방</label></li>
+                            <li><label><input type="radio" name="type" value="7"/>슈즈</label></li>
+                            <li><label><input type="radio" name="type" value="8"/>악세사리</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="cosmetic">
                         <ul>
                             <li><label><input type="radio" name="type"/>Face</label></li>
                             <li><label><input type="radio" name="type"/>Eye</label></li>
-                            <li><label><input type="radio" name="type"name="type"/>Cheek</label></li>
+                            <li><label><input type="radio" name="type"/>Cheek</label></li>
                             <li><label><input type="radio" name="type"/>Lip</label></li>
                             <li><label><input type="radio" name="type"/>Nail</label></li>
                         </ul>
@@ -159,9 +159,9 @@
                 </div>
                 <div id="subType">
                     <div class="menu3">Subtype</div>
-                    <div>
+                    <div class="fs1">
                         <ul>
-                            <li><label><input type="radio" />블라우스</label></li>
+                            <li><label><input type="checkbox" />블라우스</label></li>
                             <li><label><input type="checkbox" />셔츠</label></li>
                             <li><label><input type="checkbox" />긴팔</label></li>
                             <li><label><input type="checkbox" />후드</label></li>
@@ -173,7 +173,7 @@
                             <li><label><input type="checkbox" />니트</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs2">
                         <ul>
                             <li><label><input type="checkbox" />가디건</label></li>
                             <li><label><input type="checkbox" />조끼</label></li>
@@ -187,20 +187,20 @@
                             <li><label><input type="checkbox" />퍼자켓</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs3">
                         <ul>
                             <li><label><input type="checkbox" />미디,롱</label></li>
                             <li><label><input type="checkbox" />미니</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs4">
                         <ul>
                             <li><label><input type="checkbox" />롱</label></li>
                             <li><label><input type="checkbox" />미디</label></li>
                             <li><label><input type="checkbox" />미니</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs5">
                         <ul>
                             <li><label><input type="checkbox" />레깅스</label></li>
                             <li><label><input type="checkbox" />롱팬츠</label></li>
@@ -213,7 +213,7 @@
                             <li><label><input type="checkbox" />숏팬츠</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs6">
                         <ul>
                             <li><label><input type="checkbox" />클러치</label></li>
                             <li><label><input type="checkbox" />토트</label></li>
@@ -224,7 +224,7 @@
                             <li><label><input type="checkbox" />캐주얼,백팩</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs7">
                         <ul>
                             <li><label><input type="checkbox" />펌프스,힐</label></li>
                             <li><label><input type="checkbox" />부츠,부티</label></li>
@@ -235,7 +235,7 @@
                             <li><label><input type="checkbox" />샌들,슬리퍼</label></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="fs8">
                         <ul>
                             <li><label><input type="checkbox" />실버</label></li>
                             <li><label><input type="checkbox" />귀걸이</label></li>
@@ -664,8 +664,8 @@
                                 <div class="color">
                                     <div class="colorBox">
                                         <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
+                                        <!-- <span><a href="#"></a></span>
+                                        <span><a href="#"></a></span> -->
                                         <a href="#" class="del">삭제</a>
                                     </div>
                                 </div>
@@ -700,8 +700,8 @@
                                 <div class="color">
                                     <div class="colorBox">
                                         <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
+                                        <!-- <span><a href="#"></a></span>
+                                        <span><a href="#"></a></span> -->
                                         <a href="#" class="del">삭제</a>
                                     </div>
                                 </div>
@@ -736,8 +736,8 @@
                                 <div class="color" `>
                                     <div class="colorBox">
                                         <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
-                                        <span><a href="#"></a></span>
+                                        <!-- <span><a href="#"></a></span>
+                                        <span><a href="#"></a></span> -->
                                         <a href="#" class="del">삭제</a>
                                     </div>
                                 </div>
@@ -767,8 +767,8 @@
                 <!-- //navBarContent -->
                 <!-- navBarContentOpt -->
                 <div id="navBarContentOpt">
-                    <button>장바구니</button>
-                    <button>주문하기</button>
+                    <button class="btn_bucket">장바구니</button>
+                    <button class="btn_order">주문하기</button>
                     <button class="btn_delete"><i class="ico i_bin"></i>전체삭제</button>
                 </div>
                 <!-- //navBarContentOpt -->
