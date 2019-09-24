@@ -289,9 +289,11 @@ body{font:12px/1.6 arial; color:#000;}
     position: absolute;
 }
 .navConInfo div > input{
-    width:10px;
+    width: 10px;
     position: relative;
-    left:95px; top:-10px;
+    left: 95px;
+    top: -11px;
+    height: 16px;
 }
 .count{
     display: block;
@@ -305,30 +307,35 @@ body{font:12px/1.6 arial; color:#000;}
     cursor: pointer;
 }
 #navBarContentOpt{
+   
     position: relative;
     top: 40px;
     display: block;
+    width:620px;
+    
 }
-#navBarContentOpt > button:nth-of-type(1){
-    position: relative;
-    left:30px;
+#navBarContentOpt > .btn_bucket{
+    position: absolute;
+    right: 30px;
     margin-bottom:50px;
 }
-#navBarContentOpt > button:nth-of-type(2){
-    position: relative;
+#navBarContentOpt > .btn_order{
+    position: absolute;
     top:50px; right:30px;
     margin-bottom:50px;
 }
-#navBarContentOpt > button:nth-of-type(3){
-    position: relative;
-    left:30px; top:50px;
+#navBarContentOpt > .btn_delete{
+    position: absolute;
+    right:30px; top:100px;
     margin-bottom:20px;
 }
 .totalPrice{
     width: 620px;
-    position: relative;
-    bottom:-120px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     border-top:2px solid #d7d7d7;
+    text-align: right;
 }
 
 .ico{

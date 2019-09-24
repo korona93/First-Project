@@ -46,8 +46,10 @@ $(function(){
 });
 
 
-// 장바구니수량
+
 $(function(){
+
+	// 장바구니수량
 	$('.inputNumber').blur(function () {
 		var value = $(this).val();
 		if (value == "") {
@@ -55,13 +57,19 @@ $(function(){
 			$(this).val("1").focus();
 		}
 	});
-});
 
-// 삭제 버튼 클릭시 리스트 삭제
-$(function(){
+
+	// 삭제 버튼 클릭시 리스트 삭제
 	$('.del').click(function(){
 		var li = $(this).parent().parent().parent().parent();
 		li.remove();
-
 	});
+
+	// // totalprice 변경
+	 $(".selectproduct_price").show(function(){
+	 	var each = $(this).$('inputNumber').val() * $(this).$('selectproduct_price').val();
+	 	var total = 
+	});
+	$(인풋).each(change)
+
 });
