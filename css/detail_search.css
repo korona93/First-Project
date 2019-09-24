@@ -111,41 +111,66 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
     display: block;
     height: 60px;
-    margin: 15px 70px 0 30px;   
+    margin: 15px 50px 0 30px;   
 }
 #subType > div{ display: none;}
-#subType div > ul{
+#subType > div > ul{
     float: left;
-    width: 455px;
+    width: 450px;
 }
-#subType div > ul:nth-of-type(1) > li{
+#subType > div > ul:nth-of-type(1) > li{
     float:left;
     display: block;
-    width : 90px; height:40px;
-    /* margin-right:10px; */
+    width : 80px; height:40px;
+    margin-right:20px;
     
 
 }
-#subType div > ul:nth-of-type(2) > li{
+#subType > div > ul:nth-of-type(2) > li{
     float:left;
-    width : 90px;
-    /* margin-right:10px; */
+    width : 80px;
+    margin-right:20px;
 
 }
 #subType > .fs3 > ul{
-    float: left;
-    width: 455px;
+    display: block;
+    width:400px;
+    position: absolute;
+    top: 200px; left: 150px;
 }
 #subType > .fs3 > ul > li{
     float: left;
-    margin-right: 100px;
+    margin-left: 40px;
+    margin-right: 65px;
 }
-#subType .fs8 > ul > li{margin-bottom: 5px;}
-#subType .fs8 > ul:first-child > li{height: 20px;}
-#subType .fs8 > ul:last-child > li{
+#subType > .fs4 > ul{
+    display: block;
+    width:400px;
+    position: absolute;
+    top: 200px; left: 150px;
+}
+#subType > .fs4 > ul > li{
     float: left;
-    width: 90px; 
-    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#subType > .fs8 > ul{
+    display: block;
+    width:450px;
+}
+#subType > .fs8 > ul > li{
+    width: 40px;
+    height: 20px;
+}
+#subType > .fs8 > ul:last-child{
+    width: 450px;
+    height: 10px;
+    display:block;
+}
+#subType > .fs8 > ul:last-child > li{
+    float: left;
+    width:100px; height: 40px;
+    margin-top:10px;
 }
 /* select */
 #select{
@@ -154,7 +179,7 @@ body{font:12px/1.6 arial; color:#000;}
     border-bottom:2px solid #aaa;
     position: relative;
     height: 30px;
-    top:260px;
+    top:270px;
 }
 #select > button{
     display: block;
