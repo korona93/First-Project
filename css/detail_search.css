@@ -352,6 +352,50 @@ body{font:12px/1.6 arial; color:#000;}
     vertical-align: -3px;
     margin-right: 5px;
 }
+
+.ico_bucket{
+    display: inline-block;
+    overflow: hidden;
+    background: url('../images/basket_icon-icons.com_56201.png') no-repeat;
+    text-indent: -9999px;
+}
+.ico_order{
+    display: inline-block;
+    overflow: hidden;
+    background: url('../images/Dollar_icon.png') no-repeat;
+    text-indent: -9999px;
+}
+.i_bin2{
+    width: 20px;
+    height: 18px;
+    background-size: 20px 18px;
+    vertical-align: -3px;
+    margin-right: 5px;
+}
+.btn_bucket{
+    width: 85px;
+    padding: 5px 0;
+    background: transparent;
+    border: 0;
+    font-family: "Malgun Gothic","맑은 고딕";
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_order{
+    width: 85px;
+    padding: 5px 0;
+    background: transparent;
+    border: 0;
+    font-family: "Malgun Gothic","맑은 고딕";
+    font-size: 13px;
+    color: #666;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 .navContentWrap{
     display:none;
 }
