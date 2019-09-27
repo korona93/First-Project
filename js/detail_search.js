@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 $(function(){
 
-	// 장바구니수량
+	// 장바구니수량 1미만 안됨 = >>>어떻게 할지
 	$('.inputNumber').blur(function () {
 		var value = $(this).val();
 		if (value == "") {
