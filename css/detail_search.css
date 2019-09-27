@@ -307,12 +307,10 @@ body{font:12px/1.6 arial; color:#000;}
     cursor: pointer;
 }
 #navBarContentOpt{
-   
     position: relative;
     top: 40px;
     display: block;
     width:620px;
-    
 }
 #navBarContentOpt > .btn_bucket{
     position: absolute;
@@ -423,4 +421,5 @@ body{font:12px/1.6 arial; color:#000;}
 
 .navContentWrap{
     display:none;
+    height: 295px;
 }

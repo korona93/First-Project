@@ -2,8 +2,11 @@
 $(document).ready(function(){
 
 	$("#navBtn").click(function(){
-        $(".navContentWrap").stop().slideToggle("fast");
+		$(".navContentWrap").stop().slideToggle("fast");	
+
 		// 이미지 변환 넣어야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		$("")
+
 	});
 });	
 
@@ -17,6 +20,9 @@ $(function(){
 			$(this).val("1").focus();
 		}
 	});
+
+	// 전체삭제버튼 클릭시 모든 상품 삭제
+
 
 
 	// 삭제 버튼 클릭시 리스트 삭제
@@ -35,12 +41,8 @@ $(function(){
 	$("#total").text(totalP);	  
 
 });
-// 인풋변경될때마다 토탈프라이스 함수 실행되는 이벤트 작성하기!!!!!!!!!!!!!!!!!!!!!!!!!!
-	// var allinput = new Array;
-	// for(var i=1; i<=3; i++){
-	// 	allinput = {$("#inp"+i).val();}
-	// }
-	
+// 1 인풋변경될때마다 2 삭제버튼 3 상품들어올때마다 totalprice함수 실행되는 이벤트 작성하기!!!!!!!!!!
+// 1 상품이 들어올때  2 삭제버튼 3 전체삭제 클릭시 --> 네비바 위에 상품 갯수 표시 이벤트 작성하기
 
 
 
@@ -56,3 +58,5 @@ $(function(){
 		$(this).text(addComma($(this).text()));
 	});
 });
+
+// 상품이 많이 들어올때 스크롤바!
