@@ -23,7 +23,10 @@ $(function(){
 	});
 
 	// 전체삭제버튼 클릭시 모든 상품 삭제
-
+	$('.btn_delete').click(function(){
+		var ul = $('.product_all');
+		ul.remove();
+	});
 
 
 	// 삭제 버튼 클릭시 리스트 삭제
