@@ -229,7 +229,11 @@ p{ font-size: 12px;}
     margin: 0 4px 0 0;
 }
 #postcode1{
-    width: 40px;
+    width: 100px;
+    text-align: center;
+}
+#postcode2{
+    width: 100px;
     text-align: center;
 }
 .btn02{
