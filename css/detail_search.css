@@ -122,14 +122,14 @@ body{font:12px/1.6 arial; color:#000;}
     float:left;
     display: block;
     width : 80px; height:40px;
-    margin-right:20px;
+    margin-left:20px;
     
 
 }
 #subType > div > ul:nth-of-type(2) > li{
     float:left;
     width : 80px;
-    margin-right:20px;
+    margin-left:20px;
 
 }
 #subType > .fs3 > ul{
@@ -156,21 +156,21 @@ body{font:12px/1.6 arial; color:#000;}
 }
 #subType > .fs8 > ul{
     display: block;
-    width:450px;
+    width:470px; height: 30px;
 }
 #subType > .fs8 > ul > li{
-    width: 40px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    margin: 0;
 }
 #subType > .fs8 > ul:last-child{
-    width: 450px;
+    float: left;
     height: 10px;
     display:block;
 }
 #subType > .fs8 > ul:last-child > li{
     float: left;
     width:100px; height: 40px;
-    margin-top:10px;
 }
 /* select */
 #select{
