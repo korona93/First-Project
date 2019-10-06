@@ -259,7 +259,7 @@ p{ font-size: 12px;}
 
 
 /* btn */
-#btnWrap{position: relative;}
+#btnWrap{position: relative; margin-top: 5px;}
 .btn_red{
     text-align: center;
     width: 120px;
@@ -283,4 +283,9 @@ p{ font-size: 12px;}
     border: 1px solid #ccc;
     position: absolute;
     right: 0;
+}
+
+#mainWrap{
+    width: 1200px;
+    margin: 0 auto;
 }
