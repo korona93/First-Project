@@ -1,4 +1,7 @@
-// 네비바 열고 닫기
+// 처음 상품을 담으면 닫혀있던 네비바가 자동으로 slideUp되서 보여지게![미완]
+
+
+// 네비바 열고 닫기[완]]
 $(document).ready(function(){
 	$("#navBtn").click(function(){
 		if($(".i_toggle").css('background-position')=="-124px -345px"){
@@ -13,7 +16,10 @@ $(document).ready(function(){
 
 $(function(){
 
-	// 장바구니수량 1미만 안됨 = >>>어떻게 할지
+	// 장바구니수량 1미만 안됨 = >>>어떻게 할지[미완]
+	// 1. 숫자를 1미만으로 내릴 수 없게[경고창 없이]
+	// 2. 소수점/한글 안되게!
+	// 3. 버튼을 눌러서도 작동될 수 있게!
 	$('.inputNumber').blur(function () {
 		var value = $(this).val();
 		if (value == "") {
@@ -29,13 +35,13 @@ $(function(){
 	});
 
 
-	// 삭제 버튼 클릭시 리스트 삭제
+	// 삭제 버튼 클릭시 리스트 삭제[완]
 	$('.del').click(function(){
 		var li = $(this).parent().parent().parent().parent();
 		li.remove();
 	});
 
-	// totalprice 변경
+	// totalprice 변경[미완]
 	var totalP=0;
 	for(var i=1; i<=3; i++){
 		var price = Number($("#prod"+i).text());
@@ -66,4 +72,4 @@ $(function(){
 	});
 });
 
-// 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게;
+// 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게[미완]
