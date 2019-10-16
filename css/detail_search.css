@@ -276,8 +276,14 @@ body{font:12px/1.6 arial; color:#000;}
 }
 #navBarContent{
     display: block;
-    
+
 }
+/* navContentWrap(상품이 없어도 높이유지) */
+.navContentWrap{
+    height: 295px;
+    display: none;
+}
+
 .navConInfo > div{
     width: 150px;
 }
@@ -418,9 +424,4 @@ body{font:12px/1.6 arial; color:#000;}
     color: #666;
     font-weight: bold;
     cursor: pointer;
-}
-
-
-.navContentWrap{
-    display:none;
 }
