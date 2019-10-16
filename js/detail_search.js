@@ -22,7 +22,7 @@ $(function(){
 		}
 	});
 
-	// 전체삭제버튼 클릭시 모든 상품 삭제
+	//전체삭제 버튼 클릭시 모든 상품 삭제[product_all 클래스 만들어서 상품을 안에 담기]
 	$('.btn_delete').click(function(){
 		var ul = $('.product_all');
 		ul.remove();
@@ -60,10 +60,10 @@ function addComma(num) {
 	return num.toString().replace(regexp, ',');
 }
 $(function(){
-		// console.log(typeof $('.selectproduct_price').text());
+	// console.log(typeof $('.selectproduct_price').text());
 	$('.selectproduct_price').each(function () {
 		$(this).text(addComma($(this).text()));
 	});
 });
 
-// 상품이 많이 들어올때 스크롤바!
+// 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게;
