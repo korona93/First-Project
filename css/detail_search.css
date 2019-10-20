@@ -350,7 +350,7 @@ body{font:12px/1.6 arial; color:#000;}
     background: url('../images/bg_blog_190328.png') no-repeat;
     text-indent: -9999px;
 }
-
+/* .navBarHeader */
 .navBarHeader #navBarHeaderOpt .btn_toggle{
     padding: 6px;
     background: transparent;
@@ -376,6 +376,13 @@ body{font:12px/1.6 arial; color:#000;}
     font-weight: bold;
     cursor: pointer;
 }
+
+
+/* #navBarContentOpt */
+#navBarContentOpt{ 
+    /* width: 100%; */
+    /* overflow: hidden; */
+}
 #navBarContentOpt .btn_delete .i_bin{
     width: 20px;
     height: 18px;
@@ -383,7 +390,7 @@ body{font:12px/1.6 arial; color:#000;}
     vertical-align: -3px;
     margin-right: 5px;
 }
-
+/* .ico */
 .ico_bucket{
     display: inline-block;
     overflow: hidden;
@@ -403,6 +410,7 @@ body{font:12px/1.6 arial; color:#000;}
     vertical-align: -3px;
     margin-right: 5px;
 }
+/* .btn */
 .btn_bucket{
     width: 85px;
     padding: 5px 0;
