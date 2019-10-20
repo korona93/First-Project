@@ -1,6 +1,5 @@
 // 처음 상품을 담으면 닫혀있던 네비바가 자동으로 slideUp되서 보여지게![미완]
 
-
 // 네비바 열고 닫기[완]]
 $(document).ready(function(){
 	$("#navBtn").click(function(){
@@ -28,12 +27,12 @@ $(function(){
 		}
 	});
 
-	//전체삭제 버튼 클릭시 모든 상품 삭제[product_all 클래스 만들어서 상품을 안에 담기]
+	//전체삭제 버튼 클릭시 모든 상품 삭제 [완]
+	//[product_all 클래스 만들어서 상품을 안에 담기???고민]
 	$('.btn_delete').click(function(){
 		var ul = $('.product_all');
 		ul.remove();
 	});
-
 
 	// 삭제 버튼 클릭시 리스트 삭제[완]
 	$('.del').click(function(){
@@ -48,16 +47,11 @@ $(function(){
 		var eachT = price*$("#inp"+i).val();
 		totalP += eachT;
 	}
-	$("#total").text(totalP);	  
+	$("#total").text(totalP);	
+	// 1 인풋변경될때마다 2 삭제버튼 3 상품들어올때마다 totalprice함수 실행되는 이벤트 작성하기!!!!!!!!!!
 
+	// 1 상품이 들어올때  2 삭제버튼 3 전체삭제 클릭시 --> 네비바 위에 상품 갯수 표시 이벤트 작성하기  
 });
-
-// 1 인풋변경될때마다 2 삭제버튼 3 상품들어올때마다 totalprice함수 실행되는 이벤트 작성하기!!!!!!!!!!
-
-
-// 1 상품이 들어올때  2 삭제버튼 3 전체삭제 클릭시 --> 네비바 위에 상품 갯수 표시 이벤트 작성하기
-
-
 
 // 네비바 금액에 ',' 삽입!
 	// addComma() : 숫자 타입값을 매개변수로 받아 콤마를 추가하여 문자열로 반환해주는 함수
@@ -65,6 +59,7 @@ function addComma(num) {
 	var regexp = /\B(?=(\d{3})+(?!\d))/g;
 	return num.toString().replace(regexp, ',');
 }
+
 $(function(){
 	// console.log(typeof $('.selectproduct_price').text());
 	$('.selectproduct_price').each(function () {
@@ -73,3 +68,5 @@ $(function(){
 });
 
 // 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게[미완]
+
+
