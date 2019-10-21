@@ -288,6 +288,7 @@ body{font:12px/1.6 arial; color:#000;}
 #navBarContent li{
     float:left;
     margin-left: 10px;
+    
 }
 
 .navBarHeader{
@@ -299,9 +300,15 @@ body{font:12px/1.6 arial; color:#000;}
     position: absolute;
     right:10px; top:5px;
 }
+
+.product_all {
+    
+}
+
 #navBarContent{
     display: block;
-
+    width:480px;
+    /* overflow-x: scroll; */
 }
 /* navContentWrap(상품이 없어도 높이유지) */
 .navContentWrap{
