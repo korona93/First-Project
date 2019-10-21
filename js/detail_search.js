@@ -13,22 +13,29 @@ $(document).ready(function(){
 	});
 });	
 
+
+
 $(function(){
 
-	// 장바구니수량 1미만 안됨 = >>>어떻게 할지[미완]
-	// 1. 숫자를 1미만으로 내릴 수 없게[경고창 없이]
-	// 2. 소수점/한글 안되게!
+	// 장바구니수량 1미만 안됨 [완]
+	// 1. 숫자를 1미만으로 내릴 수 없게
 	// 3. 버튼을 눌러서도 작동될 수 있게!
 	$('.inputNumber').blur(function () {
 		var value = $(this).val();
-		if (value == "") {
+		if (value == "" || value < "1") {
 			alert("최소 구매수량은 1개입니다.");
 			$(this).val("1").focus();
 		}
 	});
 
+	// 2. 소수점/한글 안되게![완]
+	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
+	$("input:text[numberOnly]").on("keyup", function() {
+    	$(this).val($(this).val().replace(/[^0-9]/g,""));
+	});
+
 	//전체삭제 버튼 클릭시 모든 상품 삭제 [완]
-	//[product_all 클래스 만들어서 상품을 안에 담기???고민]
+	//[product_all 클래스 만들어서 상품을 안에 담기???고민해보자]
 	$('.btn_delete').click(function(){
 		var ul = $('.product_all');
 		ul.remove();
@@ -51,6 +58,7 @@ $(function(){
 	// 1 인풋변경될때마다 2 삭제버튼 3 상품들어올때마다 totalprice함수 실행되는 이벤트 작성하기!!!!!!!!!!
 
 	// 1 상품이 들어올때  2 삭제버튼 3 전체삭제 클릭시 --> 네비바 위에 상품 갯수 표시 이벤트 작성하기  
+	
 });
 
 // 네비바 금액에 ',' 삽입!
