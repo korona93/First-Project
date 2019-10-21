@@ -103,7 +103,7 @@ body{font:12px/1.6 arial; color:#000;}
 #subType1{
     float: left;
     display: block;
-    height: 60px;
+    height: 60px; width: 600px;
     margin: 40px 0 20px 0;
     /* overflow: hidden; */
 }
@@ -159,7 +159,7 @@ body{font:12px/1.6 arial; color:#000;}
     width:470px; height: 30px;
 }
 #subType1 > .fs8 > ul > li{
-    width: 10px;
+    width: 20px;
     height: 10px;
     margin: 0;
 }
@@ -176,27 +176,22 @@ body{font:12px/1.6 arial; color:#000;}
 #subType2{
     float: left;
     display: block;
-    height: 60px;
+    height: 60px; width: 600px;
     margin: 40px 0 20px 0;
     /* overflow: hidden; */
 }
-.menu3{
-    float: left;
-    display: block;
-    height: 60px;
-    margin: 15px 50px 0 30px;   
-}
-#subType2 > div{ display: block;}
+#subType2 > div{ display: none;}
 #subType2 > div > ul{
     float: left;
-    width: 450px;
+    width: 470px;
 }
 #subType2 > div > ul > li{
     float: left;
     display: block;
-    width : 100px; height:40px;
-    margin-left:10px;
+    width : 120px; height:40px;
+    margin-left:20px;
 }
+
 /* select */
 #select{
     display: block;
