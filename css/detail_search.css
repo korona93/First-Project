@@ -271,13 +271,13 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navBarContent*/
 #navBar{
-    width:620px;
+    width:790px;
     /* height: 330px; */
     margin:0 auto;
     border:2px solid black;
     overflow: hidden;
     position: fixed;
-    bottom: 0; left:34%;
+    bottom: 0; left:22%;
     background-color: #d99f9d;
 }
 #navBarContent li{
@@ -300,15 +300,11 @@ body{font:12px/1.6 arial; color:#000;}
     
 }
 
-#navBarContent{
-    display: block;
-    width:480px;
-    /* overflow-x: scroll; */
-}
 /* navContentWrap(상품이 없어도 높이유지) */
 .navContentWrap{
     height: 295px;
     display: none;
+    overflow: hidden;
 }
 
 .navConInfo > div{
@@ -339,31 +335,9 @@ body{font:12px/1.6 arial; color:#000;}
 .count img{
     cursor: pointer;
 }
-#navBarContentOpt{
-   
-    position: relative;
-    top: 40px;
-    display: block;
-    width:620px;
-    
-}
-#navBarContentOpt > .btn_bucket{
-    position: absolute;
-    right: 30px;
-    margin-bottom:50px;
-}
-#navBarContentOpt > .btn_order{
-    position: absolute;
-    top:50px; right:30px;
-    margin-bottom:50px;
-}
-#navBarContentOpt > .btn_delete{
-    position: absolute;
-    right:30px; top:100px;
-    margin-bottom:20px;
-}
+
 .totalPrice{
-    width: 620px;
+    width: 790px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -404,12 +378,41 @@ body{font:12px/1.6 arial; color:#000;}
     cursor: pointer;
 }
 
-
-/* #navBarContentOpt */
-#navBarContentOpt{ 
-    /* width: 100%; */
-    /* overflow: hidden; */
+#navBarContent{
+    float: left;
+    display: block;
+    width:650px;
+    float: left;
+    overflow-x: scroll;
 }
+/* #navBarContentOpt */
+#navBarContentOpt{
+    width:140px;
+    height: 285px;
+
+    position: relative;
+    top: 40px;
+    display: block;
+
+    float: right;
+    overflow: hidden;
+}
+#navBarContentOpt > .btn_bucket{
+    position: absolute;
+    right: 30px;
+    margin-bottom:50px;
+}
+#navBarContentOpt > .btn_order{
+    position: absolute;
+    top:50px; right:30px;
+    margin-bottom:50px;
+}
+#navBarContentOpt > .btn_delete{
+    position: absolute;
+    right:30px; top:100px;
+    margin-bottom:20px;
+}
+
 #navBarContentOpt .btn_delete .i_bin{
     width: 20px;
     height: 18px;
