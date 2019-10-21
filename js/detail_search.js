@@ -24,18 +24,18 @@ $(document).ready(function(){
 $(function(){
 
 
-	// 3. 버튼을 눌러서도 작동될 수 있게! [미완]
+	// 3. 버튼을 눌러서도 작동될 수 있게! [완료]
 	$('.up').on('click', function(){
 		var i = $(this).parent().prev();
-		i.val(parseInt(i.val())+1);
+		i.val(parseInt(i.val())+1).focus();
 	});
 	$('.down').on('click', function(){
 		var i = $(this).parent().prev();
-		i.val(parseInt(i.val())-1);
+		i.val(parseInt(i.val())-1).focus();
 	});	
 	// 장바구니수량 1미만 안됨 [완료]
 	// 1. 숫자를 1미만으로 내릴 수 없게 [완료]
-	$('.inputNumber').change(function () {
+	$('.inputNumber').blur(function () {
 		var value = parseInt($(this).val());
 		if (value==""||value<1){
 			alert("최소 구매수량은 1개입니다.");
