@@ -5,9 +5,9 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <link rel="stylesheet", href="../css/index.css">
-            <link rel="stylesheet" href="../css/cart_style.css">
+            <link rel="stylesheet", href="../css/ImageInformation.css">
             <script src="./js/main.js"></script>
-            <title>cart</title>
+            <title>영상정보처리기기운영･관리방침</title>
             <style>
                 #header{    
                 position: fixed;
@@ -20,7 +20,7 @@
         <div id="header">
             <!-- 메인로고 -->
             <h1 id="mainLogo">
-                <a href="../index.html" title="스타일난다">
+                <a href="#" title="스타일난다">
                     <img src="../images/logo.png" alt="메인로고">
                 </a>
             </h1>
@@ -62,7 +62,7 @@
             <!-- 메인 메뉴2 -->
             <ul id="mainMenu2">
                 <li class="login">
-                    <a href="Login.html" title="login">
+                    <a href="./Login.html" title="login">
                         <p>LOGIN</p>
                     </a>
                 </li>
@@ -82,12 +82,12 @@
             <!-- 헤더 툴 -->
                 <ul id="tools">
                     <li class="shoppingCart">
-                        <a href="cart.html" title="장바구니">
+                        <a href="./html/cart.html" title="장바구니">
                             <img src="../images/cart.png" alt="장바구니" width="20px" height="25px">
                         </a>
                     </li>
                     <li>
-                        <a href="detail_search.html" title="검색">
+                        <a href="../html/detail_search.html" title="검색">
                             <img src="../images/search.png" alt="검색" width="20px" height="22px">
                         </a>
                     </li>
@@ -102,133 +102,129 @@
         <!-- !header -->
 
         <!-- wrap -->
-        <div id="ordForm" class="orderListArea">
-            <table class="f_table" cellspacing="0">
-                <caption>SHOPPING CART</caption>
-                <tr>
-                    <th scope="col" class="chk"><input type="checkbox"></th>
-                    <th scope="col" class="product">Product</th>
-                    <th scope="col" class="name">Name</th>
-                    <th scope="col" class="price">Price</th>
-                    <th scope="col" class="quantity">Quantity</th>
-                    <th scope="col" class="mileage">Mileage</th>
-                    <th scope="col" class="total">Total</th>
-                </tr>
-                <tbody class="body">
-                    <tr class="xans_record">
-                        <td class="item" id="chk_item"><input type="checkbox"></td>
-                        <td class="item" id="product_item"><a href="#"><img src="http://placehold.it/100x180" alt="#" /></a></td>
-                        <td class="item" id="name_item">
-                            <ul class="name_ul">
-                                <li>
-                                    <a href="#"><p class="bold">제품이름</p></a><br>
-                                    <p class="displaynone">(1개)<br></p>
-                                    <p class="btn_o">옵션</p>
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="item" id="price_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-                        <td class="item" id="quantity_item">
-                            <input type="number" id="qua_n">
-                            <br>
-                            <p class="btn_o">수정</p>
-                        </td>
-                        <td class="item" id="mileage_item"><img src="../images/icon_201809131207584600.png"/>00원</td>
-                        <td class="item" id="total_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="xans_record">
-                        <td class="item" id="chk_item"><input type="checkbox"></td>
-                        <td class="item" id="product_item"><a href="#"><img src="http://placehold.it/100x180" alt="#" /></a></td>
-                        <td class="item" id="name_item">
-                            <a href="#"></a>
-                            <ul class="name_ul">
-                                <li>
-                                    <a href="#">
-                                    <p class="bold" class="displaynone">제품이름<br></p></a>
-                                    <p class="displaynone">(1개)<br></p>
-                                    <p class="btn_o">옵션</p>
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="item" id="price_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-                        <td class="item" id="quantity_item">
-                            <input type="number" id="qua_n">
-                            <p class="btn_o">수정</p>
-                        </td>
-                        <td class="item" id="mileage_item"><img src="../images/icon_201809131207584600.png" />00원</td>
-                        <td class="item" id="total_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-    
-                    </tr>
-                    <tr class="xans_record">
-                        <td class="item" id="chk_item"><input type="checkbox"></td>
-                        <td class="item" id="product_item"><a href="#"><img src="http://placehold.it/100x180" alt="#" /></a></td>
-                        <td class="item" id="name_item">
-                            <ul class="name_ul">
-                                <li>
-                                    <a href="#"><p class="bold">제품이름</p></a>
-                                    <p class="displaynone">(1개)<br></p>
-                                    <p class="btn_o">옵션</p>
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="item" id="price_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-                        <td class="item" id="quantity_item">
-                            <input type="number" id="qua_n">
-                            <p class="btn_o">수정</p>
-                        </td>
-                        <td class="item" id="mileage_item"><img src="../images/icon_201809131207584600.png" />00원</td>
-                        <td class="item" id="total_item">
-                            <div>
-                                <p class="bold">9,000원</p>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="f_table">
-                <tr>
-                    <td id="all_p">
-                        <span>상품구매금액<strong>33,000원</strong></span>
-                        <span>+ 배송비<strong>1,800원 = </strong>- 상품할인금액 = 합계 : </span>
-                        <span><strong>34,800원 = </strong>원</span>
-                    </td>
-                </tr>
-                <tr id="pri_btn">
-                    <td class="btn_p">메인으로</td>
-                    <td class="btn_p">선택상품주문</td>
-                    <td class="btn_p">선택상품삭제</td>
-                    <td class="btn_p">전체상품삭제</td>
-                    <td class="btn_p">구매하기</td>
-                </tr>
-            </table>
-    
-    
-    
+        <div id="mainWrap">
+            <div id="path-wrap">
+                <div class="path">
+                    <ul><li title="현재 위치"><strong>영상정보처리기기운영･관리방침</strong></li>
+                    </ul></div>
+            </div>
             
-    
-    
-    
+            <div class="member_privacy"><p>
+                    본 ㈜난다(이하 “회사”라 함)는 영상정보처리기기 운영․관리 방침을 통해 회사에서 처리하는 영상정보가 어떠한 용도와 방식으로 이용․관리되고 있는지 알려드립니다. 
+                </p>
+            <h7>1. 영상정보처리기기의 설치근거 및 목적</h7><p>
+                    개인정보보호법 제25조 제1항에 의거하여 다음과 같은 목적으로 영상정보처리기기를 설치, 운영합니다.<br>
+                    · 시설안전 및 화재 예방<br>
+                    · 고객과 임직원의 안전 및 재산보호를 위한 범죄 예방<br>
+                    · 회사의 유∙무형 자산 보호 및 정보유출 사고 예방
+                </p>
+            <h7>2. 영상정보처리기기의 설치대수, 설치위치 및 촬영범위</h7><p class="cctv_p">
+                    회사는 영상정보처리기기가 설치된 장소에는 정보주체가 쉽게 알아 볼 수 있도록 안내판을 설치하고 있습니다.
+                </p>
+            <table><tbody>
+            <tr>
+            <th>구분</th>
+                            <th>설치대수</th>
+                            <th>설치 위치 및 촬영 범위</th>
+                        </tr>
+            <tr>
+            <td>CCTV</td>
+                            <td>399 대</td>
+                            <td>
+                                - 사무실 입구 및 내부<br>
+                                - 매장 내부 및 외부(주차장)
+                            </td>
+                        </tr>
+            </tbody></table>
+            <p>
+                    개인정보보호법 제 25조 5항에 의거 녹음기능을 제외한 화상정보만 촬영하고 있습니다.
+                </p>
+            <h7>3. 관리책임자 및 접근권한자</h7><p class="cctv_p">
+                    정보주체의 영상정보를 보호하고 개인영상정보와 관련한 불만을 처리하기 위하여 회사는 관리책임자를 두고 있습니다.
+                </p>
+            <table class="cctv_table"><tbody>
+            <tr>
+            <th>구분</th>
+                            <th>이름</th>
+                            <th>직위</th>
+                            <th>소속</th>
+                            <th>연락처</th>
+                        </tr>
+            <tr>
+            <td>관리책임자</td>
+                            <td>한관현</td>
+                            <td>부문장</td>
+                            <td>마켓인텔리전스부문</td>
+                            <td>
+                                Email : khhan@stylenanda.com<br>
+                                전화번호 : 02-2037-0502
+                            </td>
+                        </tr>
+            <tr>
+            <td>접근권한자</td>
+                            <td colspan="4">
+                                • 홍대 본사 : IT팀 및 인사총무팀<br>
+                                • 송도 물류센터 : 물류센터부문 부문장<br>
+                                • 오프라인 매장 : 각 매장 매니저 및 리더
+                            </td>
+                        </tr>
+            </tbody></table>
+            <h7>4. 영상정보의 촬영시간, 보관기간, 보관장소 및 처리방법</h7><table><tbody>
+            <tr>
+                <th>촬영시간</th>
+                <th>보관기간</th>
+                <th>보관장소</th>
+                <th>처리방법</th>
+            </tr>
+            <tr>
+                <td width="8%">24시간</td>
+                <td>촬영일로부터 14~70일</td>
+                <td>본사,물류센터,매장의 각 영상녹화 저장장치</td>
+                <td>개인영상정보의 목적 외 이용, 제3자 제공, 파기, 열람 등 요구에 관한 사항을 기록·관리하고, 보관기간 만료 시 복원이 불가능한 방법으로 영구 삭제(출력물의 경우 파쇄 또는 소각)합니다.</td>
+            </tr>
+            </tbody></table>
+            <h7>5. 영상정보처리기기 설치 및 관리 등의 위탁에 관한 사항</h7><table class="cctv_table"><tbody>
+            <tr>
+            <th>수탁업체</th>
+                            <th>연락처</th>
+                        </tr>
+            <tr>
+            <td>(주)에스원</td>
+                            <td>1588-3112</td>
+                        </tr>
+            </tbody></table>
+            <h7>6. 영상정보처리기기운영자의 영상정보 확인 방법 및 장소</h7><p>
+                    확인 방법 : 영상정보 관리책임자 또는 사업장별 접근권한자에게 미리 연락하고 신분증을 지참하여 방문하시면 확인 가능합니다.<br>
+                    확인 장소 : 개인영상정보를 확인하고자 하는 사업소 사무실 또는 매장內
+                </p>
+            <h7>7. 정보주체의 영상정보 열람 등 요구에 대한 조치</h7><p>
+                    · 귀하는 개인영상정보에 관하여 열람 또는 존재확인, 삭제를 원하는 경우 언제든지 회사에 요구하실 수 있습니다.<br>
+                    회사는 개인영상정보에 관하여 열람 또는 존재확인. 삭제를 요구한 경우 지체 없이 필요한 조치를 하겠습니다.<br> 
+                    단, 열람 등을 요구할 수 있는 개인영상정보는 정보주체가 촬영된 개인영상정보 및 명백히 귀하의 급박한 생명, 신체, 재산의 이익을 위하여 필요한 개인영상정보에 한정됩니다.<br><br>
+                    
+                    단, 아래의 항목에 해당하는 경우에는 이를 거부할 수 있습니다. 이 경우 15일 이내에 거부사유 및 불복방법을 귀하에게 통지(정보통신망 포함)할 것입니다.<br><br>
+                    
+                    (1)범죄수사ㆍ공소유지ㆍ재판수행에 중대한 지장을 초래하는 경우<br>
+                    (2)특정 정보주체의 영상정보만을 삭제하는 것이 기술적으로 곤란한 경우<br>
+                    (3)제1항에 따른 요청에 필요한 조치를 취함으로써 타인의 사생활권이 침해될 우려가 큰 경우<br>
+                    (4)기타 열람 등의 요청을 거절할 만한 정당한 공익적 사유가 있는 경우 
+                </p>
+            <h7>8. 영상정보 보호를 위한 기술적ㆍ관리적 및 물리적 조치</h7><p>
+                    당사는 처리하는 영상정보를 암호화 조치 등을 통하여 안전하게 관리되고 있습니다.<br> 
+                    또한 당사는 개인영상정보보호를 위한 관리적 대책으로서 개인정보에 대한 접근 권한을 차등부여하고 있고,<br> 
+                    개인영상정보의 위․변조 방지를 위하여 개인영상정보의 생성 일시, 열람시 열람 목적․열람자․열람 일시 등을 기록하여 관리하고 있습니다.<br> 
+                    이 외에도 개인영상정보의 안전한 물리적 보관을 위하여 잠금장치를 설치하고 있습니다.
+                </p>
+            <h7>9. 기타 본 방침에서 정하고 있지 아니한 사항은 회사 홈페이지(www.stylenanda.com)의 「개인정보처리방침」에 따릅니다.</h7><h7>10. 그 밖에 영상정보처리기기의 설치ㆍ운영 및 관리에 필요한 사항</h7><p>
+                    이 영상정보처리기기 운영관리방침이 법령정책 또는 보안기술의 변경에 따라 내용의 추가삭제 및 수정이 있을 시에는 시행하기 전에 당사 홈페이지를 통해 변경사류 및 내용 등을 공지하도록 하겠습니다.<br><br> 
             
+                    - 공고일자 : 2019년 8월 16일<br> 
+                    - 시행일자 : 2019년 8월 23일
+                </p>
+            </div>
+              
+                        </div>
+                    </div><!-- content end -->
         </div>
         <!-- !wrap -->
         <!-- footer -->
@@ -318,7 +314,7 @@
                     회사명. ㈜난다 │ 전화. 0502-707-8888 │ 팩스. 02-335-5274 │ 이메일. nanda@stylenanda.com │ 주소. 서울특별시 마포구 잔다리로 32 서문빌딩 2,3,4,6F
                 </p>
                 <p style="margin-bottom:20px">
-                    ⓒ 2017 NANDA All rights reserved. │ <a href="./html/privacy.html" style="font-weight:bold; color:#101010">개인정보처리방침</a> │ 
+                    ⓒ 2017 NANDA All rights reserved. │ <a href="/member/privacy.html" style="font-weight:bold; color:#101010">개인정보처리방침</a> │ 
                     <a href="/member/cctv_policies_procedures.html">영상정보기기 운영 및 관리 방침</a> │
                     <a href="/member/agreement01.html" style="color:#101010">이용약관</a> │ Hosting by cafe24
                 </p>
@@ -332,18 +328,4 @@
         </div>
         <!-- !footer -->
     </body>
-</html>
-
-
-
-<head>
-    
-    <title>Document</title>
-</head>
-
-<body>
-    
-
-</body>
-
 </html>

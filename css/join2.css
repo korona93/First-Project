@@ -1,0 +1,291 @@
+/* reset CSS */
+*{margin:0; padding:0;}
+ul li{list-style: none;}
+a{outline:0; text-decoration: none; color:#000;}
+img{border:0;}
+body{font:11px/1.6 arial; color:#000;}
+select{
+    -webkit-appearance: none;
+    background: url('../images/select_arr.png') no-repeat 100%;
+    background-size: 32px 27px;
+    min-height: 26px;
+    min-width: 80px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+select, input {
+    vertical-align: middle;
+    font-size: 100%;
+    color: #000;
+}
+
+#contentWrap{
+    width: 70%;
+    margin: 0 auto;
+    padding: 70px 0px 80px;
+}
+*{
+    box-sizing: border-box;
+}
+#content{
+    /* width:970px; */
+    margin:0 auto;
+}
+.border{
+    border-top: 1px solid #ccc;
+}
+#titleWrap{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-weight: 800;
+}
+
+#title{
+    font-size: 16px;
+    margin-top: 0;
+    padding: 0px 0px 40px;
+}
+
+
+.subsubTitle{
+    width: 130px;
+    padding: 10px 0 8px 20px;
+    /* border-top: 1px solid #ccc; */
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+/* h4 */
+h4{
+    padding: 50px 0 20px 20px;
+    font-size: 13px !important;
+}
+/* p */
+p{ font-size: 12px;}
+.required{
+    margin: -25px 0 10px;
+    color: #353535;
+    text-align: right;
+}
+
+/*  */
+.member{
+    overflow: hidden;
+}
+/*  */
+.subsubTitle{
+    float: left;
+}
+#detail1{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#detail2{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+/*  */
+.subTitle{
+    width: 115px;
+    padding: 10px 0 8px 20px;
+    /* border-top: 1px solid #ccc; */
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+/*  */
+.floatL {
+    display: block;
+    overflow: hidden;
+}
+.floatL > div {
+    float: left;
+}
+
+
+/*  */
+.subCon_floatL{
+    float: left;
+    width: auto;
+    padding: 10px 0 8px 40px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#smsAgr{
+    vertical-align: middle;
+}
+#emailAgr{
+    vertical-align: middle;
+}
+#old{
+    vertical-align: middle;
+}
+
+/* authMember */
+.authMember{
+    height: 70px;
+    position: relative;
+}
+#auth{
+    padding: 20px 0 30px 20px;
+}
+.authWrap{
+    display: block;
+    height: 70px;
+    position: relative;
+}
+.mobileWrap{
+    vertical-align: middle;
+    position: absolute;
+    top: 37px;
+    left: 168px;
+}
+/* pwd_hint */
+#pwd_hint{
+    padding: 13px 0 8px 40px;
+}
+/* #hint */
+#hint {
+    height: 26px;
+    font-size: 11px;
+}
+/* #hint_answer */
+#hint_answer{
+    padding: 13px 0 8px 40px;
+}
+#hint_answer > input{
+    width: 500px;
+    height: 26px;
+}
+/* input하이트 묶을것!!!!!!!!!! */
+.input_css{
+    padding: 4px;
+    border: 1px solid #d9d9d9 !important;
+    height: 25px;
+    color: #202020;
+    font-size: 12px;
+}
+
+/*  */
+#smsWrap{
+    height: 87px;
+    position: relative;
+}
+#smsAgree{
+    padding: 35px 0 30px 20px;
+}
+#smsWrap p{
+    position: absolute;
+    left: 155px;
+    top: 40px;
+}
+.subCon_floatL_smsAgree{
+    padding: 15px 0 8px 40px;
+    width: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 이메일 */
+#email3{
+    width: 130px;
+}
+#emailAgreeWrap{
+    height: 87px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+#emailAgree{
+    padding: 35px 0 30px 20px;
+}
+#emailAgreeWrap p{
+    position: absolute;
+    left: 155px;
+    top: 40px;
+}
+.subCon_floatL_emailAgree{
+    padding: 15px 0 8px 40px;
+    width: auto;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/* 생년월일 */
+#birth_year{
+    width: 60px;
+    margin: 0 4px 0 0;
+}
+#birth_month, #birth_day{
+    width: 30px;
+    margin: 0 4px 0 0;
+}
+#postcode1{
+    width: 100px;
+    text-align: center;
+}
+#postcode2{
+    width: 100px;
+    text-align: center;
+}
+.btn02{
+    text-align: center;
+    width: 60px;
+    display: inline-block;
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+}
+#addr1, #addr2{
+    width: 280px;
+    margin: 5px 0 0;
+}
+#phone2, #phone3, #mobile2, #mobile3{
+    width: 50px;
+    margin: 0 4px;
+}
+/* old */
+#old{
+    
+}
+
+
+/* btn */
+#btnWrap{position: relative; margin-top: 5px;}
+.btn_red{
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    padding: 12px;
+    vertical-align: middle;
+    background: #d99f9d;
+    color: #fff;
+    border: 1px solid #d99f9d;
+    position: absolute;
+    right: 123px;
+}
+.cancel{
+    text-align: center;
+    width: 120px;
+    display: inline-block;
+    padding: 12px;
+    vertical-align: middle;
+    background: #ccc;
+    color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+}
+
+#mainWrap{
+    width: 1200px;
+    margin: 0 auto;
+}

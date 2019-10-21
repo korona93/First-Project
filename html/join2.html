@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <Title>join2</Title>
+    <link rel="stylesheet" href="../css/join2.css">
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <!--jQuery 기본문법-->
+    <script src="./js/jquery.easing.1.3.js"></script> <!--  옵션  -->
+    <script src="./js/jquery-ui.min.js"></script> <!--  화면 옵션  -->
+    <script src="./js/prefixfree.min.js"></script> <!--  밴더 프리픽스옵션  -->
+</head>
+<body>
+    <!-- contentWrap -->
+    <div id="contentWrap">
+        <!-- join -->
+        <div id="titleWrap">
+            <div id="title">
+                <strong>Join</strong>
+            </div>
+        </div>
+
+        <!-- //join -->
+        <!-- content-->
+        <div id="content">
+            <!-- top -->
+            <div id="top">
+                <div class="member border">
+                    <div class="subsubTitle">회원구분</div>
+                    <div id="detail1">
+                        <label><input type="radio" label="회원구분">개인회원</label>
+                    </div>    
+                </div>
+
+                <div class="authMember border">
+                    <div id="auth" class="subsubTitle">회원인증</div>
+                    <div id="authWrap">
+                        <div>
+                            <div id="detail2">
+                                
+                                <label><input type="radio" label="휴대폰인증">휴대폰인증</label>
+                            </div>
+                        </div>
+                        <div class="mobileWrap">
+                            <a href="#">
+                                <img src="../images/btn_certification_mobile.gif" alt="휴대폰인증" />
+                            </a>
+                            본인 명의의 휴대폰으로 본인인증을 진행합니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //top -->
+
+            <!-- detailWrap -->
+            <h4 class="border">기본정보</h4>
+            <p class="required"><img src="../images/ico_required__.png" alt="필수">필수입력사항</p>
+            
+            <div id="detailWrap">
+
+                <div class="floatL border">
+                    <div class="subTitle">아이디<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="memId" class="subCon_floatL">
+                        <input placeholder value type="text" class="member_id input_css">
+                        <span id="idMsg">(영문소문자/숫자, 4~16자)</span>
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">비밀번호<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="memPwd" class="subCon_floatL">
+                        <input value type="password" class="member_pwd input_css">
+                        <span id="pwdMsg">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span>
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">비밀번호 확인<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="memPwd" class="subCon_floatL">
+                        <input value type="password" class="member_pwd input_css">
+                        <span id="pwdMsg">(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span>
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">비밀번호 확인 질문<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="pwd_hint" class="subCon_floatL">
+                        <select id="hint" name="hint" fw-filter="isFill" fw-label="hint" fw-msg="">
+                            <option value="hint_01">기억에 남는 추억의 장소는?</option>
+                            <option value="hint_02">자신의 인생 좌우명은?</option>
+                            <option value="hint_03">자신의 보물 제1호는?</option>
+                            <option value="hint_04">가장 기억에 남는 선생님 성함은?</option>
+                            <option value="hint_05">타인이 모르는 자신만의 신체비밀이 있다면?</option>
+                            <option value="hint_06">추억하고 싶은 날짜가 있다면?</option>
+                            <option value="hint_07">받았던 선물 중 기억에 남는 독특한 선물은?</option>
+                            <option value="hint_08">유년시절 가장 생각나는 친구 이름은?</option>
+                            <option value="hint_09">인상 깊게 읽은 책 이름은?</option>
+                            <option value="hint_10">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                            <option value="hint_11">자신이 두번째로 존경하는 인물은?</option>
+                            <option value="hint_12">친구들에게 공개하지 않은 어릴 적 별명이 있다면?</option>
+                            <option value="hint_13">초등학교 때 기억에 남는 짝꿍 이름은?</option>
+                            <option value="hint_14">다시 태어나면 되고 싶은 것은?</option>
+                            <option value="hint_15">내가 좋아하는 캐릭터는?</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">비밀번호 확인 답변<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="hint_answer" class="subCon_floatL">
+                        <input placeholder value type="text" class="hint_answer input_css" name="hint_answer">
+                    </div>
+                </div>
+                
+                <div class="floatL border">
+                    <div class="subTitle">이름<img src="../images/ico_required__.png" alt="필수" />
+                    </div>
+                    <div id="name" class="subCon_floatL">
+                        <input placeholder value type="text" class="member_id input_css">
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">주소</div>
+                    <div id="address" class="subCon_floatL">
+                        <input value type="text" id="postcode1" class="input_css">
+                        -
+                        <input value type="text" id="postcode2" class="input_css">
+                        <br>
+                        <input id="addr1" class="input_css" name="addr1" value type="text"> 기본주소
+                        <br>
+                        <input id="addr2" class="input_css" name="addr2" value type="text"> 나머지주소
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">일반전화</div>
+                    <div id="tel" class="subCon_floatL">
+                        <select id="phone1" name="phone[]" fw-filter="isNumber&amp;isNumber" fw-label="일반전화" fw-alone="N" fw-msg="">
+                            <option value="02">02</option>
+                            <option value="031">031</option>
+                            <option value="032">032</option>
+                            <option value="033">033</option>
+                            <option value="041">041</option>
+                            <option value="042">042</option>
+                            <option value="043">043</option>
+                            <option value="044">044</option>
+                            <option value="051">051</option>
+                            <option value="052">052</option>
+                            <option value="053">053</option>
+                            <option value="054">054</option>
+                            <option value="055">055</option>
+                            <option value="061">061</option>
+                            <option value="062">062</option>
+                            <option value="063">063</option>
+                            <option value="064">064</option>
+                            <option value="0502">0502</option>
+                            <option value="0503">0503</option>
+                            <option value="0504">0504</option>
+                            <option value="0505">0505</option>
+                            <option value="0506">0506</option>
+                            <option value="0507">0507</option>
+                            <option value="070">070</option>
+                        </select>
+                        -
+                        <input id="phone2" class="input_css" name="phone[]" fw-msg value type="text">
+                        -
+                        <input id="phone3" class="input_css" name="phone[]" fw-msg value type="text">
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">휴대전화</div>
+                    <div id="phone" class="subCon_floatL">
+                        <select id="mobile1" name="mobile[]" fw-filter="isNumber&amp;isNumber" fw-label="휴대전화" fw-alone="N" fw-msg="">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        -
+                        <input id="mobile2" class="input_css" name="mobile[]" fw-msg value type="text">
+                        -
+                        <input id="mobile3" class="input_css" name="mobile[]" fw-msg value type="text">
+                    </div>
+                </div>
+
+                <div id="smsWrap" class="floatL border">
+                    <div id="smsAgree" class="subTitle">SMS 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL_smsAgree">
+                        <label><input type="checkbox" id="smsAgr" value="smsAgr">동의함</label>
+                    </div>
+                    <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.<br>
+                        (※ 선택하지 않을 시 수신 미동의로 가입됩니다.)
+                    </p>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">이메일<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL">
+                        <input id="email1" class="input_css" name="email1" value type="text">
+                        @
+                        <input id="email2" class="input_css" name="email2" value type="text">
+                        <select id="email3" fw-filter="isFill" fw-label="이메일" fw-alone="N" fw-msg="">
+                            <option value="" selected="selected">- 이메일 선택 -</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="yahoo.com">yahoo.com</option>
+                            <option value="empas.com">empas.com</option>
+                            <option value="korea.com">korea.com</option>
+                            <option value="dreamwiz.com">dreamwiz.com</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="etc">직접입력</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="emailAgreeWrap" class="floatL border">
+                    <div id="emailAgree" class="subTitle">이메일 수신여부<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL_emailAgree">
+                        <label><input type="checkbox" id="emailAgr" value="emailAgr">동의함</label>
+                    </div>
+                    <p>쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다.<br>
+                        (※ 선택하지 않을 시 수신 미동의로 가입됩니다.)
+                    </p>
+                </div>
+
+            </div>
+            <!-- //detailWrap -->
+            
+            <!-- bottom -->
+            <h4>추가정보</h4>
+            <div id="bottom">
+                <div class="floatL border">
+                    <div class="subTitle">생년월일</div>
+                    <div class="subCon_floatL">
+                        <input value type="text" maxlength="4" id="birth_year" class="input_css" name="birth_year">
+                        년
+                        <input value type="text" maxlength="2" id="birth_month" class="input_css" name="birth_month">
+                        월
+                        <input value type="text" maxlength="2" id="birth_day" class="input_css" name="birth_day">
+                        일
+                    </div>
+                </div>
+
+                <div class="floatL border">
+                    <div class="subTitle">만 14세 이상<img src="../images/ico_required__.png" alt="필수" /></div>
+                    <div class="subCon_floatL">
+                        <label><input type="checkbox" id="old" name="old">예</label>
+                    </div>
+                </div>
+            </div>
+            <!-- //bottom -->
+            <!-- btnWrap -->
+            <div id="btnWrap">
+                <a href="#">
+                    <span class="btn_red">Join</span>
+                </a>
+                <a href="#">
+                    <span class="cancel">Cancel</span>
+                </a>
+            </div>
+            <!-- //btnWrap -->
+
+        </div>
+        <!-- //content -->
+    </div>
+    <!-- //contentWrap -->
+</body>
+</html>
