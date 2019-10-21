@@ -7,20 +7,21 @@ $(document).ready(function() {
             $('#type .fashion').css('display','block');
             $('#type .cosmetic').css('display','none');
             $('input[name="type2"]').removeAttr('checked');
-            // $('#subType1').css('display','block');
+            $('#subType1').css('display','block');
+            $('#subType2').css('display','none');
             $('#subType2 div').css('display','none');
         }else if(chkValue=='2'){
             $('#type .fashion').css('display','none');
             $('#type .cosmetic').css('display','block');
             $('input[name="type1"]').removeAttr('checked');
-            // $('#subType1').css('display','none');
+            $('#subType1').css('display','none');
+            $('#subType2').css('display','block');
             $('#subType1 div').css('display','none');
         }
     });
     /* sype에 대한 js */
     $('input[name=type1]').on('click',function(){
         var chkValue = $('input[name=type1]:checked').val();
-        $('#subType1').css('display','block');
         $('#subType1 .menu3').css('display','block');
         if(chkValue == '1'){
             $('#subType1 .fs1').css('display','block');
@@ -105,7 +106,6 @@ $(document).ready(function() {
     });
     $('input[name=type2]').on('click',function(){
         var chkValue = $('input[name=type2]:checked').val();
-        $('#subType1').css('display','none');
         $('#subType2 .menu3').css('display','block');
         if(chkValue == '1'){
             $('#subType2 .cm1').css('display','block');

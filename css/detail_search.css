@@ -103,7 +103,7 @@ body{font:12px/1.6 arial; color:#000;}
 #subType1{
     float: left;
     display: block;
-    height: 60px; width: 600px;
+    height: 80px; width: 600px;
     margin: 40px 0 20px 0;
     /* overflow: hidden; */
 }
@@ -116,7 +116,7 @@ body{font:12px/1.6 arial; color:#000;}
 #subType1 > div{ display: none;}
 #subType1 > div > ul{
     float: left;
-    width: 450px;
+    width: 450px; 
 }
 #subType1 > div > ul:nth-of-type(1) > li{
     float:left;
@@ -159,24 +159,20 @@ body{font:12px/1.6 arial; color:#000;}
     width:470px; height: 30px;
 }
 #subType1 > .fs8 > ul > li{
-    width: 20px;
-    height: 10px;
-    margin: 0;
+    width: 60px !important; height: 10px;
+    float: left;
 }
 #subType1 > .fs8 > ul:last-child{
-    float: left;
-    height: 10px;
-    display:block;
+    margin-left: 10px;    
 }
 #subType1 > .fs8 > ul:last-child > li{
-    float: left;
-    width:100px; height: 40px;
+    width:65px; height: 10px;
 }
 /* subType2 */
 #subType2{
     float: left;
     display: block;
-    height: 60px; width: 600px;
+    height: 80px; width: 600px;
     margin: 40px 0 20px 0;
     /* overflow: hidden; */
 }
