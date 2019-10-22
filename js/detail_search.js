@@ -19,6 +19,13 @@ $(function(){
 	calcul();
 	$('em').append($('.eachProduct').length);
 
+	// 2. 소수점/한글 안되게![완료]
+	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
+	$("input:text[numberOnly]").on("keyup", function() {
+    	$(this).val($(this).val().replace(/[^0-9]/g,""));
+	});
+
+
 	// 3. 버튼을 눌러서도 작동될 수 있게! [완료]
 	$('.up').on('click', function(){
 		var i = $(this).parent().prev();
@@ -32,20 +39,16 @@ $(function(){
 	});	
 	// 장바구니수량 1미만 안됨 [완료]
 	// 1. 숫자를 1미만으로 내릴 수 없게 [완료]
-	$('.inputNumber').blur(function () {
+	$('.inputNumber').blur(function (){
+	
 		var value = parseInt($(this).val());
-		if (value==""||value<1){
+		if(value==""||value<1){
 			alert("최소 구매수량은 1개입니다.");
 			$(this).val(1).focus();
 		}
 		calcul();
 	});
 
-	// 2. 소수점/한글 안되게![완료]
-	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
-	$("input:text[numberOnly]").on("keyup", function() {
-    	$(this).val($(this).val().replace(/[^0-9]/g,""));
-	});
 
 	//전체삭제 버튼 클릭시 모든 상품 삭제 [완료]
 	//[product_all 클래스 만들어서 상품을 안에 담기???고민해보자]
@@ -69,17 +72,16 @@ $(function(){
 // 총계 계산[완료]
 function calcul(){
 	var totalP=0;
-	for(var i=1; i<=$('.eachProduct').length; i++){
-		var price = Number($("#prod"+i).text());
-		var eachT = price*$("#inp"+i).val();
+	$('.eachProduct').each(function(index, item){
+		var price = Number($(this).children().children().children('.prod').text());
+		var eachT = price*$(this).children().children().children('.inp').val();
 		totalP += eachT;
-	}
-	$("#total").text(totalP);	
+	});
+	$("#total").text(totalP);
 }
+
 //네비바 안의 상품갯수
 function productNum(){
-	// var i = $('.eachProduct').length;
-	// console.log(i);
 	$('em').text($('.eachProduct').length);
 }
 
