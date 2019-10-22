@@ -5,6 +5,7 @@ a{outline:0; text-decoration: none; color:#000;}
 img{border:0;}
 body{font:12px/1.6 arial; color:#000;}
 
+/* #contentWrap */
 #contentWrap{
     width:970px;
     margin:0 auto;
@@ -24,6 +25,7 @@ body{font:12px/1.6 arial; color:#000;}
     position: relative;
 }
 
+/* #category */
 #category{
     position: relative;
     display:block;
@@ -219,7 +221,6 @@ body{font:12px/1.6 arial; color:#000;}
 }
 
 /* detailContentWrap*/
-
 #detailContentWrap{
     width:800px;
     margin: 0 auto;
@@ -229,6 +230,7 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
     margin: 10px 30px 30px 20px;
 }
+/* .colorBox */
 .colorBox{
     width:150px;
     vertical-align: baseline;
@@ -273,78 +275,18 @@ body{font:12px/1.6 arial; color:#000;}
     bottom: 0; left:22%;
     background-color: #d99f9d;
 }
-#navBarContent li{
-    float:left;
-    margin-left: 10px;
-    
-}
-
+/* .navBarHeader */
 .navBarHeader{
     display: block;
     height: 35px;
     position: relative;
 }
+/* #navBarHeaderOpt */
 #navBarHeaderOpt{
     position: absolute;
     right:10px; top:5px;
 }
-
-.product_all {
-    
-}
-
-/* navContentWrap(상품이 없어도 높이유지) */
-.navContentWrap{
-    height: 295px;
-    display: none;
-    overflow: hidden;
-}
-
-.navConInfo > div{
-    width: 150px;
-}
-.del{
-    float: right;
-    margin-right: 30px;
-}
-.navPrice{
-    position: absolute;
-}
-.navConInfo div > input{
-    width: 10px;
-    position: relative;
-    left: 95px;
-    top: -11px;
-    height: 16px;
-}
-.count{
-    display: block;
-    width: 10px; 
-    position: relative;
-    left: 110px; top:-30px;
-    font-size: 0px;
-
-}
-.count img{
-    cursor: pointer;
-}
-
-.totalPrice{
-    width: 790px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-top:2px solid #d7d7d7;
-    text-align: right;
-}
-
-.ico{
-    display: inline-block;
-    overflow: hidden;
-    background: url('../images/bg_blog_190328.png') no-repeat;
-    text-indent: -9999px;
-}
-/* .navBarHeader */
+/* .navBarHeaderOpt */
 .navBarHeader #navBarHeaderOpt .btn_toggle{
     padding: 6px;
     background: transparent;
@@ -359,6 +301,80 @@ body{font:12px/1.6 arial; color:#000;}
     background-position: -124px -345px;
 }
 
+.product_all {
+    
+}
+
+/* navContentWrap(상품이 없어도 높이유지) */
+.navContentWrap{
+    height: 295px;
+    display: none;
+    overflow: hidden;
+}
+/* #navBarContent */
+
+#navBarContent{
+    float: left;
+    display: block;
+    width:650px;
+    height: 278px;
+    float: left;
+    overflow-x: scroll;
+}
+#navBarContent li{
+    float:left;
+    margin-left: 10px
+}
+/* .navConInfo */
+.navConInfo > div{
+    width: 150px;
+}
+.navConInfo div > input{
+    width: 10px;
+    position: relative;
+    left: 95px;
+    top: -11px;
+    height: 16px;
+}
+/* .del */
+.del{
+    float: right;
+    margin-right: 30px;
+}
+/* .navPrice */
+.navPrice{
+    position: absolute;
+}
+
+/* .count */
+.count{
+    display: block;
+    width: 10px; 
+    position: relative;
+    left: 110px; top:-30px;
+    font-size: 0px;
+
+}
+.count img{
+    cursor: pointer;
+}
+/* .totalPrice */
+.totalPrice{
+    width: 790px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top:2px solid #d7d7d7;
+    text-align: right;
+}
+/* .ico */
+.ico{
+    display: inline-block;
+    overflow: hidden;
+    background: url('../images/bg_blog_190328.png') no-repeat;
+    text-indent: -9999px;
+}
+/* .btn_delete */
 .btn_delete{
     width: 85px;
     padding: 5px 0;
@@ -371,14 +387,6 @@ body{font:12px/1.6 arial; color:#000;}
     cursor: pointer;
 }
 
-#navBarContent{
-    float: left;
-    display: block;
-    width:650px;
-    height: 278px;
-    float: left;
-    overflow-x: scroll;
-}
 /* #navBarContentOpt */
 #navBarContentOpt{
     width:140px;
