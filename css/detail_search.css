@@ -5,6 +5,7 @@ a{outline:0; text-decoration: none; color:#000;}
 img{border:0;}
 body{font:12px/1.6 arial; color:#000;}
 
+/* #contentWrap */
 #contentWrap{
     width:970px;
     margin:0 auto;
@@ -24,6 +25,7 @@ body{font:12px/1.6 arial; color:#000;}
     position: relative;
 }
 
+/* #category */
 #category{
     position: relative;
     display:block;
@@ -223,7 +225,6 @@ body{font:12px/1.6 arial; color:#000;}
 }
 
 /* detailContentWrap*/
-
 #detailContentWrap{
     width:800px;
     margin: 0 auto;
@@ -233,6 +234,7 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
     margin: 10px 30px 30px 20px;
 }
+/* .colorBox */
 .colorBox{
     width:150px;
     vertical-align: baseline;
@@ -268,7 +270,7 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navBarContent*/
 #navBar{
-    width:790px;
+    width:700px;
     /* height: 330px; */
     margin:0 auto;
     border:2px solid black;
@@ -277,20 +279,29 @@ body{font:12px/1.6 arial; color:#000;}
     bottom: 0; left:22%;
     background-color: #d99f9d;
 }
-#navBarContent li{
-    float:left;
-    margin-left: 10px;
-    
-}
-
+/* .navBarHeader */
 .navBarHeader{
     display: block;
     height: 35px;
     position: relative;
 }
+/* #navBarHeaderOpt */
 #navBarHeaderOpt{
     position: absolute;
     right:10px; top:5px;
+}
+/* .navBarHeaderOpt */
+.navBarHeader #navBarHeaderOpt .btn_toggle{
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.navBarHeader #navBarHeaderOpt .btn_toggle .i_toggle{
+    width: 18px;
+    height: 10px;
+    border: 0;
+    background-position: -124px -345px;
 }
 
 .product_all {
@@ -303,16 +314,23 @@ body{font:12px/1.6 arial; color:#000;}
     display: none;
     overflow: hidden;
 }
+/* #navBarContent */
 
+#navBarContent{
+    float: left;
+    display: block;
+    width:560px;
+    height: 278px;
+    float: left;
+    overflow-y: scroll;
+}
+#navBarContent li{
+    float:left;
+    margin-left: 10px
+}
+/* .navConInfo */
 .navConInfo > div{
     width: 150px;
-}
-.del{
-    float: right;
-    margin-right: 30px;
-}
-.navPrice{
-    position: absolute;
 }
 .navConInfo div > input{
     width: 10px;
@@ -321,6 +339,17 @@ body{font:12px/1.6 arial; color:#000;}
     top: -11px;
     height: 16px;
 }
+/* .del */
+.del{
+    float: right;
+    margin-right: 30px;
+}
+/* .navPrice */
+.navPrice{
+    position: absolute;
+}
+
+/* .count */
 .count{
     display: block;
     width: 10px; 
@@ -332,37 +361,23 @@ body{font:12px/1.6 arial; color:#000;}
 .count img{
     cursor: pointer;
 }
-
+/* .totalPrice */
 .totalPrice{
-    width: 790px;
+    width: 700px;
     position: absolute;
     bottom: 0;
     right: 0;
     border-top:2px solid #d7d7d7;
     text-align: right;
 }
-
+/* .ico */
 .ico{
     display: inline-block;
     overflow: hidden;
     background: url('../images/bg_blog_190328.png') no-repeat;
     text-indent: -9999px;
 }
-/* .navBarHeader */
-.navBarHeader #navBarHeaderOpt .btn_toggle{
-    padding: 6px;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-}
-
-.navBarHeader #navBarHeaderOpt .btn_toggle .i_toggle{
-    width: 18px;
-    height: 10px;
-    border: 0;
-    background-position: -124px -345px;
-}
-
+/* .btn_delete */
 .btn_delete{
     width: 85px;
     padding: 5px 0;
@@ -375,13 +390,6 @@ body{font:12px/1.6 arial; color:#000;}
     cursor: pointer;
 }
 
-#navBarContent{
-    float: left;
-    display: block;
-    width:650px;
-    float: left;
-    overflow-x: scroll;
-}
 /* #navBarContentOpt */
 #navBarContentOpt{
     width:140px;
