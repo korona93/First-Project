@@ -211,24 +211,30 @@ $(document).ready(function() {
             $('#subType2 .cm9').css('display','block');
         }
     });
+
+    $(".subType1").click(function(){
+        var select_array= Array();
+        var select_cnt = 0;
+        var chkbox = $('.subType1');
+    
+        for(i=0; i<chkbox.length; i++){
+            if(chkbox[i].checked==true){
+                select_array[select_cnt]=chkbox[i].value;
+                select_cnt++;
+            }
+        }
+        /* https://neptune297.tistory.com/60  사용한거*/
+        console.log(select_array);
+    });
+
+
 });
 
 
 
 $(document).ready(function(){
 
-    var select_array= Array();
-    var select_cnt = 0;
-    var chkbox = $('input[name=subType1]');
-
-    for(i=0; i<chkbox.length; i++){
-        if(chkbox[i].checked==true){
-            select_array[select_cnt]=chkbox[i].value;
-            select_cnt++;
-        }
-    }
-    /* https://neptune297.tistory.com/60  사용한거*/
-    console.log(select_array);
+    
     
 
 });
