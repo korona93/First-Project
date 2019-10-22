@@ -38,6 +38,7 @@ $(function(){
 			alert("최소 구매수량은 1개입니다.");
 			$(this).val(1).focus();
 		}
+		calcul();
 	});
 
 	// 2. 소수점/한글 안되게![완료]
@@ -91,10 +92,10 @@ function productNum(){
  
 // 네비바 금액에 ',' 삽입!
 	// addComma() : 숫자 타입값을 매개변수로 받아 콤마를 추가하여 문자열로 반환해주는 함수
-// function addComma(num) {
-// 	var regexp = /\B(?=(\d{3})+(?!\d))/g;
-// 	return num.toString().replace(regexp, ',');
-// }
+function addComma(num) {
+ 	var regexp = /\B(?=(\d{3})+(?!\d))/g;
+ 	return num.toString().replace(regexp, ',');
+}
 
 // $(function(){
 // 	// console.log(typeof $('.selectproduct_price').text());
