@@ -375,6 +375,7 @@ body{font:12px/1.6 arial; color:#000;}
     float: left;
     display: block;
     width:650px;
+    height: 278px;
     float: left;
     overflow-x: scroll;
 }
