@@ -266,7 +266,7 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navBarContent*/
 #navBar{
-    width:790px;
+    width:700px;
     /* height: 330px; */
     margin:0 auto;
     border:2px solid black;
@@ -293,7 +293,6 @@ body{font:12px/1.6 arial; color:#000;}
     border: 0;
     cursor: pointer;
 }
-
 .navBarHeader #navBarHeaderOpt .btn_toggle .i_toggle{
     width: 18px;
     height: 10px;
@@ -316,10 +315,10 @@ body{font:12px/1.6 arial; color:#000;}
 #navBarContent{
     float: left;
     display: block;
-    width:650px;
+    width:560px;
     height: 278px;
     float: left;
-    overflow-x: scroll;
+    overflow-y: scroll;
 }
 #navBarContent li{
     float:left;
@@ -360,7 +359,7 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /* .totalPrice */
 .totalPrice{
-    width: 790px;
+    width: 700px;
     position: absolute;
     bottom: 0;
     right: 0;
