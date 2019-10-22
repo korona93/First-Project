@@ -159,15 +159,12 @@ body{font:12px/1.6 arial; color:#000;}
     width:470px; height: 30px;
 }
 #subType1 > .fs8 > ul > li{
-    width: 60px !important; height: 10px;
+    width: 70px !important; height: 10px;
     float: left;
 }
-#subType1 > .fs8 > ul:last-child{
-    margin-left: 10px;    
-}
 #subType1 > .fs8 > ul:last-child > li{
-    width:65px; height: 10px;
-}
+    margin-left: 20px;
+} 
 /* subType2 */
 #subType2{
     float: left;

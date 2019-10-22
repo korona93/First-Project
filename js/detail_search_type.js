@@ -118,7 +118,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '2'){
+        else if(chkValue == '2'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','block');
             $('#subType2 .cm3').css('display','none');
@@ -129,7 +129,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '3'){
+        else if(chkValue == '3'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','block');
@@ -140,7 +140,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '4'){
+        else if(chkValue == '4'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
@@ -151,7 +151,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '5'){
+        else if(chkValue == '5'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
@@ -162,7 +162,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '6'){
+        else if(chkValue == '6'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
@@ -173,7 +173,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '7'){
+        else if(chkValue == '7'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
@@ -184,7 +184,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '8'){
+        else if(chkValue == '8'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
@@ -195,7 +195,7 @@ $(document).ready(function() {
             $('#subType2 .cm8').css('display','block');
             $('#subType2 .cm9').css('display','none');
         }
-        if(chkValue == '9'){
+        else if(chkValue == '9'){
             $('#subType2 .cm1').css('display','none');
             $('#subType2 .cm2').css('display','none');
             $('#subType2 .cm3').css('display','none');
