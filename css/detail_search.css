@@ -194,6 +194,10 @@ body{font:12px/1.6 arial; color:#000;}
     height: 30px;
     top:270px;
 }
+#select ul{
+    display: block;
+    width: 550px; height: 30px;
+}
 #select > button{
     display: block;
     position: absolute;
