@@ -4,26 +4,35 @@ ol,ul{list-style:none;}
 a{outline:0; text-decoration:none; color:#555;}
 img{border:0;}
 body{font:12px/1.6 arial; color:#555;}
+.white{
+    background-color: white;
+    z-index: 1000;
+}
+.pink{
+    background-color:#d99f9d;
+    z-index: 1000; 
+}
+
 
 /*header*/
 #header{
     height: 60px;
     width: 100%;
     position: relative;
-    background-color: white;
-    z-index : 1000;
+    z-index : 801;
     font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    
 }
 
 #header > h1#mainLogo{
     position : absolute;
     left: 80px;
-    bottom : 3px;
+    bottom : 5px;
 }
 ul#mainMenu1{
     position: absolute;
     left : 300px;
-    bottom : 3px;
+    bottom : 5px;
 }
 
 ul#mainMenu1 > li{
@@ -52,9 +61,65 @@ ul#tools{
 
 ul#tools > li{
     float: left;
-    margin : 0 10px 3px 10px;
+    margin : 0 10px 10px 10px;
    
 }
+ul#tools > li > .shoppingCart{
+    opacity: 0;
+}
+/* 2019.09.19 */
+
+ul#mainMenu1 > li{
+    position: relative;
+}
+/*ul#mainMenu1*/ .subCategory{
+    width:150px;
+    height: 400px;
+    background-color: rgb(242, 225, 211);
+    z-index: 900;
+    display:none;
+}
+.subCategory li{
+    padding-left: 30px;
+    padding-bottom: 1px;
+    height: 30px;
+    font-family: 'Lora','Microsoft Himalaya',sans-serif,Verdana,'Nanum Gothic'!important;
+}
+
+.subCategory li:first-of-type{
+    padding-top:20px;
+}
+ul#mainMenu1 div.tce{
+    height: 340px;
+    position: absolute;
+    left:0; bottom: -353px
+    /*display: none;*/
+}
+
+ul#mainMenu1 div.kkxx{
+    height: 130px;
+    position: absolute;
+    left:0; bottom: -143px
+    /*display: none;*/
+}
+
+ul#mainMenu1 div.nandaMade{
+    height: 250px;
+    position: absolute;
+    left:0; bottom: -263px
+    /*display: none;*/
+}
+
+ul#mainMenu1 div.apperalFashion{
+    height: 310px;
+    position: absolute;
+    left:0; bottom: -323px
+    /*display: none;*/
+}
+
+/* //2019.09.19 */
+
+/* //2019.09.19 */
 
 /*main*/
 
@@ -239,22 +304,25 @@ div#footer > div.ftIcon{
     height: 91px;
     width: 1000px;
     margin:10px auto 0;
-}
-
-div.ftIcon{
     position: relative;
     top:37px;
     left:398px;
 }
 
-div.ftIcon > ul.ftIcon{
+/*div.ftIcon{
+    position: relative;
+    top:37px;
+    left:398px;
+}*/
+
+div#footer > div.ftIcon > ul.ftIcon{
     position: absolute;
 
 }
 
 ul.ftIcon > li{
     float: left;
-    margin-left: 17px;
+    margin-left: 20px;
 }
 
 /*푸터 회사정보*/
@@ -264,4 +332,72 @@ div#footer > div#information{
     width: 100%;
     margin:10px auto 0 auto;
     text-align: center;
+}
+
+/* 2019.09.19 */
+
+/*전체메뉴 클릭 시 화면*/
+#gnbBody{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 800;
+    background: #d99f9d;
+    text-transform: uppercase;
+    font-size: 18px;
+    display:none;
+}
+#gnbBody > #gnbMenu{
+    position: fixed;
+    left:25%;
+    bottom:47%;
+    font-family: 'Lora','Microsoft Himalaya,sans-serif,Verdana','Nanum Gothic'!important;
+    font-size:14px;
+    text-align: center;
+}
+
+#gnbBody > #gnbMenu > li{
+    float:left;
+    padding: 0 27px;
+    width:130px;
+    position: relative;
+}
+
+#gnbBody .ftIcon{
+    position: fixed;
+    bottom:5%; left:44%;  
+}
+
+ul#gnbMenu div.notice{
+    height: 340px;
+    position: absolute;
+    left:0; bottom: -353px;
+}
+ul#gnbMenu div.todaySale{
+    height: 130px;
+    position: absolute;
+    left:0; bottom: -143px
+    
+}
+
+ul#gnbMenu div.qna{
+    height: 250px;
+    position: absolute;
+    left:0; bottom: -263px
+  
+}
+
+ul#gnbMenu div.review{
+    height: 310px;
+    position: absolute;
+    left:0; bottom: -323px
+  
+}
+
+ul#gnbMenu div.store{
+    height: 310px;
+    position: absolute;
+    left:0; bottom: -323px
+  
 }
