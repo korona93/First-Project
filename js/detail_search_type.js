@@ -11,6 +11,7 @@ $(document).ready(function() {
             $('#subType1').css('display','block');
             $('#subType2').css('display','none');
             $('#subType2 div').css('display','none');
+            $('.selected').html("");
         }else if(chkValue=='2'){
             $('#type .fashion').css('display','none');
             $('#type .cosmetic').css('display','block');
@@ -19,6 +20,7 @@ $(document).ready(function() {
             $('#subType1').css('display','none');
             $('#subType2').css('display','block');
             $('#subType1 div').css('display','none');
+            $('.selected').html("");
         }
     });
     /* subType에 대한 js */
@@ -35,6 +37,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '2'){
             $('#subType1 .fs1').css('display','none');
@@ -45,6 +48,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '3'){
             $('#subType1 .fs1').css('display','none');
@@ -55,6 +59,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '4'){
             $('#subType1 .fs1').css('display','none');
@@ -65,6 +70,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '5'){
             $('#subType1 .fs1').css('display','none');
@@ -75,6 +81,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '6'){
             $('#subType1 .fs1').css('display','none');
@@ -85,6 +92,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','block');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '7'){
             $('#subType1 .fs1').css('display','none');
@@ -95,6 +103,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','block');
             $('#subType1 .fs8').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '8'){
             $('#subType1 .fs1').css('display','none');
@@ -105,6 +114,7 @@ $(document).ready(function() {
             $('#subType1 .fs6').css('display','none');
             $('#subType1 .fs7').css('display','none');
             $('#subType1 .fs8').css('display','block');
+            $('.selected').html("");
         }
     });
     $('input[name=type2]').on('click',function(){
@@ -121,6 +131,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '2'){
             $('#subType2 .cm1').css('display','none');
@@ -132,6 +143,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '3'){
             $('#subType2 .cm1').css('display','none');
@@ -143,6 +155,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '4'){
             $('#subType2 .cm1').css('display','none');
@@ -154,6 +167,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '5'){
             $('#subType2 .cm1').css('display','none');
@@ -165,6 +179,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '6'){
             $('#subType2 .cm1').css('display','none');
@@ -176,6 +191,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '7'){
             $('#subType2 .cm1').css('display','none');
@@ -187,6 +203,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','block');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '8'){
             $('#subType2 .cm1').css('display','none');
@@ -198,6 +215,7 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','block');
             $('#subType2 .cm9').css('display','none');
+            $('.selected').html("");
         }
         else if(chkValue == '9'){
             $('#subType2 .cm1').css('display','none');
@@ -209,80 +227,67 @@ $(document).ready(function() {
             $('#subType2 .cm7').css('display','none');
             $('#subType2 .cm8').css('display','none');
             $('#subType2 .cm9').css('display','block');
+            $('.selected').html("");
         }
     });
 
-
+    // 패션 클릭 옵션
     $(".subType1").click(function(){
         var select_array = new Array();
         select_cnt=0;
         
         var chkbox = $('.subType1');
+        
     
         for(var i=0; i<chkbox.length; i++){
             if(chkbox[i].checked==true){
                 select_array[select_cnt++]=chkbox[i].value;             
-            }
-            // console.log(select_array[select_cnt])
-            // alert(select_array[i].val());
-            
+            }            
         }
 
         var txt="";
         for(var i=0; i<select_array.length; i++){
-            txt += "<span>"+select_array[i]+"</span>";
-            txt += "<a href='#'>"+"<img src='../images/x_106506.png' width='12px' height='11px'>"+"</a>"
+            txt += "<span>"+select_array[i]+"<a href='#'>"+"<img src='../images/x_106506.png' width='12px' height='11px'>"+"</a>"+"</span>";
         }
         $('.selected').html(txt);
-
-    // $(".subType1").click(function(){
-    //     var select_array= Array();
-    //     var select_cnt = 0;
-    //     var chkbox = $('.subType1');
-    
-    //     for(i=0; i<chkbox.length; i++){
-    //         if(chkbox[i].checked==true){
-    //             select_array[select_cnt]=chkbox[i].value;
-    //             select_cnt++;               
-    //         }
-    
-            
-    //         // console.log(select_array[select_cnt])
-    //         // alert(select_array[i].val());
-            
-    //     }
-
-    //     for(j=0; j<select_array.length; j++){
-    //         $('.selected').append("<span>"+select_array[j]+"</>");
-    //     }
-        
-        //$('.selected').html("<div>"+select_array[].val()+"</div>");
-        // for(i=0; i<select_array.length; i++){
-        //     $('.selected').html("<div>"+select_array+"</div>");
-        // }
-        // console.log(select_array)
-
-        // $(".subType1:checked").each(function(idx){
-        //     var value = $(this).val();
-        //     var eqValue = $(".subType1:eq(idx)".val();
-        //     console.log(value+":"+eqValue);
-        // });
-        // $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
-        // /* https://neptune297.tistory.com/60  사용한거*/
-        // for(i=0; i<select_array.length; i++){
-        //     $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
-        // }
-        //체크박스시 그 배열 만큼 div태그에 안에 씌어놓기
-        //체크박스 해제시 배열을 감싼 div태그도 지워지기
-        //배열 출력시 위치가 떨어짐
+        $('.selected > span > a > img').click(function(){
+            $(this).parent().parent().remove();
+        });
     });
+    //초기화 버튼
     $(".button").click(function(){
         $('input[name="subType1"]').removeAttr('checked');
-        
-        
-        //초기화 버튼 클릭시 subtype 체크박스의 체크삭제됨과 같이 배열요소도 제거
+        $('.selected').html("");
     });
 
+    // 화장품 클릭 옵션
+    $(".subType2").click(function(){
+        var select_array = new Array();
+        select_cnt=0;
+        
+        var chkbox = $('.subType2');
+        
+    
+        for(var i=0; i<chkbox.length; i++){
+            if(chkbox[i].checked==true){
+                select_array[select_cnt++]=chkbox[i].value;             
+            }            
+        }
+
+        var txt="";
+        for(var i=0; i<select_array.length; i++){
+            txt += "<span>"+select_array[i]+"<a href='#'>"+"<img src='../images/x_106506.png' width='12px' height='11px'>"+"</a>"+"</span>";
+        }
+        $('.selected').html(txt);
+        $('.selected > span > a > img').click(function(){
+            $(this).parent().parent().remove();
+        });
+    });
+    //초기화 버튼
+    $(".button").click(function(){
+        $('input[name="subType2"]').removeAttr('checked');
+        $('.selected').html("");
+    });
 });
 
 
