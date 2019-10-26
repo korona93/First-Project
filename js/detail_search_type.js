@@ -231,7 +231,7 @@ $(document).ready(function() {
         var txt="";
         for(var i=0; i<select_array.length; i++){
             txt += "<span>"+select_array[i]+"</span>";
-            txt += "<a href='#' class='xbox'>"+"</a>"
+            txt += "<a href='#'>"+"<img src='../images/x_106506.png' width='12px' height='11px'>"+"</a>"
         }
         $('.selected').html(txt);
 
