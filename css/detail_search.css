@@ -200,7 +200,11 @@ body{font:12px/1.6 arial; color:#000;}
     display: block;
     width: 550px; height: 30px;
 }
-
+#select > .selected div{
+    display: block;
+    float: left;
+    position: absolute;
+}
 #select > button{
     display: block;
     position: absolute;

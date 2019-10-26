@@ -220,21 +220,42 @@ $(document).ready(function() {
         for(i=0; i<chkbox.length; i++){
             if(chkbox[i].checked==true){
                 select_array[select_cnt]=chkbox[i].value;
-                select_cnt++;
+                select_cnt++;               
             }
+    
+            
+            // console.log(select_array[select_cnt])
+            // alert(select_array[i].val());
+            
         }
-        $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
-        /* https://neptune297.tistory.com/60  사용한거*/
+
+        // for(j=0; j<select_array.length; j++){
+        //     $('.selected').append("<div class='test_123'>"+select_array[j]+"</div>");
+        // }
+        
+        //$('.selected').html("<div>"+select_array[].val()+"</div>");
         for(i=0; i<select_array.length; i++){
-            $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
+            $('.selected').html("<div>"+select_array+"</div>");
         }
+        console.log(select_array)
+
+        // $(".subType1:checked").each(function(idx){
+        //     var value = $(this).val();
+        //     var eqValue = $(".subType1:eq(idx)".val();
+        //     console.log(value+":"+eqValue);
+        // });
+        // $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
+        // /* https://neptune297.tistory.com/60  사용한거*/
+        // for(i=0; i<select_array.length; i++){
+        //     $('.selected').html("<div>"+select_array+"<img src='#'>"+"</div>");
+        // }
         //체크박스시 그 배열 만큼 div태그에 안에 씌어놓기
         //체크박스 해제시 배열을 감싼 div태그도 지워지기
         //배열 출력시 위치가 떨어짐
     });
     $(".button").click(function(){
         $('input[name="subType1"]').removeAttr('checked');
-        $()
+        
         //초기화 버튼 클릭시 subtype 체크박스의 체크삭제됨과 같이 배열요소도 제거
     });
 
