@@ -1,5 +1,4 @@
 // 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게[완료] 이것은 CSS에서 처리하는 것이다.
-//  but!!!  DB연동해야하기때문에 작동하는지는 미지수
 
 // 네비바 열고 닫기[완료]]
 $(document).ready(function(){
@@ -22,7 +21,8 @@ $(function(){
 	// 2. 소수점/한글 안되게![완료]
 	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
 	$("input:text[numberOnly]").on("keyup", function() {
-    	$(this).val($(this).val().replace(/[^0-9]/g,""));
+		$(this).val($(this).val().replace(/[^0-9]/g,""));
+		// blank();
 	});
 
 
@@ -30,17 +30,21 @@ $(function(){
 	$('.up').on('click', function(){
 		var i = $(this).parent().prev();
 		i.val(parseInt(i.val())+1).focus();
+		// blank();
 		calcul();
+	
 	});
 	$('.down').on('click', function(){
 		var i = $(this).parent().prev();
 		i.val(parseInt(i.val())-1).focus();
+		// blank();
 		calcul();
+		
 	});	
 	// 장바구니수량 1미만 안됨 [완료]
 	// 1. 숫자를 1미만으로 내릴 수 없게 [완료]
+	// **********급 오류!!! 공백일때 안먹음*/****** */
 	$('.inputNumber').blur(function (){
-	
 		var value = parseInt($(this).val());
 		if(value==""||value<1){
 			alert("최소 구매수량은 1개입니다.");
@@ -48,6 +52,7 @@ $(function(){
 		}
 		calcul();
 	});
+
 
 
 	//전체삭제 버튼 클릭시 모든 상품 삭제 [완료]
@@ -85,7 +90,6 @@ function productNum(){
 	$('em').text($('.eachProduct').length);
 }
 
-
 //            ***********문제****************
 //**  콤마 삽입하면 안먹음[빼고 하자!]
 
@@ -103,6 +107,11 @@ function addComma(num) {
 // 		$(this).text(addComma($(this).text()));
 // 	});
 // });
+
+function blank(){
+	var i = $('inp').val();
+	i = i.replace("",1);
+}
 
 
 
