@@ -212,32 +212,55 @@ $(document).ready(function() {
         }
     });
 
+
     $(".subType1").click(function(){
-        var select_array= Array();
-        var select_cnt = 0;
+        var select_array = new Array();
+        select_cnt=0;
+        
         var chkbox = $('.subType1');
     
-        for(i=0; i<chkbox.length; i++){
+        for(var i=0; i<chkbox.length; i++){
             if(chkbox[i].checked==true){
-                select_array[select_cnt]=chkbox[i].value;
-                select_cnt++;               
+                select_array[select_cnt++]=chkbox[i].value;             
             }
-    
-            
             // console.log(select_array[select_cnt])
             // alert(select_array[i].val());
             
         }
 
-        // for(j=0; j<select_array.length; j++){
-        //     $('.selected').append("<div class='test_123'>"+select_array[j]+"</div>");
-        // }
+        var txt="";
+        for(var i=0; i<select_array.length; i++){
+            txt += "<span>"+select_array[i]+"</span>";
+            txt += "<a href='#' class='xbox'>"+"</a>"
+        }
+        $('.selected').html(txt);
+
+    // $(".subType1").click(function(){
+    //     var select_array= Array();
+    //     var select_cnt = 0;
+    //     var chkbox = $('.subType1');
+    
+    //     for(i=0; i<chkbox.length; i++){
+    //         if(chkbox[i].checked==true){
+    //             select_array[select_cnt]=chkbox[i].value;
+    //             select_cnt++;               
+    //         }
+    
+            
+    //         // console.log(select_array[select_cnt])
+    //         // alert(select_array[i].val());
+            
+    //     }
+
+    //     for(j=0; j<select_array.length; j++){
+    //         $('.selected').append("<span>"+select_array[j]+"</>");
+    //     }
         
         //$('.selected').html("<div>"+select_array[].val()+"</div>");
-        for(i=0; i<select_array.length; i++){
-            $('.selected').html("<div>"+select_array+"</div>");
-        }
-        console.log(select_array)
+        // for(i=0; i<select_array.length; i++){
+        //     $('.selected').html("<div>"+select_array+"</div>");
+        // }
+        // console.log(select_array)
 
         // $(".subType1:checked").each(function(idx){
         //     var value = $(this).val();
@@ -255,6 +278,7 @@ $(document).ready(function() {
     });
     $(".button").click(function(){
         $('input[name="subType1"]').removeAttr('checked');
+        
         
         //초기화 버튼 클릭시 subtype 체크박스의 체크삭제됨과 같이 배열요소도 제거
     });

@@ -199,11 +199,16 @@ body{font:12px/1.6 arial; color:#000;}
 #select > .selected{
     display: block;
     width: 550px; height: 30px;
-}
-#select > .selected div{
-    display: block;
-    float: left;
     position: absolute;
+}
+#select > .selected > span{
+}
+.xbox{
+    margin-bottom: 2px;
+    margin-left: 3px;
+    display: inline-block;
+    width: 12px; height: 11px;
+    background: url(../images/x_106506.png) no-repeat;
 }
 #select > button{
     display: block;
