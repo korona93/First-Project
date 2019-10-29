@@ -30,7 +30,9 @@ $(function(){
 	$('.up').on('click', function(){
 		var i = $(this).parent().prev();
 		i.val(parseInt(i.val())+1).focus();
-		// blank();
+		// if(i==""){
+		// 	$(this).val(1).focus();
+		// }
 		calcul();
 	
 	});
@@ -43,9 +45,8 @@ $(function(){
 	});	
 	// 장바구니수량 1미만 안됨 [완료]
 	// 1. 숫자를 1미만으로 내릴 수 없게 [완료]
-	// **********급 오류!!! 공백일때 안먹음*/****** */
 	$('.inputNumber').blur(function (){
-		var value = parseInt($(this).val());
+		var value = $(this).val();
 		if(value==""||value<1){
 			alert("최소 구매수량은 1개입니다.");
 			$(this).val(1).focus();
