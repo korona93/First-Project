@@ -53,7 +53,16 @@ $(function(){
 		}
 		calcul();
 	});
-
+	//.on("change keyup paste", function() )
+	//최대 5개까지만되도록
+	$('.inputNumber').blur(function (){
+		var value = $(this).val();
+		if(value>=6){
+			alert("최대 구매수량은 5개입니다.");
+			$(this).val(5).focus();
+		}
+		calcul();
+	});
 
 
 	//전체삭제 버튼 클릭시 모든 상품 삭제 [완료]
