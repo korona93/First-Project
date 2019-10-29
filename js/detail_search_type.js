@@ -286,7 +286,13 @@ $(document).ready(function() {
         }
         $('.selected').html(txt);
         $('.selected > span > a > img').click(function(){
+            var text = $(this).parent().parent().text();
             $(this).parent().parent().remove();
+            for(var i=0; i<chkbox.length; i++){
+                if(chkbox[i].value==text){ 
+                    chkbox[i].checked=false; 
+                }
+            }    
         });
     });
     //초기화 버튼
