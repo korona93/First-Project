@@ -11,6 +11,7 @@ div{vertical-align: baseline;}
 
 /*contentWrap*/
 #contentWrap{
+    width: 70%;
     margin: 0 auto;
     display: block;
 }
