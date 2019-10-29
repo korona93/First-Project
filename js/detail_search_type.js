@@ -234,15 +234,13 @@ $(document).ready(function() {
     // 패션 클릭 옵션
     $(".subType1").click(function(){
         var select_array = new Array();
-        select_cnt=0;
-        
         var chkbox = $('.subType1');
-        
+        select_cnt=0;        
     
         for(var i=0; i<chkbox.length; i++){
             if(chkbox[i].checked==true){
-                select_array[select_cnt++]=chkbox[i].value;             
-            }            
+                select_array[select_cnt++]=chkbox[i].value;    
+            }          
         }
 
         var txt="";
@@ -250,10 +248,18 @@ $(document).ready(function() {
             txt += "<span>"+select_array[i]+"<a href='#'>"+"<img src='../images/x_106506.png' width='12px' height='11px'>"+"</a>"+"</span>";
         }
         $('.selected').html(txt);
+
         $('.selected > span > a > img').click(function(){
+            var text = $(this).parent().parent().text();
             $(this).parent().parent().remove();
+            for(var i=0; i<chkbox.length; i++){
+                if(chkbox[i].value==text){ 
+                    chkbox[i].checked=false; 
+                }
+            }    
         });
-    });
+    });    
+    
     //초기화 버튼
     $(".button").click(function(){
         $('input[name="subType1"]').removeAttr('checked');
@@ -280,7 +286,13 @@ $(document).ready(function() {
         }
         $('.selected').html(txt);
         $('.selected > span > a > img').click(function(){
+            var text = $(this).parent().parent().text();
             $(this).parent().parent().remove();
+            for(var i=0; i<chkbox.length; i++){
+                if(chkbox[i].value==text){ 
+                    chkbox[i].checked=false; 
+                }
+            }    
         });
     });
     //초기화 버튼
