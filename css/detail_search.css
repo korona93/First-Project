@@ -270,9 +270,21 @@ body{font:12px/1.6 arial; color:#000;}
 .colorBox > span:nth-of-type(3){
     background-color: violet;
 }
-
-
-
+/* eachImg */
+.eachImg{
+    width: 120px;
+    height: 160px;
+}
+/* eachcol1,2,3 */
+#eachCol1{
+    background-color: #000000;
+}
+#eachCol2{
+    background-color: plum;
+}
+#eachCol3{
+    background-color: burlywood;
+}
 /* navBarContent*/
 #navBar{
     width:700px;
