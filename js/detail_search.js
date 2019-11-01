@@ -22,7 +22,14 @@ $(function(){
 	$('.btn_bucket').click(function(){
 		location.href="cart.html";
 	});
+	// 상품이미지/상품이름 클릭시 이동
+	$('.navProductName').click(function(){
+		location.href="detailProduct.html";
+	});
 
+	$('.navConImage').click(function(){
+		location.href="detailProduct.html";
+	});
 
 	// 2. 소수점/한글 안되게![완료]
 	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
