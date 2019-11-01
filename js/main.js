@@ -90,17 +90,38 @@ $(document).ready(function(){
                 $('.subCategory').css({"display":"none"});
             });
 
-
+        //메인 사진에 마우스 호버/아웃 시
             $(".pictureBox img").mouseover(function(){
                 $(this).attr("src",function(){
                     return this.title;
                 });
-                $
             });
             $(".pictureBox img").mouseout(function(){
                 $(this).attr("src",function(){
                     return this.alt;
                 }); 
+            });
+
+        //메인  색상칸에 마우스 호버/아웃 시 
+        
+            $(".colorBox span").mouseover(function(){
+                //console.log("in");
+                var path = $(this).attr("title");
+                //console.log(path);
+                var thisParent = $(this).parent().parent();
+                //console.log(thisParent);
+                thisParent.children('a').children('img').attr("src",function(){
+                    return path;
+                });
+            });
+
+            $(".colorBox span").mouseout(function(){
+                //console.log("out"); 
+                var thisParent = $(this).parent().parent();
+                var boxAlt = thisParent.children('a').children('img').attr("alt");
+                thisParent.children('a').children('img').attr("src",function(){
+                    return boxAlt;
+                });
             });
     });
 
