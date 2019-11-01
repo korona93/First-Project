@@ -241,7 +241,7 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /* .colorBox */
 .colorBox{
-    width:150px;
+    width:160px;
     vertical-align: baseline;
     display: inline-block;
     overflow: hidden;
@@ -270,30 +270,43 @@ body{font:12px/1.6 arial; color:#000;}
 .colorBox > span:nth-of-type(3){
     background-color: violet;
 }
+
+
+
+
+
+
+
+
+
+
 /* eachImg */
 .eachImg{
-    width: 120px;
-    height: 160px;
+    width: 160px;
+    height: 210px;
 }
 /* eachcol1,2,3 */
 #eachCol1{
     background-color: #000000;
+    margin:5px 0 0 3px;
 }
 #eachCol2{
-    background-color: plum;
+    background-color: #D3CBC3;
+    margin:5px 0 0 3px;
 }
 #eachCol3{
-    background-color: burlywood;
+    background-color: #A6C3E6;
+    margin:5px 0 0 3px;
 }
 /* navBarContent*/
 #navBar{
-    width:700px;
+    width:850px;
     /* height: 330px; */
-    margin:0 auto;
+    /* margin:0 auto; */
     border:2px solid black;
     overflow: hidden;
     position: fixed;
-    bottom: 0; left:32%;
+    bottom: 0; left:28%;
     background-color: #d99f9d;
 }
 /* .navBarHeader */
@@ -327,7 +340,7 @@ body{font:12px/1.6 arial; color:#000;}
 
 /* navContentWrap(상품이 없어도 높이유지) */
 .navContentWrap{
-    height: 295px;
+    height: 330px;
     display: none;
     overflow: hidden;
 }
@@ -336,51 +349,82 @@ body{font:12px/1.6 arial; color:#000;}
 #navBarContent{
     float: left;
     display: block;
-    width:560px;
-    height: 278px;
+    width:710px;
+    height: 303px;
+    /* height: 278px; */
     float: left;
     overflow-y: scroll;
 }
-#navBarContent li{
+/* .eachProduct */
+.eachProduct{
+    display:block;
+    width: 160px;
+    height: 295px;
     float:left;
     margin-left: 10px
+    /* margin: 20px 0 0 30px; */
+}
+/* .navConImage */
+.navConImage{
+    display: block;
+    width:160px;
+    height: 210px;
+}
+.color{
+    display: block;
+    width:160px;
+    height: 30px;
 }
 /* .navConInfo */
-.navConInfo > div{
-    width: 150px;
+.navConInfo{
+    /* display: block; */
+    width: 160px;
+    height: 75px;
 }
-.navConInfo div > input{
-    width: 10px;
-    position: relative;
-    left: 95px;
-    top: -11px;
-    height: 16px;
+.navConInfo>.navProductName{
+    width:160px;
+    height: 20px;
 }
-/* .del */
-.del{
-    float: right;
-    margin-right: 30px;
-}
-/* .navPrice */
-.navPrice{
-    position: absolute;
+.navConInfo>.navProductName>a>span{
+    font-size: 11px;
 }
 
+.navConInfo div > input{
+    width: 11px;
+    position: relative;
+    left: 135px;
+    top: -21px;
+    height: 16px;
+}
 /* .count */
 .count{
     display: block;
     width: 10px; 
     position: relative;
-    left: 110px; top:-30px;
+    left: 150px; top:-40.5px;
     font-size: 0px;
-
 }
 .count img{
     cursor: pointer;
 }
+/* .del */
+.del{
+    float: right;
+    margin-top: 5px;
+    /* margin-right: 30px; */
+}
+/* .navPrice */
+.navPrice{
+    overflow: hidden;
+    width: 160px;
+    height: 25px;
+    /* position: absolute; */
+}
+
+
 /* .totalPrice */
 .totalPrice{
-    width: 700px;
+    width: 850px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -431,7 +475,7 @@ body{font:12px/1.6 arial; color:#000;}
 }
 #navBarContentOpt > .btn_delete{
     position: absolute;
-    right:30px; top:100px;
+    right:30px; top:135px;
     margin-bottom:20px;
 }
 
