@@ -241,7 +241,7 @@ body{font:12px/1.6 arial; color:#000;}
 }
 /* .colorBox */
 .colorBox{
-    width:160px;
+    width:150px;
     vertical-align: baseline;
     display: inline-block;
     overflow: hidden;
@@ -370,7 +370,7 @@ body{font:12px/1.6 arial; color:#000;}
     width:160px;
     height: 210px;
 }
-.color{
+.navColor{
     display: block;
     width:160px;
     height: 30px;
