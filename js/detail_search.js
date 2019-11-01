@@ -87,9 +87,11 @@ $(function(){
 // 총계 계산[완료]
 function calcul(){
 	var totalP=0;
-	$('.eachProduct').each(function(index, item){
-		var price = Number($(this).children().children().children('.prod').text());
-		var eachT = price*$(this).children().children().children('.inp').val();
+	$('.navPrice').each(function(index, item){
+		var price = Number($(this).find('.prod').text());
+		
+		var eachT = price*$(this).find('.inp').val();
+		
 		totalP += eachT;
 	});
 	$("#total").text(totalP);
