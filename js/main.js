@@ -38,7 +38,7 @@ $(document).ready(function(){
         });
         $('#mainSection1').mouseover(function(){
             //console.log("111");
-            //$('.subCategory').css({"display":"none"});
+            $('.subCategory').css({"display":"none"});
         });
         $('*').click(function(){
             //console.log('clicked');
@@ -65,13 +65,13 @@ $(document).ready(function(){
             $()
         });
 
-            //mainMenu1
+            //GNBMENU
             $('#gnbBody > #gnbMenu > li').mouseover(function(){
                 //console.log('li');
                 $(this).css({"text-decoration":"underline"});
                 $(this).children('.subCategory').css({"display":"block"});
-                $('#mainMenu1 > li').not(this).css({"text-decoration":"none"});
-                $('#mainMenu1 > li').not(this).children('.subCategory').css({"display":"none"});
+                $('#gnbMenu > li').not(this).css({"text-decoration":"none"});
+                $('#gnbMenu > li').not(this).children('.subCategory').css({"display":"none"});
             });
             
             
@@ -79,6 +79,28 @@ $(document).ready(function(){
                 //console.log('mouseout');
                 $(this).css({"text-decoration":"none"});
                 //$(this).children('.subCategory').css({"display":"none"});
+            });
+            $('#gnbBody  #voidArea1').mouseover(function(){
+                $('.subCategory').css({"display":"none"});
+            });
+            $('#gnbBody > #voidArea2').mouseover(function(){
+                $('.subCategory').css({"display":"none"});
+            });
+            $('#gnbBody > #voidArea3').mouseover(function(){
+                $('.subCategory').css({"display":"none"});
+            });
+
+
+            $(".pictureBox img").mouseover(function(){
+                $(this).attr("src",function(){
+                    return this.title;
+                });
+                $
+            });
+            $(".pictureBox img").mouseout(function(){
+                $(this).attr("src",function(){
+                    return this.alt;
+                }); 
             });
     });
 
