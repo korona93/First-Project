@@ -1,5 +1,4 @@
 // 상품이 많이 들어올때 스크롤바만들어서 해당 width이상으로 상품을 담을 수 있게[완료] 이것은 CSS에서 처리하는 것이다.
-//  but!!!  DB연동해야하기때문에 작동하는지는 미지수
 
 // 네비바 열고 닫기[완료]]
 $(document).ready(function(){
@@ -19,10 +18,24 @@ $(function(){
 	calcul();
 	$('em').append($('.eachProduct').length);
 
+	// 장바구니페이지 이동
+	$('.btn_bucket').click(function(){
+		location.href="cart.html";
+	});
+	// 상품이미지/상품이름 클릭시 이동
+	$('.navProductName').click(function(){
+		location.href="detailProduct.html";
+	});
+
+	$('.navConImage').click(function(){
+		location.href="detailProduct.html";
+	});
+
 	// 2. 소수점/한글 안되게![완료]
 	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
 	$("input:text[numberOnly]").on("keyup", function() {
-    	$(this).val($(this).val().replace(/[^0-9]/g,""));
+		$(this).val($(this).val().replace(/[^0-9]/g,""));
+		// blank();
 	});
 
 
@@ -30,21 +43,36 @@ $(function(){
 	$('.up').on('click', function(){
 		var i = $(this).parent().prev();
 		i.val(parseInt(i.val())+1).focus();
+		// if(i==""){
+		// 	$(this).val(1).focus();
+		// }
 		calcul();
+	
 	});
 	$('.down').on('click', function(){
 		var i = $(this).parent().prev();
 		i.val(parseInt(i.val())-1).focus();
+		// blank();
 		calcul();
+		
 	});	
 	// 장바구니수량 1미만 안됨 [완료]
 	// 1. 숫자를 1미만으로 내릴 수 없게 [완료]
 	$('.inputNumber').blur(function (){
-	
-		var value = parseInt($(this).val());
+		var value = $(this).val();
 		if(value==""||value<1){
 			alert("최소 구매수량은 1개입니다.");
 			$(this).val(1).focus();
+		}
+		calcul();
+	});
+	//.on("change keyup paste", function() )
+	//최대 5개까지만되도록
+	$('.inputNumber').blur(function (){
+		var value = $(this).val();
+		if(value>=6){
+			alert("최대 구매수량은 5개입니다.");
+			$(this).val(5).focus();
 		}
 		calcul();
 	});
@@ -72,9 +100,11 @@ $(function(){
 // 총계 계산[완료]
 function calcul(){
 	var totalP=0;
-	$('.eachProduct').each(function(index, item){
-		var price = Number($(this).children().children().children('.prod').text());
-		var eachT = price*$(this).children().children().children('.inp').val();
+	$('.navPrice').each(function(index, item){
+		var price = Number($(this).find('.prod').text());
+		
+		var eachT = price*$(this).find('.inp').val();
+		
 		totalP += eachT;
 	});
 	$("#total").text(totalP);
@@ -84,7 +114,6 @@ function calcul(){
 function productNum(){
 	$('em').text($('.eachProduct').length);
 }
-
 
 //            ***********문제****************
 //**  콤마 삽입하면 안먹음[빼고 하자!]
@@ -103,6 +132,11 @@ function addComma(num) {
 // 		$(this).text(addComma($(this).text()));
 // 	});
 // });
+
+function blank(){
+	var i = $('inp').val();
+	i = i.replace("",1);
+}
 
 
 
