@@ -18,6 +18,12 @@ $(function(){
 	calcul();
 	$('em').append($('.eachProduct').length);
 
+	// 장바구니페이지 이동
+	$('.btn_bucket').click(function(){
+		location.href="cart.html";
+	});
+
+
 	// 2. 소수점/한글 안되게![완료]
 	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
 	$("input:text[numberOnly]").on("keyup", function() {
