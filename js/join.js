@@ -1,9 +1,13 @@
 $(document).ready(function(){
 
-    //조건달기[미완]
     $('.btn_L').click(function(){
-        location.href="join2.html";
+        // if($('input:checkbox[name="agree_check1"]').is(":checked") == true&&
+        // $('input:checkbox[name="agree_check2"]').is(":checked") == true){
+        //     location.href="join2.html";
+        // }else{
+        //     alert("이용약관에 동의해주세요.")
+        // }
+        alert("이용약관에 동의해주세요.")
     });
-
 });
 
