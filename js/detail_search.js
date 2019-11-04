@@ -18,6 +18,19 @@ $(function(){
 	calcul();
 	$('em').append($('.eachProduct').length);
 
+	// 장바구니페이지 이동
+	$('.btn_bucket').click(function(){
+		location.href="cart.html";
+	});
+	// 상품이미지/상품이름 클릭시 이동
+	$('.navProductName').click(function(){
+		location.href="detailProduct.html";
+	});
+
+	$('.navConImage').click(function(){
+		location.href="detailProduct.html";
+	});
+
 	// 2. 소수점/한글 안되게![완료]
 	//텍스트박스input-text에-숫자만-입력-가능하도록-설정
 	$("input:text[numberOnly]").on("keyup", function() {
@@ -87,9 +100,11 @@ $(function(){
 // 총계 계산[완료]
 function calcul(){
 	var totalP=0;
-	$('.eachProduct').each(function(index, item){
-		var price = Number($(this).children().children().children('.prod').text());
-		var eachT = price*$(this).children().children().children('.inp').val();
+	$('.navPrice').each(function(index, item){
+		var price = Number($(this).find('.prod').text());
+		
+		var eachT = price*$(this).find('.inp').val();
+		
 		totalP += eachT;
 	});
 	$("#total").text(totalP);
