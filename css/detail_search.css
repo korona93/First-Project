@@ -6,6 +6,11 @@ img{border:0;}
 body{font:12px/1.6 arial; color:#000;}
 
 /* #contentWrap */
+#wrap{
+    margin-top: 80px;
+
+}
+
 #contentWrap{
     width:970px;
     margin:0 auto;
