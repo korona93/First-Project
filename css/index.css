@@ -23,7 +23,7 @@ body{font:12px/1.6 arial; color:#555;}
     position: relative;
     z-index : 801;
     font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
-    
+    background-color: white;
 }
 
 #header > h1#mainLogo{
