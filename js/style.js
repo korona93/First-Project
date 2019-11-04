@@ -240,7 +240,7 @@ $(document).ready(function(){
         var t_price = parseInt(total.text());
         var point = (Math.floor(t_price*0.03));
         // ??? 1미만 문제
-        var img = '<img class="p_img" src="./icon_201809131207584600.png" />';
+        var img = '<img class="p_img" src="../images/icon_201809131207584600.png" />';
 
         //$("#mileage_item").text(point+"원");
         $(".point:eq("+n+")").text(point+"원").prepend(img);
@@ -280,7 +280,7 @@ $(document).ready(function(){
         var point = (Math.floor(t_price*0.03));
         $(".point:eq("+n+")").text(point+"원");
 
-        var img = '<img class="p_img" src="./icon_201809131207584600.png" />';
+        var img = '<img class="p_img" src="../images/icon_201809131207584600.png" />';
         $(".point:eq("+n+")").text(point+"원").prepend(img);
 
         // 전체가격
