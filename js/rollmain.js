@@ -37,8 +37,10 @@
 	var wwslidingAuto=setTimeout("play_w('right')",6000);
 
 $(document).ready(function(){
-
+	console.log('시작\n');
 	$(".rollstop a").click(function(){
+		console.log($(this).parent);
+		console.log(obj);
 		$(this).parent().hide();
 		$(".rollplay").css('display','inline-block');
 		if(wwslidingAuto)clearTimeout(wwslidingAuto);	
@@ -48,6 +50,7 @@ $(document).ready(function(){
 		$(this).parent().hide();
 		$(".rollstop").css('display','inline-block');
 		play_w('right');
+		console.log('시작\n');
 	});
 
 	$(".rollingbtn li.seq a").each(function(index){
