@@ -104,7 +104,7 @@ $(document).ready(function(){
 
         //메인  색상칸에 마우스 호버/아웃 시 
         
-            $(".colorBox span").mouseover(function(){
+            $("#mainWrap .colorBox span").mouseover(function(){
                 //console.log("in");
                 var path = $(this).attr("title");
                 //console.log(path);
@@ -115,7 +115,8 @@ $(document).ready(function(){
                 });
             });
 
-            $(".colorBox span").mouseout(function(){
+            
+            $("#mainWrap .colorBox span").mouseout(function(){
                 //console.log("out"); 
                 var thisParent = $(this).parent().parent();
                 var boxAlt = thisParent.children('a').children('img').attr("alt");
