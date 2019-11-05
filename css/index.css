@@ -298,13 +298,13 @@ div.dscrBox{
     /*background-color:mediumaquamarine;*/
 }
 
-.colorBox{
+#mainWrap .colorBox{
     width: 100%;
     display: inline-block;
     overflow: hidden;
     margin-top: 10px;
 }
-.colorBox span{
+#mainWrap .colorBox span{
     width: 20px;
     height: 20px;
     margin: 0 2.5px;
@@ -312,7 +312,7 @@ div.dscrBox{
     border: 1px solid darkgrey;
     cursor: pointer;
 }
-.colorBox input{
+#mainWrap .colorBox input{
     float: right;
 }
 .product{
