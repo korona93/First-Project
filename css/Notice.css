@@ -2,11 +2,13 @@
     width: 1200px;
     margin: 0 auto;
     
+    
 }
 
 #mainWrap{
     text-align: left;
-
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    font-weight: 400;
 }
 
 #path-wrap{margin: 50px auto;}
@@ -19,7 +21,7 @@
     text-align: center;
 }
 #guide{
-    border: 2px solid black;
+    border: 1px solid #ccc;
     padding: 20px;
 }
 #mainWrap h3{
@@ -45,7 +47,7 @@
 
 #mainWrap table th{
     height: 30px;
-    border: 1px solid black;
+    border:1px solid #ccc;
     background-color: lightgray;
     box-sizing: border-box;
     border-collapse: collapse;
@@ -55,7 +57,7 @@
 
 #mainWrap table td{
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     border-collapse: collapse;
     text-align: center;

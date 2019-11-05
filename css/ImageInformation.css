@@ -1,6 +1,8 @@
 #mainWrap{ 
     width: 1200px;
     margin: 0 auto;
+    font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic' !important;
+    font-weight: 400;
     
 }
 
@@ -19,7 +21,7 @@
     text-align: center;
 }
 .member_privacy{
-    border: 2px solid black;
+    border: 1px solid #ccc;
 }
 h6{
     font-size: 22px;
@@ -44,7 +46,7 @@ h6{
 
 #mainWrap table th{
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     background-color: lightgray;
     box-sizing: border-box;
     border-collapse: collapse;
@@ -54,7 +56,7 @@ h6{
 
 #mainWrap table td{
     height: 30px;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     border-collapse: collapse;
     text-align: center;
