@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>리뷰상품 팝업창</title>
+</head>
+<link rel="stylesheet" href="./popup.css" media="all" type="text/css" />
+<script type="text/javascript" async="" src="./../f.txt"></script><script type="text/javascript" async="" src="./www.stylenanda.com_files/ec.js.다운로드"></script><script async="" src="./www.stylenanda.com_files/analytics.js.다운로드"></script><script src="./www.stylenanda.com_files/236938263671258" async=""></script><script async="" src="./www.stylenanda.com_files/fbevents.js.다운로드"></script><script src="./www.stylenanda.com_files/AceCounter_AW.js.다운로드"></script><script async="" src="./www.stylenanda.com_files/pc-1ab7b008ea21c893f51ff7edf2fc91e235298f7a21a093c44818132f9962ef29.js.다운로드" id="crema-jssdk" charset="UTF-8"></script><link href="./www.stylenanda.com_files/pc-6f34da875e38c50da4d00c2d3c9a375bd0a9a9e4b6327ef0c94309f5c8d89618.css" rel="stylesheet" type="text/css">
+<script>
+(function(top, window) {
+	
+  function findTop(t, s)
+  {
+      try {
+          if (t.document) {
+              return t;
+          }
+      } catch (e) {
+          try {
+              if (s.parent.document) {
+                  var p = s;
+                  while (p) {
+                      try {
+                          if (p.document) {
+                              s = p;
+                              p = p.parent;
+                          }
+                      } catch (e) {
+                          return s;
+                      }
+                  }
+              }
+          } catch (e) {
+              return s;
+          }
+      }
+  }
+  top = findTop(top, window);
+  
+  var eclogPID = 'eclog';
+  if (top != window && window.location.href.indexOf('PREVIEW_SDE') == -1 && typeof top[eclogPID] != 'undefined') {
+      window[eclogPID] = top[eclogPID];
+      return;
+  }
+
+  var cook = {
+      get : function() {
+          var cookieStr = document.cookie;
+          if (cookieStr == '') return false;
+
+          var cookies = cookieStr.split('; ');
+          var findCookie = false;
+          for (var i = 0; i < cookies.length; i++) {
+              if (cookies[i].substring(0, 4) != 'CID=') {
+                  continue;
+              }
+              findCookie = cookies[i].substring(4);
+          }
+          return findCookie;
+      }
+  };
+
+  var cid = {
+      key : null,
+      generate : function() {
+          this.key = cook.get();
+          if (this.key === false) {
+              this.key = this.getHash();
+          }
+      },
+      getCid : function() {
+          return this.key;
+      },
+      getHash : function() {
+          var d = new Date().getTime();
+          var sUid = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'.replace(/[x]/g, function(c) {
+              var r = (d + Math.random()*16)%16 | 0;
+              d = Math.floor(d/16);
+              return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+          });
+          return 'CID' + sUid;
+      }
+  };
+
+  cid.generate();
+
+  top[eclogPID] = cid;
+  window[eclogPID] = cid;
+  
+})(top, window);
+</script>
+<body>
+  <div class="show_photo_review fullscreen_popup review" tabindex="-1" style="opacity: 1;">
+    <div class="fullscreen_popup__background ie_png_fix"></div>
+    <div id="photo-popup-container" class="show_photo_review__photo_popup_container fullscreen_popup__content_container">
+      <div id="photo-popup-content" class="js-ie-opacity-fix show_photo_review__photo_popup_content fullscreen_popup__content" style="width: 621.902px; margin-top: 70px;">
+        <div class="show_photo_review__photos_container">
+          
+            <div data-width="1024" data-height="1365" data-index="1" data-count="3" id="photo-container-1" class="show_photo_review__photo_container  js-ie-opacity-fix" style="max-height: 867px; overflow: hidden; padding: 0px;">
+              <img src="//assets3.cre.ma/p/stylenanda-com/reviews/00/00/59/72/01/image1/b1b158815944107c.jpg" class="js-photo-container-review-image-zoom show_photo_review__photo_container_image" data-width="1024" data-height="1365" alt="모델컷에 어두운곳에서 촬영된 색은 실제랑 정말 달라요. 생각했던 컬러는 아니지만 아" style="max-width: 1024px;">
+            </div>
+          
+            <div data-width="1024" data-height="1365" data-index="2" data-count="3" id="photo-container-2" class="show_photo_review__photo_container js-ie-opacity-fix selected" style="padding: 0px; max-height: 867px; overflow: hidden;">
+              <img src="//assets3.cre.ma/p/stylenanda-com/reviews/00/00/59/72/01/image2/f179bab153f0b78c.jpg" class="js-photo-container-review-image-zoom show_photo_review__photo_container_image" data-width="1024" data-height="1365" alt="모델컷에 어두운곳에서 촬영된 색은 실제랑 정말 달라요. 생각했던 컬러는 아니지만 아" style="max-width: 1024px;">
+            </div>
+          
+            <div data-width="1024" data-height="1365" data-index="3" data-count="3" id="photo-container-3" class="show_photo_review__photo_container  js-ie-opacity-fix" style="max-height: 867px; overflow: hidden; padding: 0px;">
+              <img src="//assets3.cre.ma/p/stylenanda-com/reviews/00/00/59/72/01/image3/d530af4ebdfe53d2.jpg" class="js-photo-container-review-image-zoom show_photo_review__photo_container_image" data-width="1024" data-height="1365" alt="모델컷에 어두운곳에서 촬영된 색은 실제랑 정말 달라요. 생각했던 컬러는 아니지만 아" style="max-width: 1024px;">
+            </div>
+          
+          <div class="show_photo_review__images_count_indicator show_photo_review__image_count_3">
+            
+              <div class="show_photo_review__indicator_dot                      show_photo_review__indicator_dot--index_1                      js-indicator-dot                      js-index-1"></div>
+            
+              <div class="show_photo_review__indicator_dot                      show_photo_review__indicator_dot--index_2                      js-indicator-dot                      js-index-2 selected"></div>
+            
+              <div class="show_photo_review__indicator_dot                      show_photo_review__indicator_dot--index_3                      js-indicator-dot                      js-index-3"></div>
+            
+          </div>
+          
+            <div id="image-prev" class="show_photo_review__photo_navigation_button show_photo_review__photo_navigation_button--prev">
+              <i class="show_photo_review__photo_navigation_button_img sprites-photo-navigation-left"></i>
+            </div>
+            <div id="image-next" class="show_photo_review__photo_navigation_button show_photo_review__photo_navigation_button--next">
+              <i class="show_photo_review__photo_navigation_button_img sprites-photo-navigation-right"></i>
+            </div>
+          
+        </div>
+        <div id="review-contents-container" class="show_photo_review__review_contents_container js-ie-opacity-fix">
+          <div id="info-container" class="show_photo_review__info_container">
+            <div class="show_photo_review__info ">
+              <div class="show_photo_review__product_thumbnail">
+                
+                  <a class="show_photo_review__link_to_product js-link-iframe" data-url="http://stylenanda.com/front/php/product.php?product_no=243018">
+                    <img src="//assets3.cre.ma/p/stylenanda-com/products/00/00/18/97/37/image/extra_small_eb69c85edeac6158.jpg" alt="트루빈티지워싱 세미배기데님PT" width="70" height="70" class="show_photo_review__link_to_product">
+                  </a>
+                
+              </div>
+              <div class="show_photo_review__product_info">
+                
+                <div class="show_photo_review__product_name">
+                  <a class="show_photo_review__link_to_product js-link-iframe" data-url="http://stylenanda.com/front/php/product.php?product_no=243018">트루빈티지워싱 세미배기데님PT</a>
+                </div>
+                <div class="show_photo_review__product_score">
+                  
+                    <div class="show_photo_review__star_rating_container">
+                      
+                        
+                          <span class="star"></span>
+                        
+                      
+                        
+                          <span class="star"></span>
+                        
+                      
+                        
+                          <span class="star"></span>
+                        
+                      
+                        
+                          <span class="star"></span>
+                        
+                      
+                        
+                          <span class="star star--empty"></span>
+                        
+                      
+                    </div>
+                  
+                </div>
+                <div class="show_photo_review__user_name">107046732***</div>
+              </div>
+              <div class="show_photo_review__like_result js-like-result js-ie-opacity-fix">
+                <div class="show_photo_review__review_like_info js-likes-html hidden">
+                  이 리뷰에 대해 <br><strong class="js-like-score-total">0</strong>명 중 <strong class="js-like-score-plus">0</strong>명이 도움이 된다 선택 했습니다
+                </div>
+                <div class="show_photo_review__review_like_info js-no-likes-html ">
+                  이 리뷰에 대해 <br>아직 도움이 된다고 평가한 사람이 없습니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="message-container" class="js-ie-opacity-fix show_photo_review__message" style="height: 658px;">
+            <div class="show_photo_review__message_contents">
+              
+    <div class="review_options">
+      
+        <div class="review_option">
+          <div class="review_option__title">HEIGHT</div>
+          <div class="review_option__content">159cm</div>
+        </div>
+      
+        <div class="review_option">
+          <div class="review_option__title">WEIGHT</div>
+          <div class="review_option__content">46~49</div>
+        </div>
+      
+      
+        <div class="review_option">
+          <div class="review_option__title">선택한 옵션</div>
+          <div class="review_option__content">
+            
+              <span class="review_option__product_option">
+                <span class="review_option__product_option_key">색상:</span>
+                <span class="review_option__product_option_value">블루진</span>
+              </span>
+            
+              <span class="review_option__product_option">
+                <span class="review_option__product_option_key">사이즈:</span>
+                <span class="review_option__product_option_value">S</span>
+              </span>
+            
+          </div>
+        </div>
+      
+    </div>
+  
+  
+              <div class="show_photo_review__all_messages js-ie-opacity-fix">
+                <div class="show_photo_review__review_message">
+                  모델컷에 어두운곳에서 촬영된 색은 실제랑 정말 달라요. 생각했던 컬러는 아니지만 아주살짝워싱된 블루누낌으로 나름의 매력이 있습니당 키가작아서 안접으면 발등바로 위까지오구요 배기핏이라 발목으로 갈수록 줄어서 발목 쪽 통은 넓지않아요. 둘둘 말아입기 좋네요 ㅎㅎㅎ 사이즈는 좋은데 허리가 넘무 큽니다 벨트하면 막 울어요 ㅜㅜ..상세사이즈랑은 뭔가 다른거같은,, 그래도 하이웨스트 넘좋! 무릎 안늘어나고 오래오래 입었으면~
+                  
+  
+                </div>
+                
+              </div>
+              <div class="show_photo_review__feedback_container">
+                <div class="review_like_action js-like-action " data-like-action-class="review_like_action" data-url="/stylenanda.com/reviews/597201/like?nonmember_token=eFFwuAU1TZOJRPcP&amp;widget_env=100">
+    <div class="review_like_action__label">이 리뷰가 도움이 되었나요?</div>
+    <div class="review_like_action__buttons">
+      <a class="review_like_action__button review_like_action__button--like js-link-like">네</a>
+      <a class="review_like_action__button review_like_action__button--unlike js-link-unlike">아니요</a>
+    </div>
+    <div class="review_like_action__score">
+      <div class="review_like_action__score_arrow"></div>
+      <span class="review_like_action__score_text js-like-score-text">0</span>
+    </div>
+  </div>
+  
+                
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup_review_navigation">
+    <a href="/stylenanda.com/reviews/597202?app=0&amp;iframe=1&amp;iframe_id=crema-fullscreen-popup&amp;nonmember_token=eFFwuAU1TZOJRPcP&amp;page=1&amp;parent_widget_id=1&amp;prev_next=true&amp;widget_env=100" data-remote="true" class="popup_review_navigation__button popup_review_navigation__button--prev js-review-navigation-prev">
+      <i class="sprites-navigator-left"></i>
+    </a>
+    <a href="/stylenanda.com/reviews/597200?app=0&amp;iframe=1&amp;iframe_id=crema-fullscreen-popup&amp;nonmember_token=eFFwuAU1TZOJRPcP&amp;page=2&amp;parent_widget_id=1&amp;prev_next=true&amp;widget_env=100" data-remote="true" class="popup_review_navigation__button popup_review_navigation__button--next js-review-navigation-next">
+      <i class="sprites-navigator-right"></i>
+    </a>
+  </div>
+  
+      </div>
+    </div>
+    <div class="js-ie-opacity-fix fullscreen_popup__close" style="top: 25px; right: 223px;">
+      <div class="sprites-circle-close-button ie_png_fix"></div>
+    </div>
+  
+    <div class="crema_review_watermark">
+      <span class="crema_review_watermark__span crema_review_watermark__span--mall_name">스타일난다</span><span class="crema_review_watermark__span">with</span><span class="crema_review_watermark__span crema_review_watermark__span--crema_name">CREMA REVIEW</span>
+    </div>
+  </div>
+</body>
+</html>
