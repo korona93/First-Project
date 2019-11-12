@@ -32,6 +32,7 @@ $(document).ready(function() {
         var chkValue = $('input[name=type1]:checked').val();
         $('#subType1 .menu3').css('display','block');
         $('input[name="subType1"]').removeAttr('checked');
+        $('.detailContentWrap2').css('display','none');
         if(chkValue == '1'){
             $('#subType1 .fs1').css('display','block');
             $('#subType1 .fs2').css('display','none');
@@ -49,7 +50,6 @@ $(document).ready(function() {
             $('.detailContentWrap1 .detailCon:nth-of-type(6)').css('display','none');
             $('.detailContentWrap1 .detailCon:nth-of-type(7)').css('display','none');
             $('.detailContentWrap1 .detailCon:nth-of-type(8)').css('display','none');
-            
             $('.selected').html("");
         }
         else if(chkValue == '2'){
