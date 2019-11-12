@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+    $('.detailContentWrap2 .detailCon').css('display','none');
     /* type에 대한 js */
     $('input[name=category]').on('click',function(){
         var chkValue = $('input[name=category]:checked').val();
@@ -11,8 +12,8 @@ $(document).ready(function() {
             $('#subType1').css('display','block');
             $('#subType2').css('display','none');
             $('#subType2 div').css('display','none');
-            $('.detailContentWrap1').css('display','block');
-            $('.detailContentWrap2').css('display','none');
+            $('.detailContentWrap1 .detailCon').css('display','block');
+            $('.detailContentWrap2 .detailCon').css('display','none');
             $('.selected').html("");
         }else if(chkValue=='2'){
             $('#type .fashion').css('display','none');
@@ -22,8 +23,8 @@ $(document).ready(function() {
             $('#subType1').css('display','none');
             $('#subType2').css('display','block');
             $('#subType1 div').css('display','none');
-            $('.detailContentWrap1').css('display','none');
-            $('.detailContentWrap2').css('display','block');
+            $('.detailContentWrap1 .detailCon').css('display','none');
+            $('.detailContentWrap2 .detailCon').css('display','block');
             $('.selected').html("");
         }
     });
@@ -32,7 +33,6 @@ $(document).ready(function() {
         var chkValue = $('input[name=type1]:checked').val();
         $('#subType1 .menu3').css('display','block');
         $('input[name="subType1"]').removeAttr('checked');
-        $('.detailContentWrap2').css('display','none');
         if(chkValue == '1'){
             $('#subType1 .fs1').css('display','block');
             $('#subType1 .fs2').css('display','none');
