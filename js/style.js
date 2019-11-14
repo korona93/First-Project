@@ -68,8 +68,21 @@ $(document).ready(function(){
     var cj = parseInt($("#cj").text());
     $("#all_last").html(bb+cj);
 
-    
-    var tmqk =  $(".price_all").text();
+
+    var tmqk =  $(".all_price").val();
+    //console.log(num);
+    console.log(tmqk);
+
+
+    // 배열 합계 구하기 함수
+    function sum(array) {
+    var result = 0.0;
+
+    for (var i = 0; i < array.length; i++)
+        result += array[i];
+
+    return result;
+    }
 
     // 전체 선택,해제
     $("#all_check").click(function(){
@@ -328,76 +341,7 @@ $(document).ready(function(){
         $(this).css("background-color","#d99f9d");
     });
 
-    // 옵션 색상,사이즈(추가, 수정)
-    // 옵션 추가
-    // $("#o_insert").click(function(){
-    //     console.log($(".b_sel").val());
-    //     var color_sel = $("#color option:selected").val();
-    //     var size_sel = $("#size option:selected").val();
-    //     $(".p_name").change(function(){
-    //         if($(color_sel)==($(".b_sel").val()) && $(size_sel)==($(".b_sel").val())){
-    //             alert("필수 선택을 해주세요");
-    //         }else{
-    //             alert("변경되었습니다.");
-    //             $(".color_option").change(color_sel);
-    //             $(".size_option").change(size_sel);
-    //             sw=1;
-    //         }
-    //     });
-    // });
 
-
-    //  tr val append
-    // 옵션 색상,사이즈(추가)
-    // 옵션 추가
-    // 클릭시 상품 추가
-    // https://m.blog.naver.com/PostView.nhn?blogId=javaking75&logNo=220134913860&proxyReferer=https%3A%2F%2Fwww.google.com%2F
-    $("#o_insert").click(function(){
-        var cloneEle = $(this).closest('tr').clone(); // 복사할 상품
-        var color_sel = $("#color option:selected").val(); // color val
-        var size_sel = $("#size option:selected").val(); // size val
-
-        console.log(color_sel + "색상");
-        console.log(size_sel + "사이즈");
-        console.log(cloneEle);
-        if(color_sel != "option" && size_sel != "option"){
-            console.log(cloneEle);
-            $('.t_product > tbody:last').append(cloneEle);
-            //$(this).append(cloneEle);
-            // $(".color_option").text(color_sel);
-            // $(".size_option").text(size_sel);
-            //$('.t_productr tr:last td:last').html(this);
-            //cloneEleTr.find("input").val(""); //텍스트박스 값 초기화
-            //cloneEleTr.find("input[type=checkbox]").removeAttr("checked");
-            //$("t_product tr:last").append(cloneEleTr.clone());
-            $(".cart_option").hide();      
-            } else {
-                alert("필수 옵션을 선택해주세요.");
-            }
-    }); 
-
-    // 옵션 색상,사이즈(수정)
-    // 옵션 수정
-    // 클릭시 옵션 값 변경
-    // $("#o_update").click(function(){
-    //     var color_sel = $("#color option:selected").val(); // color val
-    //     var size_sel = $("#size option:selected").val(); // size val
-    //     var b_color = $(".color_option").text(this);
-    //     var b_size = $(".size_option").text(this);
-    //     console.log(color_sel + "색상");
-    //     console.log(size_sel + "사이즈");
-
-
-    //     if(color_sel != "option" && size_sel != "option"){
-    //         $(b_color).text(color_sel).change();
-    //         $(b_size).text(size_sel).change();
-    //         //$(".color_option").text(color_sel);
-    //         //$(".size_option").text(size_sel);
-    //         $(".cart_option").hide();
-    //         } else {
-    //             alert("필수 옵션을 선택해주세요.");
-    //         }
-    // }); 
 
 
     // 수량 + 클릭
@@ -419,7 +363,7 @@ $(document).ready(function(){
         var t_price = parseInt(total.text());
         var point = (Math.floor(t_price*0.03));
         // ??? 1미만 문제
-        var img = '<img class="p_img" src="./icon_201809131207584600.png" />';
+        var img = '<img class="p_img" src="../images/icon_201809131207584600.png" />';
 
         //$("#mileage_item").text(point+"원");
         $(".point:eq("+n+")").text(point+"원").prepend(img);
@@ -460,7 +404,7 @@ $(document).ready(function(){
         var point = (Math.floor(t_price*0.03));
         $(".point:eq("+n+")").text(point+"원");
 
-        var img = '<img class="p_img" src="./icon_201809131207584600.png" />';
+        var img = '<img class="p_img" src="../image" />';
         $(".point:eq("+n+")").text(point+"원").prepend(img);
 
         // 전체가격
@@ -523,14 +467,32 @@ $(document).ready(function(){
 
     // 선택상품삭제
     $("#btn_selDel").click(function(){
-        if(confirm("선택하신 상품을 삭제하시겠습니까?")){
-            $("input[name=check_chk]:checked").each(function(){
-                var sel_del = $(this).parent().parent();
-                sel_del.remove();
-                $("#all_check").prop("checked",false);
-            });
-        }else{
+        // if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+        //     $("input[name=check_chk]:checked").each(function(){
+        //         var sel_del = $(this).parent().parent();
+        //         sel_del.remove();
+        //     });
+        
+                
+        if($("input[name=all_check]").is(":checked")== true){
+            confirm("선택하신 상품을 삭제하시겠습니까?")
+                
+                    var sel_del = $(this).parent().parent();
+                    sel_del.remove();
+                    $(".body").hide();
+                    $(".ff_table").hide();
+                    $("#all_check").prop("checked",false);
+                    $("#delete").show().css("visibility","visible");
+                   
+        }else if($("input[name=all_check]").is(":checked")== false && $("input[name=check_chk]").is(":checked")== false ){
             alert("선택된 상품이 없습니다.");
+        }else{
+            if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+                $("input[name=check_chk]:checked").each(function(){
+                    var sel_del = $(this).parent().parent();
+                    sel_del.remove();
+                });
+            }
         }
     });
     
