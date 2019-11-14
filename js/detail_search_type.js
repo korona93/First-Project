@@ -14,9 +14,54 @@ $(document).ready(function() {
             $('#subType2 div').css('display','none');
             $('.detailContentWrap1').css('display','block');
             $('.detailContentWrap3').css('display','none');
+            $('.detailContentWrap4').css('display','none');
             $('.detailContentWrap1 .detailCon').css('display','block');
             $('.detailContentWrap2 .detailCon').css('display','none');
             $('.selected').html("");
+            $(".totalView").click(function(){
+                $('.detailContentWrap1').css('display','block');
+                $('.detailContentWrap2').css('display','block');
+            });
+            $(".newProduct").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','block');
+                $('.detailContentWrap4').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','block');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');
+            });
+            $(".hot").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','block');
+                $('.detailContentWrap4').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','block');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');    
+            });
+            $(".lowPrice").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','block');
+                $('.detailContentWrap4').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','block');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');    
+            });
+            $(".highPrice").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','block');
+                $('.detailContentWrap4').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','block');    
+            });
         }else if(chkValue=='2'){
             $('#type .fashion').css('display','none');
             $('#type .cosmetic').css('display','block');
@@ -27,9 +72,54 @@ $(document).ready(function() {
             $('#subType1 div').css('display','none');
             $('.detailContentWrap2').css('display','block');
             $('.detailContentWrap3').css('display','none');
+            $('.detailContentWrap4').css('display','none');
             $('.detailContentWrap1 .detailCon').css('display','none');
             $('.detailContentWrap2 .detailCon').css('display','block');
             $('.selected').html("");
+            $(".totalView").click(function(){
+                $('.detailContentWrap1').css('display','block');
+                $('.detailContentWrap2').css('display','block');
+            });
+            $(".newProduct").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','none');
+                $('.detailContentWrap4').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(1)').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(4)').css('display','none');
+            });
+            $(".hot").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','none');
+                $('.detailContentWrap4').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(2)').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(4)').css('display','none');    
+            });
+            $(".lowPrice").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','none');
+                $('.detailContentWrap4').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(3)').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(4)').css('display','none');    
+            });
+            $(".highPrice").click(function(){
+                $('.detailContentWrap1').css('display','none');
+                $('.detailContentWrap2').css('display','none');
+                $('.detailContentWrap3').css('display','none');
+                $('.detailContentWrap4').css('display','block');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(1)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(2)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(3)').css('display','none');
+                $('.detailContentWrap4 > .detailCon:nth-of-type(4)').css('display','block');    
+            });
         }
     });
     /* subType에 대한 js */
@@ -474,11 +564,13 @@ $(document).ready(function() {
         $('.detailContentWrap1').css('display','block');
         $('.detailContentWrap2').css('display','block');
         $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap4').css('display','block');
     });
     $(".newProduct").click(function(){
         $('.detailContentWrap1').css('display','none');
         $('.detailContentWrap2').css('display','none');
         $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap4').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','block');
         $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
@@ -488,6 +580,7 @@ $(document).ready(function() {
         $('.detailContentWrap1').css('display','none');
         $('.detailContentWrap2').css('display','none');
         $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap4').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','block');
         $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
@@ -497,6 +590,7 @@ $(document).ready(function() {
         $('.detailContentWrap1').css('display','none');
         $('.detailContentWrap2').css('display','none');
         $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap4').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','block');
@@ -506,6 +600,7 @@ $(document).ready(function() {
         $('.detailContentWrap1').css('display','none');
         $('.detailContentWrap2').css('display','none');
         $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap4').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
         $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
