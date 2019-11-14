@@ -12,6 +12,8 @@ $(document).ready(function() {
             $('#subType1').css('display','block');
             $('#subType2').css('display','none');
             $('#subType2 div').css('display','none');
+            $('.detailContentWrap1').css('display','block');
+            $('.detailContentWrap3').css('display','none');
             $('.detailContentWrap1 .detailCon').css('display','block');
             $('.detailContentWrap2 .detailCon').css('display','none');
             $('.selected').html("");
@@ -23,6 +25,8 @@ $(document).ready(function() {
             $('#subType1').css('display','none');
             $('#subType2').css('display','block');
             $('#subType1 div').css('display','none');
+            $('.detailContentWrap2').css('display','block');
+            $('.detailContentWrap3').css('display','none');
             $('.detailContentWrap1 .detailCon').css('display','none');
             $('.detailContentWrap2 .detailCon').css('display','block');
             $('.selected').html("");
@@ -33,6 +37,8 @@ $(document).ready(function() {
         var chkValue = $('input[name=type1]:checked').val();
         $('#subType1 .menu3').css('display','block');
         $('input[name="subType1"]').removeAttr('checked');
+        $('.detailContentWrap1').css('display','block');
+        $('.detailContentWrap3').css('display','none');
         if(chkValue == '1'){
             $('#subType1 .fs1').css('display','block');
             $('#subType1 .fs2').css('display','none');
@@ -190,6 +196,8 @@ $(document).ready(function() {
         var chkValue = $('input[name=type2]:checked').val();
         $('#subType2 .menu3').css('display','block');
         $('input[name="subType2"]').removeAttr('checked');
+        $('.detailContentWrap2').css('display','block');
+        $('.detailContentWrap3').css('display','none');
         if(chkValue == '1'){
             $('#subType2 .cm1').css('display','block');
             $('#subType2 .cm2').css('display','none');
@@ -461,7 +469,48 @@ $(document).ready(function() {
             return path;
         });
     });
-
+    /* sort 정렬 */ 
+    $(".totalView").click(function(){
+        $('.detailContentWrap1').css('display','block');
+        $('.detailContentWrap2').css('display','block');
+        $('.detailContentWrap3').css('display','block');
+    });
+    $(".newProduct").click(function(){
+        $('.detailContentWrap1').css('display','none');
+        $('.detailContentWrap2').css('display','none');
+        $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');
+    });
+    $(".hot").click(function(){
+        $('.detailContentWrap1').css('display','none');
+        $('.detailContentWrap2').css('display','none');
+        $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');    
+    });
+    $(".lowPrice").click(function(){
+        $('.detailContentWrap1').css('display','none');
+        $('.detailContentWrap2').css('display','none');
+        $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','none');    
+    });
+    $(".highPrice").click(function(){
+        $('.detailContentWrap1').css('display','none');
+        $('.detailContentWrap2').css('display','none');
+        $('.detailContentWrap3').css('display','block');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(1)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(2)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(3)').css('display','none');
+        $('.detailContentWrap3 > .detailCon:nth-of-type(4)').css('display','block');    
+    });
     
 });
 
