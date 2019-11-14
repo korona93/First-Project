@@ -21,10 +21,8 @@ select, input {
 
 #contentWrap{
     width: 70%;
-    margin: 0 auto;
+    margin: 100px auto 0;
     padding: 70px 0px 80px;
-}
-*{
     box-sizing: border-box;
 }
 #content{
