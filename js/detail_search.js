@@ -22,6 +22,10 @@ $(function(){
 	$('.btn_bucket').click(function(){
 		location.href="cart.html";
 	});
+	
+	$('.btn_order').click(function(){
+		location.href="underConstruction.html"
+	});
 	// 상품이미지/상품이름 클릭시 이동
 	$('.navProductName').click(function(){
 		location.href="detailProduct.html";

@@ -4,11 +4,18 @@ a{outline: 0; text-decoration: none; color: #555;} /*아웃라인 없애줌*/
 img{border: 0;}
 p{margin: 0;}
 
+#delete{
+    visibility: hidden;
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
 .orderListArea{
     width: 1000px;
     height: 800px;
     position: relative;
-    margin:0 auto;
+    margin:100px auto 0;
     font-size: 11px;
     font-family: 'Lora',sans-serif,Verdana,'Nanum Gothic'; 
 }
@@ -151,26 +158,55 @@ table > tbody > tr{
     left: 279px;  
 } */
 
-
-#name_item > ul > li > p{
-    position: absolute;
-    left: 25px; 
+#name_item > ul> li{
+    width: 150px;
+    height: 20px;
 }
 
-#name_item > ul > li > a{
-    position: absolute;
-    left: 55px;  
-    bottom: 126px;
-}
-
-
-#name_item > ul> li> .displaynone{
+#name_item > ul > .pro_name{
     margin-bottom: 2px;
     position: absolute;
-    left: 65px;
+    top: 39px;   
 }
 
+#name_item > ul > .pro_name > a{
+    margin-bottom: 2px;
+    position: absolute;
+    text-align: center;
+}
 
+/* #name_item > ul > li > a{
+    position: absolute;
+    align-content: center;
+    left: 55px;  
+    bottom: 126px;
+} */
+
+#name_item > ul> .color_option{
+    margin-bottom: 2px;
+    position: absolute;
+    top: 73px;
+    text-align: center;
+}
+#name_item > ul> .size_option{
+    margin-bottom: 2px;
+    position: absolute;
+    top: 95px;
+    text-align: center;
+}
+/* #name_item > ul> li> .size_option{
+    align-content: center;
+} */
+
+#name_item > ul> .btn_o_page{
+    margin-bottom: 2px;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 123px;
+    left: 24px;
+    text-align: center;
+}
 .btn_o{
     border: 1px solid #ccc;
     width: 100px;
@@ -272,6 +308,10 @@ table > tbody > tr{
 
 
 /* cart_option */
+.prdInfo > li > p{
+    display: inline;
+}
+
 .cart_show{
     display: inline-block;
 }
