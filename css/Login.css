@@ -1,5 +1,4 @@
 
-
 /*WRAP*/
 
 #wrap{
@@ -163,30 +162,4 @@ div.interLock > ul.interLock > li{
     float: left;
     padding : 2x;
     margin : 6px; 
-}
-
-/*footer*/
-
-/*푸터전체*/
-div#footer{
-    width: 1163px;
-    height: 850px;
-    margin: 0 auto;
-}
-
-/*배너*/
-div#footer > div.benefitBanner{
-    
-    height: 230px;
-    width: 100%;
-    margin:200px auto 0;
-}
-
-ul.benefitBanner > li{
-    float: left;
-    margin-right: 17.5px
-}
-
-ul.benefitBanner > li:last-of-type{
-    margin-right: 0;
 }
