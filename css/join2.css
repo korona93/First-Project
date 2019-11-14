@@ -21,8 +21,11 @@ select, input {
 
 #contentWrap{
     width: 70%;
+    margin: 0 auto;
     margin: 100px auto 0;
     padding: 70px 0px 80px;
+}
+*{
     box-sizing: border-box;
 }
 #content{
@@ -153,13 +156,14 @@ p{ font-size: 12px;}
 }
 /* #hint */
 #hint {
+    width: 500px;
     height: 26px;
     font-size: 11px;
 }
 /* #hint_answer */
-#hint_answer{
+/* #hint_answer{
     padding: 13px 0 8px 40px;
-}
+} */
 #hint_answer > input{
     width: 500px;
     height: 26px;
@@ -194,8 +198,8 @@ p{ font-size: 12px;}
 }
 
 /* 이메일 */
-#email3{
-    width: 130px;
+#email{
+    width: 250px;
 }
 #emailAgreeWrap{
     height: 87px;
@@ -230,6 +234,7 @@ p{ font-size: 12px;}
     width: 100px;
     text-align: center;
 }
+/*날릴거*/
 #postcode2{
     width: 100px;
     text-align: center;
@@ -242,19 +247,35 @@ p{ font-size: 12px;}
     border: 1px solid #ccc;
     vertical-align: middle;
 }
+
 #addr1, #addr2{
     width: 280px;
     margin: 5px 0 0;
 }
-#phone2, #phone3, #mobile2, #mobile3{
-    width: 50px;
-    margin: 0 4px;
+#phone, #mobile{
+    width: 150px;
 }
 /* old */
 #old{
     
 }
 
+/* 입력 오류 */
+#contentWrap #detailWrap input[type=text].inp_error,
+#contentWrap #detailWrap input[type=password].inp_error{
+    border: 1px solid #F88A8A;
+    background: #F4D4D4;
+}
+
+span.error_m {
+	font-size: 15px;
+	font-weight: normal;
+	color: #FF4040;
+	margin: 0;
+} 
+
+/*손가락*/
+/* .button, .btn_red, .cancel {cursor:pointer;} */
 
 /* btn */
 #btnWrap{position: relative; margin-top: 5px;}
