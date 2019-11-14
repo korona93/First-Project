@@ -69,20 +69,8 @@ $(document).ready(function(){
     $("#all_last").html(bb+cj);
 
 
-    // var tmqk =  $(".all_price").text();
-    // console.log(num);
-    // console.log(tmqk);
-    // document.write('합계: ' , sum(num), '<br />');
-
-    // // 배열 합계 구하기 함수
-    // function sum(array) {
-    // var result = 0.0;
-
-    // for (var i = 0; i < array.length; i++)
-    //     result += array[i];
-
-    // return result;
-    // }
+    var tmqk =  $(".all_price").text();
+    
 
     // 전체 선택,해제
     $("#all_check").click(function(){
@@ -426,7 +414,6 @@ $(document).ready(function(){
 
         var total =  $(".price_all:eq("+n+")").text(a_price+"원");
         //total.text();
-        console.log(total.text() + "total 가격");
 
         // 포인트
         var t_price = parseInt(total.text());
@@ -436,6 +423,17 @@ $(document).ready(function(){
 
         //$("#mileage_item").text(point+"원");
         $(".point:eq("+n+")").text(point+"원").prepend(img);
+        
+            var sel_del = $(this).parent().parent();
+            var d = sel_del.children().children().children(".price_all");
+            console.log(parseInt(d.text()));
+            d = parseInt(d.text());
+            var a = $("#last").text(d);
+            console.log($("#last").text());
+            $("#last").text(a);
+        
+
+
 
         // 전체가격
         var p_total1 = parseInt($("#price_11").text());
@@ -443,7 +441,6 @@ $(document).ready(function(){
         var p_total3 = parseInt($("#price_33").text());
         var all_total = p_total1+p_total2+p_total3;
         $("#last").html(all_total);
-        console.log("나는얼마야"+all_total);
         var cj = parseInt($("#cj").text());
         $("#all_last").html(all_total+cj);
         }else{
@@ -468,22 +465,34 @@ $(document).ready(function(){
         //total.text();
         console.log(total.text() + "total 가격");
 
+
         // 포인트
         var t_price = parseInt(total.text());
         var point = (Math.floor(t_price*0.03));
         $(".point:eq("+n+")").text(point+"원");
 
-        var img = '<img class="p_img" src="../image" />';
+        var img = '<img class="p_img" src="../images/icon_201809131207584600.png" />';
         $(".point:eq("+n+")").text(point+"원").prepend(img);
 
+
+        if($("input[name=check_chk]").is(":checked")== true){
+            console.log("");
+            var sel_del = $(this).parent().parent();
+            var d = sel_del.children().children().children(".price_all");
+            console.log(d);
+            d = parseInt(d.text());
+            $("#last").text(d);
+        }
         // 전체가격
         var p_total1 = parseInt($("#price_11").text());
         var p_total2 = parseInt($("#price_22").text());
         var p_total3 = parseInt($("#price_33").text());
         var all_total = p_total1+p_total2+p_total3;
-        $("#last").html(all_total);
+        $("#last").text(all_total);
         var cj = parseInt($("#cj").text());
-        $("#all_last").html(all_total+cj);
+        $("#all_last").text(all_total+cj);
+
+        
         }else{
             alert("최소 구매수량은 1개입니다.");
         }
@@ -516,6 +525,25 @@ $(document).ready(function(){
     });    
 
     
+    // 가격
+    // var p_price = $("#last").text();
+    // var a_price = $("#all_last").text();
+
+    // p_price = $(this).closest('tbody tr').text(parseInt(".price_all"));
+    // console.log("상품금액 : "+p_price);
+
+    // $("#all_last") = 0;
+    // $("#last").each(function(){
+    //     $("#all_last") += parseInt($(this).val())*amount_num;
+    //     // console.log("#all_last");
+
+    // });
+
+
+
+
+
+
     // 메인으로
     $("#btn_main").click(function(){
         location.href="../index.html";
@@ -557,14 +585,14 @@ $(document).ready(function(){
         //             $("#delete").show().css("visibility","visible");
                 
         if($("input[name=all_check]").is(":checked")== true){
-            confirm("선택하신 상품을 삭제하시겠습니까?")
-                
-                    var sel_del = $(this).parent().parent();
-                    sel_del.remove();
-                    $(".body").hide();
-                    $(".ff_table").hide();
-                    $("#all_check").prop("checked",false);
-                    $("#delete").show().css("visibility","visible");
+            if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+                var sel_del = $(this).parent().parent();
+                sel_del.remove();
+                $(".body").hide();
+                $(".ff_table").hide();
+                $("#all_check").prop("checked",false);
+                $("#delete").show().css("visibility","visible");
+            }
                    
         //  }else if($("input[name=check_chk]:checked")){
         //     if(confirm("선택하신 상품을 삭제하시겠습니까?")){
@@ -579,7 +607,17 @@ $(document).ready(function(){
             if(confirm("선택하신 상품을 삭제하시겠습니까?")){
                 $("input[name=check_chk]:checked").each(function(){
                     var sel_del = $(this).parent().parent();
-                    sel_del.remove();
+                    var d = sel_del.children().children().children(".price_all");
+                    d = parseInt(d.text());
+
+                    var a = $("#last").text();                    
+                    var b = $("#all_last").text();
+                    $("#last").html(a-d);
+                    var cj = parseInt($("#cj").text());
+                    $("#all_last").html(a-d+cj);
+                     sel_del.remove();
+                     $("input[name=check_chk]").prop("checked",true);
+                     $("input[name=all_check]").prop("checked",true);
                 });
             }
         }
