@@ -22,6 +22,7 @@ $(function(){
 	$('.btn_bucket').click(function(){
 		location.href="cart.html";
 	});
+	
 	$('.btn_order').click(function(){
 		location.href="underConstruction.html"
 	});
