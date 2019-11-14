@@ -5,7 +5,7 @@ $(document).ready(function(){
             ErrorTextOut(result);
             return false;
 		}else{
-            location.href="03.html";
+            location.href="complete.html";
         }
     });
 });
