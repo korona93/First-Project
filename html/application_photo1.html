@@ -219,7 +219,7 @@
                   </a>
               </li>
               <li id="gnb">
-                  <a title="gnb">
+                  <a title="gnb" style="cursor: pointer;">
                       <img src="../images/gnb.png" alt="gnb" width="20px" height="22px">
                   </a>
               </li>
@@ -229,7 +229,7 @@
       <!-- !header--------------------------------------------------------------- --->
 
    <div class="cate_top_txt">
-		<h1>REVIEW</h1>
+		<h1 id="re_header">REVIEW</h1>
 <!-- 
 <script>
 	function fn_modify() {
@@ -252,18 +252,18 @@
                     <a href="/board/product/list_review.html?board_no=4">베스트 리뷰어</a>
                 </li>
                 <li class="line">│</li>-->
-                <li class="selected"> <a href="./application_photo.html">포토 리뷰</a></li>
+                <li class="selected"> <a href="./application_photo1.html">포토 리뷰</a></li>
                 <li class="line">│</li>
-                <li ><a href="./application_posts.html">글 리뷰</a></li>
+                <li ><a href="./application_posts1.html">글 리뷰</a></li>
 		</ul>
 		</form>
 	</div>
 	<style>
-            #container h1 {
+            #container h1#re_header {
                 clear: both;
                 font-size: 24px;
             }
-            h1 {
+            h1#re_header {
                 display: block;
                 font-size: 2em;
                 margin-block-start: 0.67em;
@@ -355,7 +355,7 @@
                       </ul>
                     </div>
                   </div>
-                  <select name="sort" id="sort" class="select2 select2-offscreen" data-url="/stylenanda.com/reviews?aloading=.page&amp;app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=https%3A%2F%2Fwww.stylenanda.com%2Fboard%2Fproduct%2Flist_review_01.html%3Fboard_no%3D4&amp;widget_env=100&amp;widget_id=6" tabindex="-1">
+                  <select name="sort" id="sort" class="select2 select2-offscreen" data-url="javascript:;" tabindex="-1">
                     <option value="10">추천순</option>
                     <option value="20" selected="selected">최신순</option>
                     <option value="30">평점순</option>
@@ -366,7 +366,7 @@
                   <a class="js-top-menu-submit">
                     <span class="top_menu__search_icon sprites-search"></span>
                   </a>
-                  <form class="js-menu-search" action="https://widgets3.cre.ma/stylenanda.com/reviews?aloading=.page&amp;app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=https%3A%2F%2Fwww.stylenanda.com%2Fboard%2Fproduct%2Flist_review_01.html%3Fboard_no%3D4&amp;widget_env=100&amp;widget_id=6" accept-charset="UTF-8" data-remote="true" method="get">
+                  <form class="js-menu-search" action="#" accept-charset="UTF-8" data-remote="true" method="get">
                     <input name="utf8" type="hidden" value="✓">
                     <input type="text" name="query" id="query" value="" placeholder="검색어 입력" autocomplete="off" class="top_menu__query js-top-menu-query">
                   </form>
@@ -396,7 +396,7 @@
                       </ul>
                     </div>
                   </div>
-                  <select name="category" id="category" class="select2 select2-offscreen" data-url="/stylenanda.com/reviews?aloading=.page&amp;app=0&amp;iframe=1&amp;iframe_id=crema-reviews-2&amp;parent_url=https%3A%2F%2Fwww.stylenanda.com%2Fboard%2Fproduct%2Flist_review_01.html%3Fboard_no%3D4&amp;widget_env=100&amp;widget_id=6" tabindex="-1">
+                  <select name="category" id="category" class="select2 select2-offscreen" data-url="javascript:;" tabindex="-1">
                     <option value="">카테고리를 선택해주세요</option>
                     <option value="">영상으로 보는 신상</option>
                     <option value="">Lace</option>
@@ -416,9 +416,10 @@
       <ul class="reviews_index__reviews reviews">
  
         <!-- reivewphto(1) -->
-        <!-- data-url="https://stylenanda.com/front/php/product.php?product_no=238639" -->
-        <li class="reviews_index_gallery_review">
-          <div class="photo_review_thumbnail js-link-fullscreen-popup" >
+        <!-- data-url="https://stylenanda.com/front/php/product.php?product_no=238639"-->
+        <!-- js-link-fullscreen-popup 변경(전) js-link-iframe 변경(후) -->
+        <li class="reviews_index_gallery_review" >
+          <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
             <div class="photo_review_thumbnail__thumbnail_container">
               <ul>
                 <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -445,7 +446,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="#html/detailProduct.html">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="오버라운드솔 스티치앵클부츠" width="40px" height="40px" src="../images/re_product1.jpg" style="opacity: 1;">
           </div>
@@ -463,7 +464,7 @@
         <!-- //reivewphto(1) -->
         <!-- reivewphto(2) -->
         <li class="reviews_index_gallery_review">
-          <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="./detailProduct.html">
+          <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
             <div class="photo_review_thumbnail__thumbnail_container">
               <ul>
                 <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -491,7 +492,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="#html/detailProduct.html">
+          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
             <div class="reviews_index_gallery_review__review_product_thumbnail">
               <img class="" alt="보들촉감 청순루즈 트임니트OPS (+strap)" width="40" height="40" src="../images/re_product2.jpg" style="opacity: 1;">
 
@@ -510,7 +511,7 @@
       <!-- //reivewphto(2) -->
       <!-- reivewphto(3) -->
       <li class="reviews_index_gallery_review">
-          <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+          <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
             <div class="photo_review_thumbnail__thumbnail_container">
               <ul>
                 <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -538,7 +539,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="#html/detailProduct.html">
+          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
             <div class="reviews_index_gallery_review__review_product_thumbnail">
               <img class="" alt="터널셔링퍼프 소매포인트mtm" width="40" height="40" src="../images/re_product3.jpg" style="opacity: 1;">
 
@@ -557,7 +558,7 @@
       <!-- //reivewphto(3) -->
       <!-- reivewphto(4) -->
       <li class="reviews_index_gallery_review">
-          <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+          <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
             <div class="photo_review_thumbnail__thumbnail_container">
               <ul>
                 <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -585,7 +586,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
             <div class="reviews_index_gallery_review__review_product_thumbnail">
               <img class="" alt="패브릭메신저 싱글백팩" width="40" height="40" src="../images/re_product4.jpg" style="opacity: 1;">
 
@@ -604,7 +605,7 @@
       <!-- //reivewphto(4) -->
       <!-- reivewphto(5) -->
       <li class="reviews_index_gallery_review">
-          <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+          <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
             <div class="photo_review_thumbnail__thumbnail_container">
               <ul>
                 <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -630,7 +631,7 @@
               </div>
             </div>
           </div>
-          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+          <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
             <div class="reviews_index_gallery_review__review_product_thumbnail">
               <img class="" alt="언발실루엣 라운드쭉티" width="40" height="40" src="http://placehold.it/40x40" style="opacity: 1;">
 
@@ -703,7 +704,7 @@
         <!-- ======================================================================================= -->
       <!-- reivewphto(6) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -729,7 +730,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="컬러스트링 볼류미셔링ops" width="40" height="40" src="../images/re_product6.jpg" style="opacity: 1;">
 
@@ -748,7 +749,7 @@
       <!-- //reivewphto(6) -->
       <!-- reivewphto(7) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -774,7 +775,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="데님브리즈 트임롱스커트" width="40" height="40" src="../images/re_product9.jpg" style="opacity: 1;">
 
@@ -793,7 +794,7 @@
       <!-- //reivewphto(7) -->
       <!-- reivewphto(8) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -819,7 +820,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="우아립넥 루즈퍼프 슬림탑" width="40" height="40" src="../images/re_product10.jpg" style="opacity: 1;">
 
@@ -838,7 +839,7 @@
       <!-- //reivewphto(8) -->
       <!-- reivewphto(9) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -864,7 +865,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="우아밴드셔링 스트링원피스" width="40" height="40" src="../images/re_product11.jpg" style="opacity: 1;">
 
@@ -883,7 +884,7 @@
       <!-- //reivewphto(9) --> 
       <!-- reivewphto(10) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -915,7 +916,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="클래식아이보리 온고잉오버롤PT" width="40" height="40" src="../images/re_product12.jpg" style="opacity: 1;">
 
@@ -934,7 +935,7 @@
       <!-- //reivewphto(10) --> 
       <!-- reivewphto(11) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -964,7 +965,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="데일리무드 라운드루즈니트" width="40" height="40" src="../images/re_product13.jpg" style="opacity: 1;">
 
@@ -974,8 +975,8 @@
                 데일리무드 라운드루즈니트
             </div>
             <div class="reviews_index_gallery_review__product_info_feedbacks">
-              <span class="reviews_index_gallery_review__reviews_count">리뷰<strong>빈칸</strong></span>
-              <span class="reviews_index_gallery_review__display_score">평점<strong>빈칸</strong></span>
+              <span class="reviews_index_gallery_review__reviews_count">리뷰<strong>1</strong></span>
+              <span class="reviews_index_gallery_review__display_score">평점<strong>5.0</strong></span>
             </div>
           </div>
         </div>
@@ -983,7 +984,7 @@
       <!-- //reivewphto(11) --> 
       <!-- reivewphto(12) -->
       <li class="reviews_index_gallery_review">
-        <div class="photo_review_thumbnail js-link-fullscreen-popup" data-url="javascript:;">
+        <div class="photo_review_thumbnail js-link-iframe" data-url="./underConstruction.html">
           <div class="photo_review_thumbnail__thumbnail_container">
             <ul>
               <li class="photo_review_thumbnail__review_image_thumbnail">
@@ -1009,7 +1010,7 @@
             </div>
           </div>
         </div>
-        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="http://stylenanda.com/front/php/product.php?product_no=238639">
+        <div class="reviews_index_gallery_review__review_product js-link-iframe " data-url="./underConstruction.html">
           <div class="reviews_index_gallery_review__review_product_thumbnail">
             <img class="" alt="소프트웜 톤맞춤패드 폴라T" width="40" height="40" src="../images/re_product14.jpg" style="opacity: 1;">
 
@@ -1019,8 +1020,8 @@
                 소프트웜 톤맞춤패드 폴라T
             </div>
             <div class="reviews_index_gallery_review__product_info_feedbacks">
-              <span class="reviews_index_gallery_review__reviews_count">리뷰<strong>빈칸</strong></span>
-              <span class="reviews_index_gallery_review__display_score">평점<strong>빈칸</strong></span>
+              <span class="reviews_index_gallery_review__reviews_count">리뷰<strong>1</strong></span>
+              <span class="reviews_index_gallery_review__display_score">평점<strong>5.0</strong></span>
             </div>
           </div>
         </div>
@@ -1339,8 +1340,8 @@
           <a href="./underConstruction.html" title="review">REVIEW</a>
           <div class="subCategory review">
               <ul>
-                  <li><a href="./underConstruction.html" title="포토 리뷰">포토 리뷰</a></li>
-                  <li><a href="./underConstruction.html" title="글 리뷰">글 리뷰</a></li>
+                  <li><a href="./application_photo1.html" title="포토 리뷰">포토 리뷰</a></li>
+                  <li><a href="./application_posts1.html" title="글 리뷰">글 리뷰</a></li>
               </ul>
           </div>
       </li>
