@@ -536,14 +536,52 @@ $(document).ready(function(){
 
     // 선택상품삭제
     $("#btn_selDel").click(function(){
-        if(confirm("선택하신 상품을 삭제하시겠습니까?")){
-            $("input[name=check_chk]:checked").each(function(){
-                var sel_del = $(this).parent().parent();
-                sel_del.remove();
-                $("#all_check").prop("checked",false);
-            });
-        }else{
+        // if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+        //     $("input[name=check_chk]:checked").each(function(){
+        //         var sel_del = $(this).parent().parent();
+        //         sel_del.remove();
+        //     });
+        // }else if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+        //     if("$(input[name=check_chk])"!=checked){
+        //         alert("선택된 상품이 없습니다.");
+        //     }
+        // }
+        // if($("input[name=all_check]:checked")){
+        //     confirm("선택하신 상품을 삭제하시겠습니까?")
+                
+        //             var sel_del = $(this).parent().parent();
+        //             sel_del.remove();
+        //             $(".body").hide();
+        //             $(".ff_table").hide();
+        //             $("#all_check").prop("checked",false);
+        //             $("#delete").show().css("visibility","visible");
+                
+        if($("input[name=all_check]").is(":checked")== true){
+            confirm("선택하신 상품을 삭제하시겠습니까?")
+                
+                    var sel_del = $(this).parent().parent();
+                    sel_del.remove();
+                    $(".body").hide();
+                    $(".ff_table").hide();
+                    $("#all_check").prop("checked",false);
+                    $("#delete").show().css("visibility","visible");
+                   
+        //  }else if($("input[name=check_chk]:checked")){
+        //     if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+        //             $("input[name=check_chk]:checked").each(function(){
+        //                 var sel_del = $(this).parent().parent();
+        //                 sel_del.remove();
+        //             });
+        //     }
+        }else if($("input[name=all_check]").is(":checked")== false && $("input[name=check_chk]").is(":checked")== false ){
             alert("선택된 상품이 없습니다.");
+        }else{
+            if(confirm("선택하신 상품을 삭제하시겠습니까?")){
+                $("input[name=check_chk]:checked").each(function(){
+                    var sel_del = $(this).parent().parent();
+                    sel_del.remove();
+                });
+            }
         }
     });
     
