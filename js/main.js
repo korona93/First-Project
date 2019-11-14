@@ -2,7 +2,6 @@
 
 
 $(document).ready(function(){
-
     //mainMenu1
         $('#header > #mainMenu1 > li').mouseover(function(){
             //console.log('li');
