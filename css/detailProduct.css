@@ -94,7 +94,8 @@ body.eMobilePopup {
 
 .xans-product-detail {
     width: 1212px;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 110px;
 }
 .xans-product-detail .imgArea {
     float: left;
