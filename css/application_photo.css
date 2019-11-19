@@ -1582,7 +1582,7 @@ body.reviews.new ul li div.select2-result-label span.star {
 }
 .sprites-icon-drop-down {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
     background-repeat: no-repeat;
     width: 17px;
     height: 10px;
@@ -1590,7 +1590,7 @@ body.reviews.new ul li div.select2-result-label span.star {
 }
 .sprites-icon-drop-down-s {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
     background-repeat: no-repeat;
     width: 12px;
     height: 6px;
@@ -1774,7 +1774,7 @@ body.reviews.new ul li div.select2-result-label span.star {
 }
 .sprites-search {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url(https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -1782,7 +1782,7 @@ body.reviews.new ul li div.select2-result-label span.star {
 }
 .sprites-search-thin {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
     background-repeat: no-repeat;
     width: 16px;
     height: 16px;
@@ -2094,7 +2094,7 @@ body.reviews.new ul li div.select2-result-label span.star {
     }
     .sprites-icon-drop-down-s {
         vertical-align: middle;
-        background-image: url('./img/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
+        background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
         background-repeat: no-repeat;
         background-size: 82px 1309px;
         width: 12px;
@@ -2103,7 +2103,7 @@ body.reviews.new ul li div.select2-result-label span.star {
     }
     .sprites-icon-drop-down {
         vertical-align: middle;
-        background-image: url('./img/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
+        background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
         background-repeat: no-repeat;
         background-size: 82px 1309px;
         width: 17px;
@@ -2310,7 +2310,7 @@ body.reviews.new ul li div.select2-result-label span.star {
     }
     .sprites-search-thin {
         vertical-align: middle;
-        background-image: url('./img/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
+        background-image: url('https://assets.cre.ma/latte/assets/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
         background-repeat: no-repeat;
         background-size: 82px 1309px;
         width: 16px;
@@ -2319,7 +2319,7 @@ body.reviews.new ul li div.select2-result-label span.star {
     }
     .sprites-search {
         vertical-align: middle;
-        background-image: url('./img/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
+        background-image: url(https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png);
         background-repeat: no-repeat;
         background-size: 82px 1309px;
         width: 15px;
@@ -4320,7 +4320,7 @@ body.en .review_popup_form__image_field_input_image_container {
 }
 .sprites-icon-drop-down {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
     background-repeat: no-repeat;
     width: 17px;
     height: 10px;
@@ -4328,7 +4328,7 @@ body.en .review_popup_form__image_field_input_image_container {
 }
 .sprites-icon-drop-down-s {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url('https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
     background-repeat: no-repeat;
     width: 12px;
     height: 6px;
@@ -4464,7 +4464,7 @@ body.en .review_popup_form__image_field_input_image_container {
 }
 .sprites-search {
     vertical-align: middle;
-    background-image: url('//assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png');
+    background-image: url(https://assets.cre.ma/latte/assets/sprites-1b0ca3ac73833654c27a330ce9f316d0e48e6156670af7520113d43b11ed7d9b.png);
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
@@ -4517,7 +4517,7 @@ body.en .review_popup_form__image_field_input_image_container {
 (min-resolution: 144dpi) {
     .sprites-icon-drop-down {
         vertical-align: middle;
-        background-image: url('//assets.cre.ma/latte/assets/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
+        background-image: url('https://assets.cre.ma/latte/assets/sprites@2x-fc9c172f0269c235f2343051aa790fa2a4b4ac4da39840102f9578504140f2b8.png');
         background-repeat: no-repeat;
         background-size: 82px 1309px;
         width: 17px;

@@ -609,5 +609,10 @@ $(document).ready(function() {
     
 });
 
+$(document).ready(function(){
+
+    $('.colorBox span')
+
+});
 
 
