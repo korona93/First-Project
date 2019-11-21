@@ -610,9 +610,46 @@ $(document).ready(function() {
 });
 
 $(document).ready(function(){
+    
+    $(".colorBox > ul > li").click(function(){
 
-    $('.colorBox span')
+        if($(".colorBox > ul > li").hasClass("checkedCol")) {
+            $(".colorBox > ul > li").removeClass("checkedCol");
+        }
+        $(this).addClass('checkedCol');
+    });
+
 
 });
+
+$(document).ready(function(){
+    $(".colorBox > input:checkBox").on('click',function(){
+        
+        //이미지 경로를 가져온다.
+        // var a = jQuery('.conImage > a > img').attr("src");
+        var img = $(this).parent().parent().parent().prev(".conImage").children().children();
+        var name = $(this).parent().parent().next(".productName").children().children().text();
+        //스타일속성 밖에 못가져옴
+        var col = $(this).prev().children(".checkedCol").children("span").attr("style");
+        var colchk = $(this).prev().children(".checkedCol")
+        var pri = $(this).parent().parent().next().next(".price").children().text();
+        console.log(img);
+        console.log(name);
+        console.log(col);
+        console.log(pri);
+        if(colchk.length){
+            var b = jQuery(img).attr("src");
+            jQuery(".eachImg").attr("src",b);
+            Query(".navProductName > a > span").text(name);
+            $(".navPrice > span").text(pri);
+        }
+        else{
+            alert("색상을 추가해주세요")
+            $(this).attr("checked", false);
+            
+        }
+        
+    })
+})
 
 
