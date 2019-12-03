@@ -633,15 +633,100 @@ $(document).ready(function(){
         var col = $(this).prev().children(".checkedCol").children("span").attr("style");
         var colchk = $(this).prev().children(".checkedCol")
         var pri = $(this).parent().parent().next().next(".price").children().text();
-        console.log(img);
-        console.log(name);
-        console.log(col);
-        console.log(pri);
+        
         if(colchk.length){
-            var b = jQuery(img).attr("src");
-            jQuery(".eachImg").attr("src",b);
-            Query(".navProductName > a > span").text(name);
-            $(".navPrice > span").text(pri);
+            var eachProduct = document.createElement("li");
+            eachProduct.setAttribute("class","eachProduct");
+
+
+            //navConImage 생성
+            var navConImage = document.createElement("div");
+            navConImage.setAttribute("class", "navConImage");
+            var navConImage = document.createElement("div");
+            navConImage.setAttribute("class", "navConImage");
+            var a1 = document.createElement("a");
+            a1.setAttribute("href", "#");         
+            var img1 = document.createElement("img");
+            img1.setAttribute("class", "eachImg");
+            img1.setAttribute("src","");
+
+
+            //navConInfo 생성
+            var navConInfo = document.createElement("div");
+            navConInfo.setAttribute("class", "navConInfo");
+            var navColor = document.createElement("div");
+            navColor.setAttribute("class", "navColor");
+            var colorBox = document.createElement("div");
+            colorBox.setAttribute("class", "colorBox");
+            var eachCol1 = document.createElement("span");
+            eachCol1.setAttribute("id", "eachCol1");
+            var a2 = document.createElement("a");
+            a2.setAttribute("href", "#");
+            var del = document.createElement("a");
+            del.setAttribute("class", "del");
+            del.setAttribute("href", "javascript:;");
+
+            var navProductName = document.createElement("div");
+            navProductName.setAttribute("class","navProductName");
+            var a3 = document.createElement("a");
+            a3.setAttribute("href", "#");
+            var span = document.createElement("span");
+            
+
+            var navPrice = document.createElement("div");
+            navPrice.setAttribute("class","navPrice");
+            var prod = document.createElement("span");
+            prod.setAttribute("class", "prod selectproduct_price");
+            var div = document.createElement("div");
+            var inputNumber = document.createElement("input");
+            inputNumber.setAttribute("class", "inputNumber inp");
+            inputNumber.setAttribute("type", "text");
+            inputNumber.setAttribute("value", "1");
+            var count = document.createElement("div");
+            count.setAttribute("class", "count");
+            var img2 = document.createElement("img");
+            img2.setAttribute("class", "up");
+            img2.setAttribute("src", "../images/icon_quantity_up.gif");
+            var img3 = document.createElement("img");
+            img3.setAttribute("class", "down");
+            img3.setAttribute("src", "../images/icon_quantity_down.gif");
+            
+            //navConImage
+            eachProduct.appendChild(navConImage);
+            navConImage.appendChild(a1);
+            a1.appendChild(img1);
+
+            //navConInfo
+            eachProduct.appendChild(navConInfo);
+            navConInfo.appendChild(navColor);
+            navColor.appendChild(colorBox);
+            colorBox.appendChild(eachCol1);
+            eachCol1.appendChild(a2);
+            colorBox.appendChild(del);
+            del.innerHTML="삭제";
+
+            navConInfo.appendChild(navProductName);
+            navProductName.appendChild(a3);
+            a3.appendChild(span);
+            
+            navConInfo.appendChild(navPrice);
+            navPrice.appendChild(prod);
+            //원글자?
+            navPrice.appendChild(div);
+            div.appendChild(inputNumber);
+            div.appendChild(count);
+            count.appendChild(img2);
+            count.appendChild(img3);
+
+
+            var b = $(img).attr("src");
+            jQuery(".product_all:last-child").find(".eachImg").attr("src",b);
+            $(".navProductName > a > span").html(name);
+            $(".navPrice > span ").html(pri);
+
+
+            $(".product_all").append(eachProduct);
+            
         }
         else{
             alert("색상을 추가해주세요")
